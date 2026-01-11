@@ -1,5 +1,5 @@
 """
-Простая конфигурация для начала
+Конфигурация приложения VaultDoc
 """
 import os
 from typing import List
@@ -12,7 +12,7 @@ class Settings:
     )
     
     # JWT
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "vaultdoc-secret-key-dev-2024")
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "vaultdoc-super-secret-jwt-key-2024-coursework-change-this")
     ALGORITHM: str = os.getenv("ALGORITHM", "HS256")
     ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "30"))
     
