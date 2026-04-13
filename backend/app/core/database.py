@@ -1,23 +1,23 @@
-"""
-Подключение к базе данных PostgreSQL
-"""
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import declarative_base, sessionmaker
 
-# URL подключения к PostgreSQL в Docker
-DATABASE_URL = "postgresql://vaultdoc_user:vaultdoc_pass@localhost:5433/vaultdoc_db"
+from app.core.config import settings
 
-# Создаем движок SQLAlchemy
-engine = create_engine(DATABASE_URL)
 
-# Создаем фабрику сессий
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+engine = create_engine(
+    settings.database_url,
+    pool_pre_ping=True,
+)
 
-# Базовый класс для моделей
+SessionLocal = sessionmaker(
+    bind=engine,
+    autoflush=False,
+    autocommit=False,
+)
+
 Base = declarative_base()
 
-# Dependency для получения сессии БД
+
 def get_db():
     db = SessionLocal()
     try:
