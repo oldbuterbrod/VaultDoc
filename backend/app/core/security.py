@@ -9,20 +9,12 @@ from app.core.config import settings
 
 # Упрощенное хеширование паролей (для теста, в продакшене используй bcrypt!)
 def verify_password(plain_password: str, hashed_password: str) -> bool:
-    """Проверка пароля (упрощенная для теста)"""
-    # Для тестовых данных
-    if hashed_password.startswith("hashed_"):
-        test_hash = hashlib.sha256(f"{plain_password}_".encode()).hexdigest()
-        return f"hashed_{test_hash[:50]}" == hashed_password
-    
-    # Для старых данных
-    return plain_password == "123" or f"hashed_password_{plain_password}" == hashed_password
+    """Проверка пароля через обычный sha256"""
+    return hashlib.sha256(plain_password.encode()).hexdigest() == hashed_password
 
 def get_password_hash(password: str) -> str:
-    """Хеширование пароля (упрощенное для теста)"""
-    # В реальном приложении используй bcrypt!
-    hash_obj = hashlib.sha256(f"{password}_".encode())
-    return f"hashed_{hash_obj.hexdigest()[:50]}"
+    """Хеширование пароля через обычный sha256"""
+    return hashlib.sha256(password.encode()).hexdigest()
 
 # Функции для работы с JWT токенами
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
