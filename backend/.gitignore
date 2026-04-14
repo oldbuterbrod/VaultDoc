@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual env
+.venv/
+venv/
+backend/.venv/
+
+# Alembic / misc
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Env files
+.env
+backend/.env
+
+# Uploads
+uploads/
+backend/uploads/

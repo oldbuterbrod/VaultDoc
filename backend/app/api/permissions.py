@@ -133,6 +133,134 @@ def grant_folder_permission(
     return permission
 
 
+@router.patch("/folders/{folder_public_id}", response_model=FolderPermissionRead)
+def update_folder_permission(
+    folder_public_id: str,
+    payload: PermissionGrant,
+    request: Request,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    folder = db.query(Folder).filter(Folder.public_id == folder_public_id).first()
+    if not folder:
+        raise HTTPException(status_code=404, detail="Папка не найдена")
+
+    if not _can_manage_folder_permissions(db, current_user, folder):
+        write_audit(
+            db=db,
+            request=request,
+            action="access_denied",
+            success=False,
+            actor_user_id=current_user.id,
+            resource_type="folder",
+            resource_id=folder.id,
+            resource_public_id=folder.public_id,
+            details={"reason": "cannot update folder permissions"},
+        )
+        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами папки")
+
+    target_user = db.query(User).filter(User.public_id == payload.user_public_id).first()
+    if not target_user:
+        raise HTTPException(status_code=404, detail="Пользователь не найден")
+
+    permission = (
+        db.query(FolderPermission)
+        .filter(
+            FolderPermission.user_id == target_user.id,
+            FolderPermission.folder_id == folder.id,
+        )
+        .first()
+    )
+    if not permission:
+        raise HTTPException(status_code=404, detail="Разрешение на папку не найдено")
+
+    permission.can_read = payload.can_read
+    permission.can_update = payload.can_update
+    permission.can_delete = payload.can_delete
+    permission.can_manage_access = payload.can_manage_access
+    permission.granted_by = current_user.id
+
+    db.commit()
+    db.refresh(permission)
+
+    write_audit(
+        db=db,
+        request=request,
+        action="folder_permission_updated",
+        success=True,
+        actor_user_id=current_user.id,
+        resource_type="folder",
+        resource_id=folder.id,
+        resource_public_id=folder.public_id,
+        details={
+            "target_user_id": target_user.id,
+            "can_read": permission.can_read,
+            "can_update": permission.can_update,
+            "can_delete": permission.can_delete,
+            "can_manage_access": permission.can_manage_access,
+        },
+    )
+
+    return permission
+
+
+@router.delete("/folders/{folder_public_id}/{user_public_id}", status_code=status.HTTP_204_NO_CONTENT)
+def revoke_folder_permission(
+    folder_public_id: str,
+    user_public_id: str,
+    request: Request,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    folder = db.query(Folder).filter(Folder.public_id == folder_public_id).first()
+    if not folder:
+        raise HTTPException(status_code=404, detail="Папка не найдена")
+
+    if not _can_manage_folder_permissions(db, current_user, folder):
+        write_audit(
+            db=db,
+            request=request,
+            action="access_denied",
+            success=False,
+            actor_user_id=current_user.id,
+            resource_type="folder",
+            resource_id=folder.id,
+            resource_public_id=folder.public_id,
+            details={"reason": "cannot revoke folder permissions"},
+        )
+        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами папки")
+
+    target_user = db.query(User).filter(User.public_id == user_public_id).first()
+    if not target_user:
+        raise HTTPException(status_code=404, detail="Пользователь не найден")
+
+    permission = (
+        db.query(FolderPermission)
+        .filter(
+            FolderPermission.user_id == target_user.id,
+            FolderPermission.folder_id == folder.id,
+        )
+        .first()
+    )
+    if not permission:
+        raise HTTPException(status_code=404, detail="Разрешение на папку не найдено")
+
+    db.delete(permission)
+    db.commit()
+
+    write_audit(
+        db=db,
+        request=request,
+        action="folder_permission_revoked",
+        success=True,
+        actor_user_id=current_user.id,
+        resource_type="folder",
+        resource_id=folder.id,
+        resource_public_id=folder.public_id,
+        details={"target_user_id": target_user.id},
+    )
+
+
 @router.post("/documents/{document_public_id}", response_model=DocumentPermissionRead, status_code=status.HTTP_201_CREATED)
 def grant_document_permission(
     document_public_id: str,
@@ -210,3 +338,131 @@ def grant_document_permission(
     )
 
     return permission
+
+
+@router.patch("/documents/{document_public_id}", response_model=DocumentPermissionRead)
+def update_document_permission(
+    document_public_id: str,
+    payload: PermissionGrant,
+    request: Request,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    document = db.query(Document).filter(Document.public_id == document_public_id).first()
+    if not document:
+        raise HTTPException(status_code=404, detail="Документ не найден")
+
+    if not _can_manage_document_permissions(db, current_user, document):
+        write_audit(
+            db=db,
+            request=request,
+            action="access_denied",
+            success=False,
+            actor_user_id=current_user.id,
+            resource_type="document",
+            resource_id=document.id,
+            resource_public_id=document.public_id,
+            details={"reason": "cannot update document permissions"},
+        )
+        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами документа")
+
+    target_user = db.query(User).filter(User.public_id == payload.user_public_id).first()
+    if not target_user:
+        raise HTTPException(status_code=404, detail="Пользователь не найден")
+
+    permission = (
+        db.query(DocumentPermission)
+        .filter(
+            DocumentPermission.user_id == target_user.id,
+            DocumentPermission.document_id == document.id,
+        )
+        .first()
+    )
+    if not permission:
+        raise HTTPException(status_code=404, detail="Разрешение на документ не найдено")
+
+    permission.can_read = payload.can_read
+    permission.can_update = payload.can_update
+    permission.can_delete = payload.can_delete
+    permission.can_manage_access = payload.can_manage_access
+    permission.granted_by = current_user.id
+
+    db.commit()
+    db.refresh(permission)
+
+    write_audit(
+        db=db,
+        request=request,
+        action="document_permission_updated",
+        success=True,
+        actor_user_id=current_user.id,
+        resource_type="document",
+        resource_id=document.id,
+        resource_public_id=document.public_id,
+        details={
+            "target_user_id": target_user.id,
+            "can_read": permission.can_read,
+            "can_update": permission.can_update,
+            "can_delete": permission.can_delete,
+            "can_manage_access": permission.can_manage_access,
+        },
+    )
+
+    return permission
+
+
+@router.delete("/documents/{document_public_id}/{user_public_id}", status_code=status.HTTP_204_NO_CONTENT)
+def revoke_document_permission(
+    document_public_id: str,
+    user_public_id: str,
+    request: Request,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    document = db.query(Document).filter(Document.public_id == document_public_id).first()
+    if not document:
+        raise HTTPException(status_code=404, detail="Документ не найден")
+
+    if not _can_manage_document_permissions(db, current_user, document):
+        write_audit(
+            db=db,
+            request=request,
+            action="access_denied",
+            success=False,
+            actor_user_id=current_user.id,
+            resource_type="document",
+            resource_id=document.id,
+            resource_public_id=document.public_id,
+            details={"reason": "cannot revoke document permissions"},
+        )
+        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами документа")
+
+    target_user = db.query(User).filter(User.public_id == user_public_id).first()
+    if not target_user:
+        raise HTTPException(status_code=404, detail="Пользователь не найден")
+
+    permission = (
+        db.query(DocumentPermission)
+        .filter(
+            DocumentPermission.user_id == target_user.id,
+            DocumentPermission.document_id == document.id,
+        )
+        .first()
+    )
+    if not permission:
+        raise HTTPException(status_code=404, detail="Разрешение на документ не найдено")
+
+    db.delete(permission)
+    db.commit()
+
+    write_audit(
+        db=db,
+        request=request,
+        action="document_permission_revoked",
+        success=True,
+        actor_user_id=current_user.id,
+        resource_type="document",
+        resource_id=document.id,
+        resource_public_id=document.public_id,
+        details={"target_user_id": target_user.id},
+    )
