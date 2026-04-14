@@ -1,18 +1,14 @@
-"""
-Pydantic схемы для аутентификации
-"""
 from pydantic import BaseModel
 
-class UserLogin(BaseModel):
-    email: str
-    password: str
+from app.schemas.user import UserRead
 
-class UserRegister(BaseModel):
-    email: str
-    password: str
-    full_name: str
-    role: str = "employee"
 
 class Token(BaseModel):
     access_token: str
     token_type: str = "bearer"
+
+
+class LoginResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    user: UserRead

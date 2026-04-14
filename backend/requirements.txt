@@ -7,4 +7,5 @@ pydantic-settings
 python-jose[cryptography]
 passlib[bcrypt]
 python-multipart
-alembic
+alembicemail-validator
+bcrypt<5
