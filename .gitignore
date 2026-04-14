@@ -1,24 +1,30 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.so
+
+# Virtual env
+.venv/
 venv/
-.env
+backend/.venv/
 
-# Node.js (если будет фронтенд)
-node_modules/
-
-# Docker данные
-docker/postgres_data/
+# Alembic / misc
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
 
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# Системные файлы
+# OS
 .DS_Store
-Thumbs.db
 
-# Логи
-*.log
+# Env files
+.env
+backend/.env
+
+# Uploads
+uploads/
+backend/uploads/
