@@ -12,6 +12,7 @@ class FolderCreate(BaseModel):
 class FolderRead(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
+    id: int
     public_id: UUID
     name: str
     owner_id: int

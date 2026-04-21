@@ -15,10 +15,17 @@ class UserCreate(UserBase):
     password: str
 
 
-class UserRead(UserBase):
+class UserRegister(UserCreate):
+    pass
+
+
+class UserRead(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
+    id: int
     public_id: UUID
+    email: EmailStr
+    full_name: str
     role: UserRole
     is_active: bool
     created_at: datetime

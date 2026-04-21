@@ -1,103 +1,111 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { authAPI } from '../services/api';
-
-interface User {
-  id: number;
-  email: string;
-  full_name: string;
-  role: 'employee' | 'manager' | 'admin';
-  is_active: boolean;
-  created_at: string;
-}
+import { User } from '../types';
 
 interface AuthContextType {
   user: User | null;
   loading: boolean;
+  isAuthenticated: boolean;
   login: (email: string, password: string) => Promise<void>;
   logout: () => void;
-  isAuthenticated: boolean;
+  refreshMe: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export const useAuth = () => {
+export const useAuth = (): AuthContextType => {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
+    throw new Error('useAuth must be used within AuthProvider');
   }
   return context;
 };
+
+const ACCESS_TOKEN_KEY = 'access_token';
+const USER_KEY = 'user';
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const token = localStorage.getItem('access_token');
-    const savedUser = localStorage.getItem('user');
-    
-    if (token && savedUser) {
-      try {
-        const parsedUser = JSON.parse(savedUser);
-        setUser(parsedUser);
-      } catch (error) {
-        console.error('Error parsing saved user:', error);
-        localStorage.removeItem('access_token');
-        localStorage.removeItem('user');
-      }
-    }
-    setLoading(false);
-  }, []);
+  const clearAuth = () => {
+    localStorage.removeItem(ACCESS_TOKEN_KEY);
+    localStorage.removeItem(USER_KEY);
+    setUser(null);
+  };
 
-  const login = async (email: string, password: string) => {
+  const refreshMe = async () => {
+    const token = localStorage.getItem(ACCESS_TOKEN_KEY);
+    if (!token) {
+      setUser(null);
+      return;
+    }
+
     try {
-      const response = await authAPI.login(email, password);
-      
-      if (response.access_token) {
-        localStorage.setItem('access_token', response.access_token);
-        
-        // Получаем информацию о пользователе
-        try {
-          const userData = await authAPI.getMe();
-          localStorage.setItem('user', JSON.stringify(userData));
-          setUser(userData);
-        } catch (userError) {
-          console.error('Error fetching user data:', userError);
-          // Создаем временного пользователя
-          const tempUser: User = {
-            id: 1,
-            email: email,
-            full_name: email.split('@')[0],
-            role: 'employee',
-            is_active: true,
-            created_at: new Date().toISOString()
-          };
-          localStorage.setItem('user', JSON.stringify(tempUser));
-          setUser(tempUser);
-        }
-      }
+      const me = await authAPI.getMe();
+      localStorage.setItem(USER_KEY, JSON.stringify(me));
+      setUser(me);
     } catch (error) {
-      console.error('Login error:', error);
+      clearAuth();
       throw error;
     }
   };
 
+  useEffect(() => {
+    const bootstrap = async () => {
+      const token = localStorage.getItem(ACCESS_TOKEN_KEY);
+      const savedUser = localStorage.getItem(USER_KEY);
+
+      if (!token) {
+        setLoading(false);
+        return;
+      }
+
+      if (savedUser) {
+        try {
+          const parsed = JSON.parse(savedUser) as User;
+          setUser(parsed);
+        } catch {
+          localStorage.removeItem(USER_KEY);
+        }
+      }
+
+      try {
+        await refreshMe();
+      } catch {
+        // already cleared
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    bootstrap();
+  }, []);
+
+  const login = async (email: string, password: string) => {
+    const response = await authAPI.login(email, password);
+
+    localStorage.setItem(ACCESS_TOKEN_KEY, response.access_token);
+    localStorage.setItem(USER_KEY, JSON.stringify(response.user));
+    setUser(response.user);
+  };
+
   const logout = () => {
-    localStorage.removeItem('access_token');
-    localStorage.removeItem('user');
-    setUser(null);
+    clearAuth();
     window.location.href = '/';
   };
 
-  return (
-    <AuthContext.Provider value={{
+  const value = useMemo(
+    () => ({
       user,
       loading,
+      isAuthenticated: !!user && !!localStorage.getItem(ACCESS_TOKEN_KEY),
       login,
       logout,
-      isAuthenticated: !!user && !!localStorage.getItem('access_token'),
-    }}>
-      {children}
-    </AuthContext.Provider>
+      refreshMe,
+    }),
+    [user, loading]
   );
+
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

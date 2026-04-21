@@ -15,6 +15,7 @@ class DocumentCreate(BaseModel):
 class DocumentRead(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
+    id: int
     public_id: UUID
     title: str
     folder_id: int | None

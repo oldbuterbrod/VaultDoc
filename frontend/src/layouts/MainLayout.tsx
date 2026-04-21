@@ -1,121 +1,62 @@
 import React from 'react';
-import { Outlet, useNavigate, useLocation } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import './MainLayout.css';
 
-interface MainLayoutProps {
-  children?: React.ReactNode;
-}
-
-const MainLayout: React.FC<MainLayoutProps> = () => {
+const MainLayout: React.FC = () => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
   const menuItems = [
-    { id: 'dashboard', label: 'Главная', path: '/dashboard' },
-    { id: 'documents', label: 'Документы', path: '/documents' },
-    ...(user?.role === 'admin' 
-      ? [{ id: 'users', label: 'Пользователи', path: '/users' }] 
-      : []
-    ),
+    { label: 'Главная', path: '/dashboard' },
+    { label: 'Проводник', path: '/documents' },
+    ...(user?.role === 'admin'
+      ? [
+          { label: 'Права доступа', path: '/permissions' },
+          { label: 'Журнал аудита', path: '/audit' },
+        ]
+      : []),
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const roleLabel =
+    user?.role === 'admin'
+      ? 'Администратор'
+      : user?.role === 'manager'
+      ? 'Менеджер'
+      : 'Сотрудник';
 
   return (
-    <div style={{ 
-      display: 'flex',
-      minHeight: '100vh'
-    }}>
-      {/* Сайдбар */}
-      <div style={{
-        width: '250px',
-        backgroundColor: '#2C3E50',
-        color: 'white',
-        padding: '20px',
-        display: 'flex',
-        flexDirection: 'column'
-      }}>
-        <h2 style={{ marginBottom: '30px' }}>ДокХранилище</h2>
-        
-        <div style={{ marginBottom: '20px' }}>
-          <div style={{ fontWeight: '500' }}>{user?.full_name}</div>
-          <div style={{ fontSize: '14px', color: '#95a5a6' }}>
-            {user?.role === 'admin' ? 'Администратор' : 
-             user?.role === 'manager' ? 'Менеджер' : 
-             user?.role === 'employee' ? 'Сотрудник' : 
-             user?.role}
-          </div>
+    <div className="layout">
+      <aside className="layout__sidebar">
+        <div className="layout__brand">VaultDoc</div>
+
+        <div className="layout__user">
+          <div className="layout__user-name">{user?.full_name}</div>
+          <div className="layout__user-role">{roleLabel}</div>
+          <div className="layout__user-email">{user?.email}</div>
         </div>
-        
-        <nav style={{ flex: 1, marginBottom: '20px' }}>
+
+        <nav className="layout__nav">
           {menuItems.map((item) => (
             <button
-              key={item.id}
+              key={item.path}
+              className={`layout__nav-btn ${location.pathname === item.path ? 'layout__nav-btn--active' : ''}`}
               onClick={() => navigate(item.path)}
-              style={{
-                width: '100%',
-                padding: '12px 15px',
-                backgroundColor: isActive(item.path) ? 'rgba(255, 255, 255, 0.2)' : 'transparent',
-                color: 'white',
-                border: 'none',
-                textAlign: 'left',
-                cursor: 'pointer',
-                marginBottom: '5px',
-                borderRadius: '5px',
-                fontSize: '16px',
-                transition: 'background-color 0.3s',
-                fontWeight: isActive(item.path) ? '600' : 'normal'
-              }}
-              onMouseEnter={(e) => {
-                if (!isActive(item.path)) {
-                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (!isActive(item.path)) {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                }
-              }}
             >
               {item.label}
             </button>
           ))}
         </nav>
-        
-        <button 
-          onClick={logout}
-          style={{
-            width: '100%',
-            padding: '12px',
-            backgroundColor: '#e74c3c',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            fontSize: '16px',
-            fontWeight: '500',
-            transition: 'background-color 0.3s'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = '#c0392b';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = '#e74c3c';
-          }}
-        >
+
+        <button className="layout__logout" onClick={logout}>
           Выйти
         </button>
-      </div>
-      
-      {/* Основной контент */}
-      <div style={{ 
-        flex: 1,
-        padding: '30px',
-        backgroundColor: '#f5f5f5'
-      }}>
-        <Outlet /> {/* Здесь будут рендериться страницы */}
-      </div>
+      </aside>
+
+      <main className="layout__content">
+        <Outlet />
+      </main>
     </div>
   );
 };
