@@ -28,3 +28,6 @@ backend/.env
 # Uploads
 uploads/
 backend/uploads/
+
+# Local uploaded documents
+backend/storage/

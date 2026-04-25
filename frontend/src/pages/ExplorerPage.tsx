@@ -7,12 +7,16 @@ import './ExplorerPage.css';
 const ExplorerPage: React.FC = () => {
   const [folders, setFolders] = useState<Folder[]>([]);
   const [documents, setDocuments] = useState<Document[]>([]);
+
   const [selectedFolderPublicId, setSelectedFolderPublicId] = useState<string | null>(null);
   const [selectedDocumentPublicId, setSelectedDocumentPublicId] = useState<string | null>(null);
 
   const [folderName, setFolderName] = useState('');
   const [documentTitle, setDocumentTitle] = useState('');
   const [documentContent, setDocumentContent] = useState('');
+
+  const [uploadTitle, setUploadTitle] = useState('');
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
@@ -22,7 +26,12 @@ const ExplorerPage: React.FC = () => {
     try {
       setLoading(true);
       setError('');
-      const [folderList, documentList] = await Promise.all([folderAPI.list(), documentAPI.list()]);
+
+      const [folderList, documentList] = await Promise.all([
+        folderAPI.list(),
+        documentAPI.list(),
+      ]);
+
       setFolders(folderList);
       setDocuments(documentList);
     } catch (e: any) {
@@ -45,6 +54,8 @@ const ExplorerPage: React.FC = () => {
     () => documents.find((d) => d.public_id === selectedDocumentPublicId) ?? null,
     [documents, selectedDocumentPublicId]
   );
+
+  const selectedFolderName = selectedFolder ? selectedFolder.name : 'корень';
 
   const handleCreateFolder = async () => {
     try {
@@ -94,11 +105,52 @@ const ExplorerPage: React.FC = () => {
     }
   };
 
-  const handleDeleteFolder = async () => {
-    if (!selectedFolder) return;
+  const handleUploadDocument = async () => {
     try {
       setError('');
       setSuccess('');
+
+      if (!selectedFile) {
+        setError('Выберите PDF или DOCX файл');
+        return;
+      }
+
+      const lowerName = selectedFile.name.toLowerCase();
+      if (!lowerName.endsWith('.pdf') && !lowerName.endsWith('.docx')) {
+        setError('Можно загружать только PDF и DOCX');
+        return;
+      }
+
+      await documentAPI.upload({
+        file: selectedFile,
+        title: uploadTitle.trim() || undefined,
+        folder_public_id: selectedFolder?.public_id ?? null,
+      });
+
+      setUploadTitle('');
+      setSelectedFile(null);
+
+      const fileInput = document.getElementById('document-upload-input') as HTMLInputElement | null;
+      if (fileInput) {
+        fileInput.value = '';
+      }
+
+      setSuccess('Файл загружен');
+      await loadData();
+    } catch (e: any) {
+      setError(e?.response?.data?.detail || 'Не удалось загрузить файл');
+    }
+  };
+
+  const handleDeleteFolder = async () => {
+    if (!selectedFolder) {
+      return;
+    }
+
+    try {
+      setError('');
+      setSuccess('');
+
       await folderAPI.delete(selectedFolder.public_id);
       setSelectedFolderPublicId(null);
       setSuccess('Папка удалена');
@@ -109,10 +161,14 @@ const ExplorerPage: React.FC = () => {
   };
 
   const handleDeleteDocument = async () => {
-    if (!selectedDocument) return;
+    if (!selectedDocument) {
+      return;
+    }
+
     try {
       setError('');
       setSuccess('');
+
       await documentAPI.delete(selectedDocument.public_id);
       setSelectedDocumentPublicId(null);
       setSuccess('Документ удалён');
@@ -122,25 +178,65 @@ const ExplorerPage: React.FC = () => {
     }
   };
 
+  const handleDownloadDocument = async () => {
+  if (!selectedDocument) {
+    return;
+  }
+
+  try {
+    setError('');
+    setSuccess('');
+
+    const blob = await documentAPI.download(selectedDocument.public_id);
+    const url = window.URL.createObjectURL(blob);
+
+    const link = window.document.createElement('a');
+    link.href = url;
+    link.download = selectedDocument.file_name || `${selectedDocument.title}`;
+    window.document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    window.URL.revokeObjectURL(url);
+    setSuccess('Файл скачан');
+  } catch (e: any) {
+    setError(e?.response?.data?.detail || 'Не удалось скачать файл');
+  }
+};
+
+  const formatFileSize = (bytes: number | null): string => {
+    if (bytes === null || bytes === undefined) {
+      return '—';
+    }
+
+    if (bytes < 1024) {
+      return `${bytes} Б`;
+    }
+
+    if (bytes < 1024 * 1024) {
+      return `${(bytes / 1024).toFixed(1)} КБ`;
+    }
+
+    return `${(bytes / (1024 * 1024)).toFixed(2)} МБ`;
+  };
+
   if (loading) {
-    return <div className="page-loading">Загрузка проводника...</div>;
+    return <div>Загрузка проводника...</div>;
   }
 
   return (
-    <div className="explorer">
+    <div className="explorer-page">
       <div className="explorer__header">
-        <div>
-          <h1 className="explorer__title">Проводник</h1>
-          <p className="explorer__subtitle">
-            Папки и документы отображаются в единой древовидной структуре
-          </p>
-        </div>
+        <h1 className="explorer__title">Проводник</h1>
+        <p className="explorer__subtitle">
+          Папки и документы отображаются в единой древовидной структуре
+        </p>
       </div>
 
       {error && <div className="explorer__alert explorer__alert--error">{error}</div>}
       {success && <div className="explorer__alert explorer__alert--success">{success}</div>}
 
-      <div className="explorer__toolbar">
+      <div className="explorer__toolbar explorer__toolbar--triple">
         <div className="explorer__card">
           <h2>Создать папку</h2>
           <input
@@ -149,16 +245,14 @@ const ExplorerPage: React.FC = () => {
             onChange={(e) => setFolderName(e.target.value)}
             placeholder="Название папки"
           />
-          <div className="explorer__hint">
-            Родитель: {selectedFolder ? selectedFolder.name : 'корень'}
-          </div>
+          <div className="explorer__hint">Родитель: {selectedFolderName}</div>
           <button className="explorer__btn explorer__btn--primary" onClick={handleCreateFolder}>
             Создать папку
           </button>
         </div>
 
         <div className="explorer__card">
-          <h2>Создать документ</h2>
+          <h2>Создать текстовый документ</h2>
           <input
             className="explorer__input"
             value={documentTitle}
@@ -171,11 +265,34 @@ const ExplorerPage: React.FC = () => {
             onChange={(e) => setDocumentContent(e.target.value)}
             placeholder="Содержимое"
           />
-          <div className="explorer__hint">
-            Папка: {selectedFolder ? selectedFolder.name : 'без папки (корень)'}
-          </div>
+          <div className="explorer__hint">Папка: {selectedFolderName}</div>
           <button className="explorer__btn explorer__btn--primary" onClick={handleCreateDocument}>
             Создать документ
+          </button>
+        </div>
+
+        <div className="explorer__card">
+          <h2>Загрузить PDF / DOCX</h2>
+          <input
+            className="explorer__input"
+            value={uploadTitle}
+            onChange={(e) => setUploadTitle(e.target.value)}
+            placeholder="Название документа (необязательно)"
+          />
+          <input
+            id="document-upload-input"
+            className="explorer__input explorer__file-input"
+            type="file"
+            accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            onChange={(e) => setSelectedFile(e.target.files?.[0] ?? null)}
+          />
+          <div className="explorer__hint">
+            Папка: {selectedFolderName}
+            <br />
+            Файл: {selectedFile ? selectedFile.name : 'не выбран'}
+          </div>
+          <button className="explorer__btn explorer__btn--primary" onClick={handleUploadDocument}>
+            Загрузить файл
           </button>
         </div>
       </div>
@@ -200,13 +317,14 @@ const ExplorerPage: React.FC = () => {
         </div>
 
         <div className="explorer__card">
-          <h2>Инспектор</h2>
+          <h2>Сведения о ресурсе</h2>
 
           {selectedFolder && (
             <div className="explorer__details">
               <div><strong>Тип:</strong> Папка</div>
               <div><strong>Название:</strong> {selectedFolder.name}</div>
               <div><strong>Public ID:</strong> {selectedFolder.public_id}</div>
+
               <button className="explorer__btn explorer__btn--danger" onClick={handleDeleteFolder}>
                 Удалить папку
               </button>
@@ -214,18 +332,31 @@ const ExplorerPage: React.FC = () => {
           )}
 
           {selectedDocument && (
-            <div className="explorer__details">
-              <div><strong>Тип:</strong> Документ</div>
-              <div><strong>Название:</strong> {selectedDocument.title}</div>
-              <div><strong>Public ID:</strong> {selectedDocument.public_id}</div>
-              <div className="explorer__document-content">
-                {selectedDocument.content || 'Содержимое отсутствует'}
-              </div>
-              <button className="explorer__btn explorer__btn--danger" onClick={handleDeleteDocument}>
-                Удалить документ
-              </button>
-            </div>
-          )}
+  <div className="explorer__details">
+    <div><strong>Тип:</strong> Документ</div>
+    <div><strong>Название:</strong> {selectedDocument.title}</div>
+    <div><strong>Файл:</strong> {selectedDocument.file_name || '—'}</div>
+    <div><strong>Размер:</strong> {formatFileSize(selectedDocument.file_size)}</div>
+
+    <div className="explorer__actions">
+      {selectedDocument.file_name && (
+        <button
+          className="explorer__btn explorer__btn--secondary"
+          onClick={handleDownloadDocument}
+        >
+          Скачать файл
+        </button>
+      )}
+
+      <button
+        className="explorer__btn explorer__btn--danger"
+        onClick={handleDeleteDocument}
+      >
+        Удалить документ
+      </button>
+    </div>
+  </div>
+)}
 
           {!selectedFolder && !selectedDocument && (
             <div className="explorer__empty">Выбери папку или документ в дереве слева</div>

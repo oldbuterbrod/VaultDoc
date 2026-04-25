@@ -20,8 +20,13 @@ class DocumentRead(BaseModel):
     title: str
     folder_id: int | None
     owner_id: int
+
     content: str | None
     file_name: str | None
     mime_type: str | None
+    file_size: int | None
+    checksum: str | None
+    uploaded_at: datetime
+
     created_at: datetime
     updated_at: datetime

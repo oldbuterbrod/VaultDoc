@@ -7,10 +7,13 @@ class Settings(BaseSettings):
     debug: bool = True
 
     database_url: str
-    secret_key: SecretStr
 
+    secret_key: SecretStr
     access_token_expire_minutes: int = 30
     algorithm: str = "HS256"
+
+    document_storage_dir: str = "storage/documents"
+    max_upload_size_mb: int = 10
 
     model_config = SettingsConfigDict(
         env_file=".env",

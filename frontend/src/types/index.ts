@@ -35,6 +35,9 @@ export interface Document {
   content: string | null;
   file_name: string | null;
   mime_type: string | null;
+  file_size: number | null;
+  checksum: string | null;
+  uploaded_at: string;
   created_at: string;
   updated_at: string;
 }

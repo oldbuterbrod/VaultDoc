@@ -23,6 +23,10 @@
   margin-bottom: 20px;
 }
 
+.explorer__toolbar--triple {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .explorer__grid {
   grid-template-columns: minmax(320px, 420px) minmax(320px, 1fr);
 }
@@ -49,6 +53,10 @@
   resize: vertical;
 }
 
+.explorer__file-input {
+  padding: 9px 12px;
+}
+
 .explorer__hint {
   font-size: 13px;
   color: #64748b;
@@ -68,10 +76,14 @@
   color: #fff;
 }
 
+.explorer__btn--secondary {
+  background: #475467;
+  color: #fff;
+}
+
 .explorer__btn--danger {
   background: #dc2626;
   color: #fff;
-  margin-top: 14px;
 }
 
 .explorer__alert {
@@ -104,6 +116,26 @@
   margin-top: 8px;
 }
 
+.explorer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
 .explorer__empty {
   color: #64748b;
+}
+
+@media (max-width: 1200px) {
+  .explorer__toolbar--triple {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .explorer__toolbar,
+  .explorer__grid {
+    grid-template-columns: 1fr;
+  }
 }

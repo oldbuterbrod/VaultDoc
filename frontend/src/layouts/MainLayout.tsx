@@ -29,7 +29,7 @@ const MainLayout: React.FC = () => {
   return (
     <div className="layout">
       <aside className="layout__sidebar">
-        <div className="layout__brand">VaultDoc</div>
+        <div className="layout__brand">ДокХранилище</div>
 
         <div className="layout__user">
           <div className="layout__user-name">{user?.full_name}</div>
