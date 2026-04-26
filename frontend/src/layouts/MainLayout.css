@@ -1,45 +1,53 @@
 .layout {
   display: flex;
   min-height: 100vh;
+  background: #f5f7fb;
 }
 
 .layout__sidebar {
-  width: 260px;
+  width: 280px;
+  min-width: 280px;
   background: #1f2a37;
-  color: #fff;
-  padding: 20px;
+  color: #ffffff;
+  padding: 24px 20px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .layout__brand {
   font-size: 24px;
   font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 28px;
 }
 
-.layout__user {
+.layout__user-card {
   margin-bottom: 24px;
-  padding: 14px;
-  border-radius: 12px;
+  padding: 16px;
+  border-radius: 14px;
   background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .layout__user-name {
+  font-size: 16px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .layout__user-role {
   font-size: 14px;
   color: #cbd5e1;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .layout__user-email {
   font-size: 12px;
   color: #94a3b8;
-  margin-top: 6px;
+  margin-top: 8px;
   word-break: break-word;
+  line-height: 1.4;
 }
 
 .layout__nav {
@@ -49,34 +57,66 @@
   flex: 1;
 }
 
-.layout__nav-btn,
+.layout__nav-item,
 .layout__logout {
+  width: 100%;
   border: none;
   border-radius: 10px;
   padding: 12px 14px;
   cursor: pointer;
   text-align: left;
   font-size: 15px;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.1s ease;
 }
 
-.layout__nav-btn {
+.layout__nav-item {
   background: transparent;
-  color: #fff;
+  color: #ffffff;
 }
 
-.layout__nav-btn--active {
+.layout__nav-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.layout__nav-item--active {
   background: #2563eb;
+  color: #ffffff;
   font-weight: 600;
 }
 
 .layout__logout {
+  margin-top: 20px;
   background: #dc2626;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
+}
+
+.layout__logout:hover {
+  background: #b91c1c;
 }
 
 .layout__content {
   flex: 1;
-  background: #f5f7fb;
   padding: 28px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .layout__sidebar {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .layout__content {
+    padding: 20px;
+  }
 }

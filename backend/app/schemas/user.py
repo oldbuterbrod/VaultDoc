@@ -19,6 +19,16 @@ class UserRegister(UserCreate):
     pass
 
 
+class UserAdminCreate(UserBase):
+    password: str
+    role: UserRole = UserRole.EMPLOYEE
+    is_active: bool = True
+
+
+class UserActivationUpdate(BaseModel):
+    is_active: bool
+
+
 class UserRead(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 

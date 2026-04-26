@@ -6,7 +6,7 @@ from sqlalchemy import or_
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
-from app.dependencies.auth import get_current_user
+from app.dependencies.auth import ensure_content_role, get_current_user
 from app.models.document import Document
 from app.models.document_permission import DocumentPermission
 from app.models.enums import UserRole
@@ -28,6 +28,11 @@ from app.services.document_service import (
 router = APIRouter()
 
 
+@router.get("/ping")
+def ping():
+    return {"module": "documents"}
+
+
 @router.post("/", response_model=DocumentRead, status_code=status.HTTP_201_CREATED)
 def create_document(
     payload: DocumentCreate,
@@ -35,6 +40,8 @@ def create_document(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     folder = None
 
     if payload.folder_public_id:
@@ -87,6 +94,8 @@ async def upload_document(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     folder = None
 
     if folder_public_id:
@@ -153,6 +162,8 @@ def list_documents(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     query = db.query(Document)
 
     if current_user.role != UserRole.ADMIN:
@@ -186,6 +197,8 @@ def download_document(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     document = db.query(Document).filter(Document.public_id == document_public_id).first()
     if not document:
         raise HTTPException(
@@ -237,6 +250,8 @@ def get_document(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     document = db.query(Document).filter(Document.public_id == document_public_id).first()
     if not document:
         raise HTTPException(
@@ -267,6 +282,8 @@ def delete_document(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     document = db.query(Document).filter(Document.public_id == document_public_id).first()
     if not document:
         raise HTTPException(

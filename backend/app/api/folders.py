@@ -3,7 +3,7 @@ from sqlalchemy import or_
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
-from app.dependencies.auth import get_current_user
+from app.dependencies.auth import ensure_content_role, get_current_user
 from app.models.enums import UserRole
 from app.models.folder import Folder
 from app.models.folder_permission import FolderPermission
@@ -16,8 +16,12 @@ from app.services.access_service import (
 )
 from app.services.audit_service import write_audit
 
-
 router = APIRouter()
+
+
+@router.get("/ping")
+def ping():
+    return {"module": "folders"}
 
 
 @router.post("/", response_model=FolderRead, status_code=status.HTTP_201_CREATED)
@@ -27,6 +31,8 @@ def create_folder(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     parent = None
     if payload.parent_public_id:
         parent = db.query(Folder).filter(Folder.public_id == payload.parent_public_id).first()
@@ -43,6 +49,7 @@ def create_folder(
         owner_id=current_user.id,
         parent_id=parent.id if parent else None,
     )
+
     db.add(folder)
     db.commit()
     db.refresh(folder)
@@ -67,6 +74,8 @@ def list_folders(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     query = db.query(Folder)
 
     if current_user.role != UserRole.ADMIN:
@@ -100,6 +109,8 @@ def get_folder(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     folder = db.query(Folder).filter(Folder.public_id == folder_public_id).first()
     if not folder:
         raise HTTPException(
@@ -130,6 +141,8 @@ def delete_folder(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    ensure_content_role(current_user)
+
     folder = db.query(Folder).filter(Folder.public_id == folder_public_id).first()
     if not folder:
         raise HTTPException(

@@ -11,7 +11,7 @@ import {
 } from '../types';
 
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000',
+  baseURL: '',
 });
 
 api.interceptors.request.use((config) => {
@@ -60,6 +60,24 @@ export const authAPI = {
 export const userAPI = {
   list: async (): Promise<User[]> => {
     const response = await api.get('/api/users/');
+    return response.data;
+  },
+
+  create: async (payload: {
+    email: string;
+    full_name: string;
+    password: string;
+    role: 'admin' | 'security_admin' | 'developer' | 'manager' | 'employee';
+    is_active: boolean;
+  }): Promise<User> => {
+    const response = await api.post('/api/users/', payload);
+    return response.data;
+  },
+
+  setActive: async (userPublicId: string, isActive: boolean): Promise<User> => {
+    const response = await api.patch(`/api/users/${userPublicId}/activation`, {
+      is_active: isActive,
+    });
     return response.data;
   },
 };
@@ -203,6 +221,37 @@ export const permissionAPI = {
 export const auditAPI = {
   list: async (limit = 100): Promise<AuditLogEntry[]> => {
     const response = await api.get(`/api/audit/?limit=${limit}`);
+    return response.data;
+  },
+};
+export const systemAPI = {
+  health: async (): Promise<{ status?: string; [key: string]: any }> => {
+    const response = await api.get('/health');
+    return response.data;
+  },
+
+  pingAuth: async (): Promise<{ module: string }> => {
+    const response = await api.get('/api/auth/ping');
+    return response.data;
+  },
+
+  pingUsers: async (): Promise<{ module: string }> => {
+    const response = await api.get('/api/users/ping');
+    return response.data;
+  },
+
+  pingFolders: async (): Promise<{ module: string }> => {
+    const response = await api.get('/api/folders/ping');
+    return response.data;
+  },
+
+  pingDocuments: async (): Promise<{ module: string }> => {
+    const response = await api.get('/api/documents/ping');
+    return response.data;
+  },
+
+  pingPermissions: async (): Promise<{ module: string }> => {
+    const response = await api.get('/api/permissions/ping');
     return response.data;
   },
 };

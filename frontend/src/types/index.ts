@@ -1,4 +1,9 @@
-export type UserRole = 'admin' | 'manager' | 'employee';
+export type UserRole =
+  | 'admin'
+  | 'security_admin'
+  | 'developer'
+  | 'manager'
+  | 'employee';
 
 export interface User {
   public_id: string;

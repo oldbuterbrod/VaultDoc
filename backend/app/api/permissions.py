@@ -16,13 +16,25 @@ from app.schemas.permission import (
 )
 from app.services.audit_service import write_audit
 
-
 router = APIRouter()
 
 
-def _can_manage_folder_permissions(db: Session, current_user: User, folder: Folder) -> bool:
-    if current_user.role == UserRole.ADMIN:
+@router.get("/ping")
+def ping():
+    return {"module": "permissions"}
+
+
+def _can_manage_folder_permissions(
+    db: Session,
+    current_user: User,
+    folder: Folder,
+) -> bool:
+    if current_user.role in {UserRole.ADMIN, UserRole.SECURITY_ADMIN}:
         return True
+
+    if current_user.role != UserRole.MANAGER:
+        return False
+
     if folder.owner_id == current_user.id:
         return True
 
@@ -37,9 +49,17 @@ def _can_manage_folder_permissions(db: Session, current_user: User, folder: Fold
     return bool(perm and perm.can_manage_access)
 
 
-def _can_manage_document_permissions(db: Session, current_user: User, document: Document) -> bool:
-    if current_user.role == UserRole.ADMIN:
+def _can_manage_document_permissions(
+    db: Session,
+    current_user: User,
+    document: Document,
+) -> bool:
+    if current_user.role in {UserRole.ADMIN, UserRole.SECURITY_ADMIN}:
         return True
+
+    if current_user.role != UserRole.MANAGER:
+        return False
+
     if document.owner_id == current_user.id:
         return True
 
@@ -54,7 +74,11 @@ def _can_manage_document_permissions(db: Session, current_user: User, document: 
     return bool(perm and perm.can_manage_access)
 
 
-@router.post("/folders/{folder_public_id}", response_model=FolderPermissionRead, status_code=status.HTTP_201_CREATED)
+@router.post(
+    "/folders/{folder_public_id}",
+    response_model=FolderPermissionRead,
+    status_code=status.HTTP_201_CREATED,
+)
 def grant_folder_permission(
     folder_public_id: str,
     payload: PermissionGrant,
@@ -78,7 +102,10 @@ def grant_folder_permission(
             resource_public_id=folder.public_id,
             details={"reason": "cannot manage folder permissions"},
         )
-        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами папки")
+        raise HTTPException(
+            status_code=403,
+            detail="Нет доступа к управлению правами папки",
+        )
 
     target_user = db.query(User).filter(User.public_id == payload.user_public_id).first()
     if not target_user:
@@ -157,7 +184,10 @@ def update_folder_permission(
             resource_public_id=folder.public_id,
             details={"reason": "cannot update folder permissions"},
         )
-        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами папки")
+        raise HTTPException(
+            status_code=403,
+            detail="Нет доступа к управлению правами папки",
+        )
 
     target_user = db.query(User).filter(User.public_id == payload.user_public_id).first()
     if not target_user:
@@ -204,7 +234,10 @@ def update_folder_permission(
     return permission
 
 
-@router.delete("/folders/{folder_public_id}/{user_public_id}", status_code=status.HTTP_204_NO_CONTENT)
+@router.delete(
+    "/folders/{folder_public_id}/{user_public_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+)
 def revoke_folder_permission(
     folder_public_id: str,
     user_public_id: str,
@@ -228,7 +261,10 @@ def revoke_folder_permission(
             resource_public_id=folder.public_id,
             details={"reason": "cannot revoke folder permissions"},
         )
-        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами папки")
+        raise HTTPException(
+            status_code=403,
+            detail="Нет доступа к управлению правами папки",
+        )
 
     target_user = db.query(User).filter(User.public_id == user_public_id).first()
     if not target_user:
@@ -261,7 +297,11 @@ def revoke_folder_permission(
     )
 
 
-@router.post("/documents/{document_public_id}", response_model=DocumentPermissionRead, status_code=status.HTTP_201_CREATED)
+@router.post(
+    "/documents/{document_public_id}",
+    response_model=DocumentPermissionRead,
+    status_code=status.HTTP_201_CREATED,
+)
 def grant_document_permission(
     document_public_id: str,
     payload: PermissionGrant,
@@ -285,7 +325,10 @@ def grant_document_permission(
             resource_public_id=document.public_id,
             details={"reason": "cannot manage document permissions"},
         )
-        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами документа")
+        raise HTTPException(
+            status_code=403,
+            detail="Нет доступа к управлению правами документа",
+        )
 
     target_user = db.query(User).filter(User.public_id == payload.user_public_id).first()
     if not target_user:
@@ -364,7 +407,10 @@ def update_document_permission(
             resource_public_id=document.public_id,
             details={"reason": "cannot update document permissions"},
         )
-        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами документа")
+        raise HTTPException(
+            status_code=403,
+            detail="Нет доступа к управлению правами документа",
+        )
 
     target_user = db.query(User).filter(User.public_id == payload.user_public_id).first()
     if not target_user:
@@ -411,7 +457,10 @@ def update_document_permission(
     return permission
 
 
-@router.delete("/documents/{document_public_id}/{user_public_id}", status_code=status.HTTP_204_NO_CONTENT)
+@router.delete(
+    "/documents/{document_public_id}/{user_public_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+)
 def revoke_document_permission(
     document_public_id: str,
     user_public_id: str,
@@ -435,7 +484,10 @@ def revoke_document_permission(
             resource_public_id=document.public_id,
             details={"reason": "cannot revoke document permissions"},
         )
-        raise HTTPException(status_code=403, detail="Нет доступа к управлению правами документа")
+        raise HTTPException(
+            status_code=403,
+            detail="Нет доступа к управлению правами документа",
+        )
 
     target_user = db.query(User).filter(User.public_id == user_public_id).first()
     if not target_user:

@@ -3,61 +3,111 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-d
 import { AuthProvider, useAuth } from './context/AuthContext';
 import MainLayout from './layouts/MainLayout';
 import DashboardPage from './pages/DashboardPage';
-import ExplorerPage from './pages/ExplorerPage'
+import ExplorerPage from './pages/ExplorerPage';
 import LoginPage from './pages/LoginPage';
 import PermissionsPage from './pages/PermissionsPage';
 import AuditLogPage from './pages/AuditLogPage';
+import UsersPage from './pages/UsersPage';
+import SystemStatusPage from './pages/SystemStatusPage';
+import { UserRole } from './types';
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { isAuthenticated, loading } = useAuth();
 
-  if (loading) return <div className="page-loading">Загрузка...</div>;
+  if (loading) {
+    return <div>Загрузка...</div>;
+  }
+
   return isAuthenticated ? <>{children}</> : <Navigate to="/" replace />;
 };
 
-const AdminRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { user } = useAuth();
-  return user?.role === 'admin' ? <>{children}</> : <Navigate to="/dashboard" replace />;
+const RoleRoute: React.FC<{
+  children: React.ReactNode;
+  allowedRoles: UserRole[];
+}> = ({ children, allowedRoles }) => {
+  const { user, isAuthenticated, loading } = useAuth();
+
+  if (loading) {
+    return <div>Загрузка...</div>;
+  }
+
+  if (!isAuthenticated) {
+    return <Navigate to="/" replace />;
+  }
+
+  return user && allowedRoles.includes(user.role) ? (
+    <>{children}</>
+  ) : (
+    <Navigate to="/dashboard" replace />
+  );
 };
 
 function App() {
   return (
-    <Router>
-      <AuthProvider>
+    <AuthProvider>
+      <Router>
         <Routes>
           <Route path="/" element={<LoginPage />} />
 
           <Route
+            path="/"
             element={
               <ProtectedRoute>
                 <MainLayout />
               </ProtectedRoute>
             }
           >
-            <Route path="/dashboard" element={<DashboardPage />} />
-            <Route path="/documents" element={<ExplorerPage />} />
+            <Route path="dashboard" element={<DashboardPage />} />
+
             <Route
-              path="/permissions"
+              path="documents"
               element={
-                <AdminRoute>
+                <RoleRoute allowedRoles={['admin', 'manager', 'employee']}>
+                  <ExplorerPage />
+                </RoleRoute>
+              }
+            />
+
+            <Route
+              path="users"
+              element={
+                <RoleRoute allowedRoles={['admin', 'security_admin']}>
+                  <UsersPage />
+                </RoleRoute>
+              }
+            />
+
+            <Route
+              path="permissions"
+              element={
+                <RoleRoute allowedRoles={['admin', 'security_admin']}>
                   <PermissionsPage />
-                </AdminRoute>
+                </RoleRoute>
               }
             />
             <Route
-              path="/audit"
+              path="system-status"
               element={
-                <AdminRoute>
+                <RoleRoute allowedRoles={['admin', 'developer']}>
+                <SystemStatusPage />
+                </RoleRoute>
+                }
+            />
+
+            <Route
+              path="audit"
+              element={
+                <RoleRoute allowedRoles={['admin', 'security_admin']}>
                   <AuditLogPage />
-                </AdminRoute>
+                </RoleRoute>
               }
             />
           </Route>
 
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
-      </AuthProvider>
-    </Router>
+      </Router>
+    </AuthProvider>
   );
 }
 
