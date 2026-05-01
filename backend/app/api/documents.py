@@ -108,7 +108,23 @@ async def upload_document(
 
         require_create_inside_folder_access(db, request, current_user, folder)
 
-    file_meta = await save_uploaded_document_file(file)
+    try:
+        file_meta = await save_uploaded_document_file(file)
+    except HTTPException as exc:
+        write_audit(
+            db=db,
+            request=request,
+            action="document_upload_rejected",
+            success=False,
+            actor_user_id=current_user.id,
+            resource_type="document",
+            details={
+                "reason": exc.detail,
+                "file_name": file.filename,
+                "content_type": file.content_type,
+            },
+        )
+        raise
 
     document_title = (
         title.strip()

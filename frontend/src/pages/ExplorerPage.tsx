@@ -111,13 +111,7 @@ const ExplorerPage: React.FC = () => {
       setSuccess('');
 
       if (!selectedFile) {
-        setError('Выберите PDF или DOCX файл');
-        return;
-      }
-
-      const lowerName = selectedFile.name.toLowerCase();
-      if (!lowerName.endsWith('.pdf') && !lowerName.endsWith('.docx')) {
-        setError('Можно загружать только PDF и DOCX');
+        setError('Выберите файл для загрузки');
         return;
       }
 
@@ -179,30 +173,30 @@ const ExplorerPage: React.FC = () => {
   };
 
   const handleDownloadDocument = async () => {
-  if (!selectedDocument) {
-    return;
-  }
+    if (!selectedDocument) {
+      return;
+    }
 
-  try {
-    setError('');
-    setSuccess('');
+    try {
+      setError('');
+      setSuccess('');
 
-    const blob = await documentAPI.download(selectedDocument.public_id);
-    const url = window.URL.createObjectURL(blob);
+      const blob = await documentAPI.download(selectedDocument.public_id);
+      const url = window.URL.createObjectURL(blob);
 
-    const link = window.document.createElement('a');
-    link.href = url;
-    link.download = selectedDocument.file_name || `${selectedDocument.title}`;
-    window.document.body.appendChild(link);
-    link.click();
-    link.remove();
+      const link = window.document.createElement('a');
+      link.href = url;
+      link.download = selectedDocument.file_name || `${selectedDocument.title}`;
+      window.document.body.appendChild(link);
+      link.click();
+      link.remove();
 
-    window.URL.revokeObjectURL(url);
-    setSuccess('Файл скачан');
-  } catch (e: any) {
-    setError(e?.response?.data?.detail || 'Не удалось скачать файл');
-  }
-};
+      window.URL.revokeObjectURL(url);
+      setSuccess('Файл скачан');
+    } catch (e: any) {
+      setError(e?.response?.data?.detail || 'Не удалось скачать файл');
+    }
+  };
 
   const formatFileSize = (bytes: number | null): string => {
     if (bytes === null || bytes === undefined) {
@@ -332,31 +326,31 @@ const ExplorerPage: React.FC = () => {
           )}
 
           {selectedDocument && (
-  <div className="explorer__details">
-    <div><strong>Тип:</strong> Документ</div>
-    <div><strong>Название:</strong> {selectedDocument.title}</div>
-    <div><strong>Файл:</strong> {selectedDocument.file_name || '—'}</div>
-    <div><strong>Размер:</strong> {formatFileSize(selectedDocument.file_size)}</div>
+            <div className="explorer__details">
+              <div><strong>Тип:</strong> Документ</div>
+              <div><strong>Название:</strong> {selectedDocument.title}</div>
+              <div><strong>Файл:</strong> {selectedDocument.file_name || '—'}</div>
+              <div><strong>Размер:</strong> {formatFileSize(selectedDocument.file_size)}</div>
 
-    <div className="explorer__actions">
-      {selectedDocument.file_name && (
-        <button
-          className="explorer__btn explorer__btn--secondary"
-          onClick={handleDownloadDocument}
-        >
-          Скачать файл
-        </button>
-      )}
+              <div className="explorer__actions">
+                {selectedDocument.file_name && (
+                  <button
+                    className="explorer__btn explorer__btn--secondary"
+                    onClick={handleDownloadDocument}
+                  >
+                    Скачать файл
+                  </button>
+                )}
 
-      <button
-        className="explorer__btn explorer__btn--danger"
-        onClick={handleDeleteDocument}
-      >
-        Удалить документ
-      </button>
-    </div>
-  </div>
-)}
+                <button
+                  className="explorer__btn explorer__btn--danger"
+                  onClick={handleDeleteDocument}
+                >
+                  Удалить документ
+                </button>
+              </div>
+            </div>
+          )}
 
           {!selectedFolder && !selectedDocument && (
             <div className="explorer__empty">Выбери папку или документ в дереве слева</div>
