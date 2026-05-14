@@ -1,0 +1,12 @@
+[OK]   login admin
+[OK]   login employee
+[OK]   GET /api/auth/me employee
+[OK]   Admin деактивирует employee
+[OK]   Деактивированный employee не входит в систему
+[OK]   Admin активирует employee обратно
+[OK]   Повторный вход employee после активации
+[OK]   Admin читает аудит для проверки активации
+[OK]   Аудит содержит user_deactivated
+[OK]   Аудит содержит user_activated
+
+Итог: OK

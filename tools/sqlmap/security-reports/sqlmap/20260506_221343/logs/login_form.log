@@ -1,0 +1,28 @@
+        ___
+       __H__
+ ___ ___[']_____ ___ ___  {1.8.4#stable}
+|_ -| . [)]     | .'| . |
+|___|_  ["]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 22:13:44 /2026-05-06/
+
+[22:13:44] [INFO] parsing HTTP request from '/home/sidorov/projects/diplom/vaultdoc/tools/sqlmap/security-reports/sqlmap/20260506_221343/requests/login.req'
+[22:13:44] [WARNING] using '/home/sidorov/projects/diplom/vaultdoc/tools/sqlmap/security-reports/sqlmap/20260506_221343/sqlmap-output' as the output directory
+[22:13:44] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1b3pre) Gecko/20090105 Firefox/3.1b3pre' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[22:13:44] [INFO] testing connection to the target URL
+[22:13:44] [INFO] checking if the target is protected by some kind of WAF/IPS
+[22:13:44] [INFO] testing if the target URL content is stable
+[22:13:45] [WARNING] target URL content is not stable (i.e. content differs). sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'
+how do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] C
+[22:13:45] [INFO] searching for dynamic content
+[22:13:45] [INFO] dynamic content marked for removal (1 region)
+[22:13:45] [CRITICAL] not authorized, try to provide right HTTP authentication type and valid credentials (401). If this is intended, try to rerun by providing a valid value for option '--ignore-code'
+[22:13:45] [WARNING] HTTP error codes detected during run:
+401 (Unauthorized) - 1 times
+[22:13:45] [WARNING] your sqlmap version is outdated
+
+[*] ending @ 22:13:45 /2026-05-06/
+

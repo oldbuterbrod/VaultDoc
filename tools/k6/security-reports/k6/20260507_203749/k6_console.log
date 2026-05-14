@@ -1,0 +1,568 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /scripts/vaultdoc_load_test.js
+        output: -
+
+     scenarios: (100.00%) 4 scenarios, 16 max VUs, 1m50s max duration (incl. graceful stop):
+              * admin_api: Up to 5 looping VUs for 1m20s over 3 stages (gracefulRampDown: 30s, exec: adminScenario, gracefulStop: 30s)
+              * employee_api: Up to 5 looping VUs for 1m20s over 3 stages (gracefulRampDown: 30s, exec: employeeScenario, gracefulStop: 30s)
+              * health: 2 looping VUs for 1m0s (exec: healthScenario, gracefulStop: 30s)
+              * login: 1.00 iterations/s for 1m0s (maxVUs: 2-4, exec: loginScenario, gracefulStop: 30s)
+
+
+running (0m01.0s), 05/14 VUs, 0 complete and 0 interrupted iterations
+admin_api      [   1% ] 1/5 VUs  0m00.5s/1m20.0s
+employee_api   [   1% ] 1/5 VUs  0m00.5s/1m20.0s
+health         [   1% ] 2 VUs    0m00.5s/1m0s 
+login          [   1% ] 1/2 VUs  0m00.5s/1m0s  1.00 iters/s
+
+running (0m02.0s), 05/14 VUs, 5 complete and 0 interrupted iterations
+admin_api      [   2% ] 1/5 VUs  0m01.5s/1m20.0s
+employee_api   [   2% ] 1/5 VUs  0m01.5s/1m20.0s
+health         [   2% ] 2 VUs    0m01.5s/1m0s 
+login          [   2% ] 1/2 VUs  0m01.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:37:52Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m03.0s), 04/14 VUs, 11 complete and 0 interrupted iterations
+admin_api      [   3% ] 1/5 VUs  0m02.5s/1m20.0s
+employee_api   [   3% ] 1/5 VUs  0m02.5s/1m20.0s
+health         [   4% ] 2 VUs    0m02.5s/1m0s 
+login          [   4% ] 0/2 VUs  0m02.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:37:53Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m04.0s), 04/14 VUs, 16 complete and 0 interrupted iterations
+admin_api      [   4% ] 1/5 VUs  0m03.5s/1m20.0s
+employee_api   [   4% ] 1/5 VUs  0m03.5s/1m20.0s
+health         [   6% ] 2 VUs    0m03.5s/1m0s 
+login          [   6% ] 0/2 VUs  0m03.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:37:54Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m05.0s), 04/14 VUs, 21 complete and 0 interrupted iterations
+admin_api      [   6% ] 1/5 VUs  0m04.5s/1m20.0s
+employee_api   [   6% ] 1/5 VUs  0m04.5s/1m20.0s
+health         [   7% ] 2 VUs    0m04.5s/1m0s 
+login          [   7% ] 0/2 VUs  0m04.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:37:55Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m06.0s), 06/14 VUs, 26 complete and 0 interrupted iterations
+admin_api      [   7% ] 2/5 VUs  0m05.5s/1m20.0s
+employee_api   [   7% ] 2/5 VUs  0m05.5s/1m20.0s
+health         [   9% ] 2 VUs    0m05.5s/1m0s 
+login          [   9% ] 0/2 VUs  0m05.5s/1m0s  1.00 iters/s
+
+running (0m07.0s), 07/14 VUs, 32 complete and 0 interrupted iterations
+admin_api      [   8% ] 2/5 VUs  0m06.5s/1m20.0s
+employee_api   [   8% ] 2/5 VUs  0m06.5s/1m20.0s
+health         [  11% ] 2 VUs    0m06.5s/1m0s 
+login          [  11% ] 1/2 VUs  0m06.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:37:57Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m08.0s), 06/14 VUs, 40 complete and 0 interrupted iterations
+admin_api      [   9% ] 2/5 VUs  0m07.5s/1m20.0s
+employee_api   [   9% ] 2/5 VUs  0m07.5s/1m20.0s
+health         [  12% ] 2 VUs    0m07.5s/1m0s 
+login          [  12% ] 0/2 VUs  0m07.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:37:58Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m09.0s), 06/14 VUs, 47 complete and 0 interrupted iterations
+admin_api      [  11% ] 2/5 VUs  0m08.5s/1m20.0s
+employee_api   [  11% ] 2/5 VUs  0m08.5s/1m20.0s
+health         [  14% ] 2 VUs    0m08.5s/1m0s 
+login          [  14% ] 0/2 VUs  0m08.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:37:59Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m10.0s), 06/14 VUs, 54 complete and 0 interrupted iterations
+admin_api      [  12% ] 2/5 VUs  0m09.5s/1m20.0s
+employee_api   [  12% ] 2/5 VUs  0m09.5s/1m20.0s
+health         [  16% ] 2 VUs    0m09.5s/1m0s 
+login          [  16% ] 0/2 VUs  0m09.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:00Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m11.0s), 08/14 VUs, 61 complete and 0 interrupted iterations
+admin_api      [  13% ] 3/5 VUs  0m10.5s/1m20.0s
+employee_api   [  13% ] 3/5 VUs  0m10.5s/1m20.0s
+health         [  17% ] 2 VUs    0m10.5s/1m0s 
+login          [  17% ] 0/2 VUs  0m10.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:01Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m12.0s), 08/14 VUs, 70 complete and 0 interrupted iterations
+admin_api      [  14% ] 3/5 VUs  0m11.5s/1m20.0s
+employee_api   [  14% ] 3/5 VUs  0m11.5s/1m20.0s
+health         [  19% ] 2 VUs    0m11.5s/1m0s 
+login          [  19% ] 0/2 VUs  0m11.5s/1m0s  1.00 iters/s
+
+running (0m13.0s), 09/14 VUs, 78 complete and 0 interrupted iterations
+admin_api      [  16% ] 3/5 VUs  0m12.5s/1m20.0s
+employee_api   [  16% ] 3/5 VUs  0m12.5s/1m20.0s
+health         [  21% ] 2 VUs    0m12.5s/1m0s 
+login          [  21% ] 1/2 VUs  0m12.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:03Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m14.0s), 08/14 VUs, 88 complete and 0 interrupted iterations
+admin_api      [  17% ] 3/5 VUs  0m13.5s/1m20.0s
+employee_api   [  17% ] 3/5 VUs  0m13.5s/1m20.0s
+health         [  22% ] 2 VUs    0m13.5s/1m0s 
+login          [  22% ] 0/2 VUs  0m13.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:04Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m15.0s), 08/14 VUs, 97 complete and 0 interrupted iterations
+admin_api      [  18% ] 3/5 VUs  0m14.5s/1m20.0s
+employee_api   [  18% ] 3/5 VUs  0m14.5s/1m20.0s
+health         [  24% ] 2 VUs    0m14.5s/1m0s 
+login          [  24% ] 0/2 VUs  0m14.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:05Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m16.0s), 10/14 VUs, 106 complete and 0 interrupted iterations
+admin_api      [  19% ] 4/5 VUs  0m15.5s/1m20.0s
+employee_api   [  19% ] 4/5 VUs  0m15.5s/1m20.0s
+health         [  26% ] 2 VUs    0m15.5s/1m0s 
+login          [  26% ] 0/2 VUs  0m15.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:06Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m17.0s), 10/14 VUs, 117 complete and 0 interrupted iterations
+admin_api      [  21% ] 4/5 VUs  0m16.5s/1m20.0s
+employee_api   [  21% ] 4/5 VUs  0m16.5s/1m20.0s
+health         [  27% ] 2 VUs    0m16.5s/1m0s 
+login          [  27% ] 0/2 VUs  0m16.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:07Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m18.0s), 10/14 VUs, 128 complete and 0 interrupted iterations
+admin_api      [  22% ] 4/5 VUs  0m17.5s/1m20.0s
+employee_api   [  22% ] 4/5 VUs  0m17.5s/1m20.0s
+health         [  29% ] 2 VUs    0m17.5s/1m0s 
+login          [  29% ] 0/2 VUs  0m17.5s/1m0s  1.00 iters/s
+
+running (0m19.0s), 11/14 VUs, 137 complete and 0 interrupted iterations
+admin_api      [  23% ] 4/5 VUs  0m18.5s/1m20.0s
+employee_api   [  23% ] 4/5 VUs  0m18.5s/1m20.0s
+health         [  31% ] 2 VUs    0m18.5s/1m0s 
+login          [  31% ] 1/2 VUs  0m18.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:09Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m20.0s), 10/14 VUs, 149 complete and 0 interrupted iterations
+admin_api      [  24% ] 4/5 VUs  0m19.5s/1m20.0s
+employee_api   [  24% ] 4/5 VUs  0m19.5s/1m20.0s
+health         [  32% ] 2 VUs    0m19.5s/1m0s 
+login          [  32% ] 0/2 VUs  0m19.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:10Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m21.0s), 12/14 VUs, 160 complete and 0 interrupted iterations
+admin_api      [  26% ] 5/5 VUs  0m20.5s/1m20.0s
+employee_api   [  26% ] 5/5 VUs  0m20.5s/1m20.0s
+health         [  34% ] 2 VUs    0m20.5s/1m0s 
+login          [  34% ] 0/2 VUs  0m20.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:11Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m22.0s), 12/14 VUs, 173 complete and 0 interrupted iterations
+admin_api      [  27% ] 5/5 VUs  0m21.5s/1m20.0s
+employee_api   [  27% ] 5/5 VUs  0m21.5s/1m20.0s
+health         [  36% ] 2 VUs    0m21.5s/1m0s 
+login          [  36% ] 0/2 VUs  0m21.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:12Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m23.0s), 12/14 VUs, 186 complete and 0 interrupted iterations
+admin_api      [  28% ] 5/5 VUs  0m22.5s/1m20.0s
+employee_api   [  28% ] 5/5 VUs  0m22.5s/1m20.0s
+health         [  37% ] 2 VUs    0m22.5s/1m0s 
+login          [  37% ] 0/2 VUs  0m22.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:13Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m24.0s), 12/14 VUs, 199 complete and 0 interrupted iterations
+admin_api      [  29% ] 5/5 VUs  0m23.5s/1m20.0s
+employee_api   [  29% ] 5/5 VUs  0m23.5s/1m20.0s
+health         [  39% ] 2 VUs    0m23.5s/1m0s 
+login          [  39% ] 0/2 VUs  0m23.5s/1m0s  1.00 iters/s
+
+running (0m25.0s), 13/14 VUs, 211 complete and 0 interrupted iterations
+admin_api      [  31% ] 5/5 VUs  0m24.5s/1m20.0s
+employee_api   [  31% ] 5/5 VUs  0m24.5s/1m20.0s
+health         [  41% ] 2 VUs    0m24.5s/1m0s 
+login          [  41% ] 1/2 VUs  0m24.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:15Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m26.0s), 12/14 VUs, 225 complete and 0 interrupted iterations
+admin_api      [  32% ] 5/5 VUs  0m25.5s/1m20.0s
+employee_api   [  32% ] 5/5 VUs  0m25.5s/1m20.0s
+health         [  42% ] 2 VUs    0m25.5s/1m0s 
+login          [  42% ] 0/2 VUs  0m25.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:16Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m27.0s), 12/14 VUs, 238 complete and 0 interrupted iterations
+admin_api      [  33% ] 5/5 VUs  0m26.5s/1m20.0s
+employee_api   [  33% ] 5/5 VUs  0m26.5s/1m20.0s
+health         [  44% ] 2 VUs    0m26.5s/1m0s 
+login          [  44% ] 0/2 VUs  0m26.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:17Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m28.0s), 12/14 VUs, 250 complete and 0 interrupted iterations
+admin_api      [  34% ] 5/5 VUs  0m27.5s/1m20.0s
+employee_api   [  34% ] 5/5 VUs  0m27.5s/1m20.0s
+health         [  46% ] 2 VUs    0m27.5s/1m0s 
+login          [  46% ] 0/2 VUs  0m27.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:18Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m29.0s), 12/14 VUs, 263 complete and 0 interrupted iterations
+admin_api      [  36% ] 5/5 VUs  0m28.5s/1m20.0s
+employee_api   [  36% ] 5/5 VUs  0m28.5s/1m20.0s
+health         [  47% ] 2 VUs    0m28.5s/1m0s 
+login          [  47% ] 0/2 VUs  0m28.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:19Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m30.0s), 12/14 VUs, 276 complete and 0 interrupted iterations
+admin_api      [  37% ] 5/5 VUs  0m29.5s/1m20.0s
+employee_api   [  37% ] 5/5 VUs  0m29.5s/1m20.0s
+health         [  49% ] 2 VUs    0m29.5s/1m0s 
+login          [  49% ] 0/2 VUs  0m29.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:20Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m31.0s), 12/14 VUs, 289 complete and 0 interrupted iterations
+admin_api      [  38% ] 5/5 VUs  0m30.5s/1m20.0s
+employee_api   [  38% ] 5/5 VUs  0m30.5s/1m20.0s
+health         [  51% ] 2 VUs    0m30.5s/1m0s 
+login          [  51% ] 0/2 VUs  0m30.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:21Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m32.0s), 12/14 VUs, 302 complete and 0 interrupted iterations
+admin_api      [  39% ] 5/5 VUs  0m31.5s/1m20.0s
+employee_api   [  39% ] 5/5 VUs  0m31.5s/1m20.0s
+health         [  52% ] 2 VUs    0m31.5s/1m0s 
+login          [  52% ] 0/2 VUs  0m31.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:22Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m33.0s), 12/14 VUs, 315 complete and 0 interrupted iterations
+admin_api      [  41% ] 5/5 VUs  0m32.5s/1m20.0s
+employee_api   [  41% ] 5/5 VUs  0m32.5s/1m20.0s
+health         [  54% ] 2 VUs    0m32.5s/1m0s 
+login          [  54% ] 0/2 VUs  0m32.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:23Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m34.0s), 12/14 VUs, 328 complete and 0 interrupted iterations
+admin_api      [  42% ] 5/5 VUs  0m33.5s/1m20.0s
+employee_api   [  42% ] 5/5 VUs  0m33.5s/1m20.0s
+health         [  56% ] 2 VUs    0m33.5s/1m0s 
+login          [  56% ] 0/2 VUs  0m33.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:24Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m35.0s), 12/14 VUs, 341 complete and 0 interrupted iterations
+admin_api      [  43% ] 5/5 VUs  0m34.5s/1m20.0s
+employee_api   [  43% ] 5/5 VUs  0m34.5s/1m20.0s
+health         [  57% ] 2 VUs    0m34.5s/1m0s 
+login          [  57% ] 0/2 VUs  0m34.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:25Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m36.0s), 12/14 VUs, 352 complete and 0 interrupted iterations
+admin_api      [  44% ] 5/5 VUs  0m35.5s/1m20.0s
+employee_api   [  44% ] 5/5 VUs  0m35.5s/1m20.0s
+health         [  59% ] 2 VUs    0m35.5s/1m0s 
+login          [  59% ] 0/2 VUs  0m35.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:26Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m37.0s), 12/14 VUs, 363 complete and 0 interrupted iterations
+admin_api      [  46% ] 5/5 VUs  0m36.5s/1m20.0s
+employee_api   [  46% ] 5/5 VUs  0m36.5s/1m20.0s
+health         [  61% ] 2 VUs    0m36.5s/1m0s 
+login          [  61% ] 0/2 VUs  0m36.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:27Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m38.0s), 12/14 VUs, 375 complete and 0 interrupted iterations
+admin_api      [  47% ] 5/5 VUs  0m37.5s/1m20.0s
+employee_api   [  47% ] 5/5 VUs  0m37.5s/1m20.0s
+health         [  62% ] 2 VUs    0m37.5s/1m0s 
+login          [  62% ] 0/2 VUs  0m37.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:28Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m39.0s), 12/14 VUs, 388 complete and 0 interrupted iterations
+admin_api      [  48% ] 5/5 VUs  0m38.5s/1m20.0s
+employee_api   [  48% ] 5/5 VUs  0m38.5s/1m20.0s
+health         [  64% ] 2 VUs    0m38.5s/1m0s 
+login          [  64% ] 0/2 VUs  0m38.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:29Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m40.0s), 12/14 VUs, 401 complete and 0 interrupted iterations
+admin_api      [  49% ] 5/5 VUs  0m39.5s/1m20.0s
+employee_api   [  49% ] 5/5 VUs  0m39.5s/1m20.0s
+health         [  66% ] 2 VUs    0m39.5s/1m0s 
+login          [  66% ] 0/2 VUs  0m39.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:30Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m41.0s), 12/14 VUs, 413 complete and 0 interrupted iterations
+admin_api      [  51% ] 5/5 VUs  0m40.5s/1m20.0s
+employee_api   [  51% ] 5/5 VUs  0m40.5s/1m20.0s
+health         [  67% ] 2 VUs    0m40.5s/1m0s 
+login          [  67% ] 0/2 VUs  0m40.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:31Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m42.0s), 12/14 VUs, 426 complete and 0 interrupted iterations
+admin_api      [  52% ] 5/5 VUs  0m41.5s/1m20.0s
+employee_api   [  52% ] 5/5 VUs  0m41.5s/1m20.0s
+health         [  69% ] 2 VUs    0m41.5s/1m0s 
+login          [  69% ] 0/2 VUs  0m41.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:32Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m43.0s), 12/14 VUs, 439 complete and 0 interrupted iterations
+admin_api      [  53% ] 5/5 VUs  0m42.5s/1m20.0s
+employee_api   [  53% ] 5/5 VUs  0m42.5s/1m20.0s
+health         [  71% ] 2 VUs    0m42.5s/1m0s 
+login          [  71% ] 0/2 VUs  0m42.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:33Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m44.0s), 12/14 VUs, 452 complete and 0 interrupted iterations
+admin_api      [  54% ] 5/5 VUs  0m43.5s/1m20.0s
+employee_api   [  54% ] 5/5 VUs  0m43.5s/1m20.0s
+health         [  72% ] 2 VUs    0m43.5s/1m0s 
+login          [  72% ] 0/2 VUs  0m43.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:34Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m45.0s), 12/14 VUs, 465 complete and 0 interrupted iterations
+admin_api      [  56% ] 5/5 VUs  0m44.5s/1m20.0s
+employee_api   [  56% ] 5/5 VUs  0m44.5s/1m20.0s
+health         [  74% ] 2 VUs    0m44.5s/1m0s 
+login          [  74% ] 0/2 VUs  0m44.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:35Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m46.0s), 12/14 VUs, 477 complete and 0 interrupted iterations
+admin_api      [  57% ] 5/5 VUs  0m45.5s/1m20.0s
+employee_api   [  57% ] 5/5 VUs  0m45.5s/1m20.0s
+health         [  76% ] 2 VUs    0m45.5s/1m0s 
+login          [  76% ] 0/2 VUs  0m45.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:36Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m47.0s), 12/14 VUs, 490 complete and 0 interrupted iterations
+admin_api      [  58% ] 5/5 VUs  0m46.5s/1m20.0s
+employee_api   [  58% ] 5/5 VUs  0m46.5s/1m20.0s
+health         [  77% ] 2 VUs    0m46.5s/1m0s 
+login          [  77% ] 0/2 VUs  0m46.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:37Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m48.0s), 12/14 VUs, 503 complete and 0 interrupted iterations
+admin_api      [  59% ] 5/5 VUs  0m47.5s/1m20.0s
+employee_api   [  59% ] 5/5 VUs  0m47.5s/1m20.0s
+health         [  79% ] 2 VUs    0m47.5s/1m0s 
+login          [  79% ] 0/2 VUs  0m47.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:38Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m49.0s), 12/14 VUs, 516 complete and 0 interrupted iterations
+admin_api      [  61% ] 5/5 VUs  0m48.5s/1m20.0s
+employee_api   [  61% ] 5/5 VUs  0m48.5s/1m20.0s
+health         [  81% ] 2 VUs    0m48.5s/1m0s 
+login          [  81% ] 0/2 VUs  0m48.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:39Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m50.0s), 12/14 VUs, 529 complete and 0 interrupted iterations
+admin_api      [  62% ] 5/5 VUs  0m49.5s/1m20.0s
+employee_api   [  62% ] 5/5 VUs  0m49.5s/1m20.0s
+health         [  82% ] 2 VUs    0m49.5s/1m0s 
+login          [  82% ] 0/2 VUs  0m49.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:40Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m51.0s), 12/14 VUs, 541 complete and 0 interrupted iterations
+admin_api      [  63% ] 5/5 VUs  0m50.5s/1m20.0s
+employee_api   [  63% ] 5/5 VUs  0m50.5s/1m20.0s
+health         [  84% ] 2 VUs    0m50.5s/1m0s 
+login          [  84% ] 0/2 VUs  0m50.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:41Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m52.0s), 12/14 VUs, 554 complete and 0 interrupted iterations
+admin_api      [  64% ] 5/5 VUs  0m51.5s/1m20.0s
+employee_api   [  64% ] 5/5 VUs  0m51.5s/1m20.0s
+health         [  86% ] 2 VUs    0m51.5s/1m0s 
+login          [  86% ] 0/2 VUs  0m51.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:42Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m53.0s), 12/14 VUs, 567 complete and 0 interrupted iterations
+admin_api      [  66% ] 5/5 VUs  0m52.5s/1m20.0s
+employee_api   [  66% ] 5/5 VUs  0m52.5s/1m20.0s
+health         [  87% ] 2 VUs    0m52.5s/1m0s 
+login          [  87% ] 0/2 VUs  0m52.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:43Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m54.0s), 12/14 VUs, 580 complete and 0 interrupted iterations
+admin_api      [  67% ] 5/5 VUs  0m53.5s/1m20.0s
+employee_api   [  67% ] 5/5 VUs  0m53.5s/1m20.0s
+health         [  89% ] 2 VUs    0m53.5s/1m0s 
+login          [  89% ] 0/2 VUs  0m53.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:44Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m55.0s), 12/14 VUs, 593 complete and 0 interrupted iterations
+admin_api      [  68% ] 5/5 VUs  0m54.5s/1m20.0s
+employee_api   [  68% ] 5/5 VUs  0m54.5s/1m20.0s
+health         [  91% ] 2 VUs    0m54.5s/1m0s 
+login          [  91% ] 0/2 VUs  0m54.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:45Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m56.0s), 12/14 VUs, 606 complete and 0 interrupted iterations
+admin_api      [  69% ] 5/5 VUs  0m55.5s/1m20.0s
+employee_api   [  69% ] 5/5 VUs  0m55.5s/1m20.0s
+health         [  92% ] 2 VUs    0m55.5s/1m0s 
+login          [  92% ] 0/2 VUs  0m55.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:46Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m57.0s), 12/14 VUs, 618 complete and 0 interrupted iterations
+admin_api      [  71% ] 5/5 VUs  0m56.5s/1m20.0s
+employee_api   [  71% ] 5/5 VUs  0m56.5s/1m20.0s
+health         [  94% ] 2 VUs    0m56.5s/1m0s 
+login          [  94% ] 0/2 VUs  0m56.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:47Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m58.0s), 12/14 VUs, 631 complete and 0 interrupted iterations
+admin_api      [  72% ] 5/5 VUs  0m57.5s/1m20.0s
+employee_api   [  72% ] 5/5 VUs  0m57.5s/1m20.0s
+health         [  96% ] 2 VUs    0m57.5s/1m0s 
+login          [  96% ] 0/2 VUs  0m57.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:48Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (0m59.0s), 12/14 VUs, 644 complete and 0 interrupted iterations
+admin_api      [  73% ] 5/5 VUs  0m58.5s/1m20.0s
+employee_api   [  73% ] 5/5 VUs  0m58.5s/1m20.0s
+health         [  97% ] 2 VUs    0m58.5s/1m0s 
+login          [  97% ] 0/2 VUs  0m58.5s/1m0s  1.00 iters/s
+time="2026-05-07T17:38:49Z" level=error msg="GoError: cannot parse json due to an error at line 1, character 1 , error: invalid character '<' looking for beginning of value\n\tat reflect.methodValueCall (native)\n\tat login (file:///scripts/vaultdoc_load_test.js:93:29(40))\n\tat loginScenario (file:///scripts/vaultdoc_load_test.js:143:8(9))\n" executor=constant-arrival-rate scenario=login source=stacktrace
+
+running (1m00.0s), 12/14 VUs, 657 complete and 0 interrupted iterations
+admin_api      [  74% ] 5/5 VUs  0m59.5s/1m20.0s
+employee_api   [  74% ] 5/5 VUs  0m59.5s/1m20.0s
+health         [  99% ] 2 VUs    0m59.5s/1m0s 
+login          [  99% ] 0/2 VUs  0m59.5s/1m0s  1.00 iters/s
+
+running (1m01.0s), 10/14 VUs, 669 complete and 0 interrupted iterations
+admin_api      [  76% ] 5/5 VUs  1m00.5s/1m20.0s
+employee_api   [  76% ] 5/5 VUs  1m00.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m02.0s), 10/14 VUs, 679 complete and 0 interrupted iterations
+admin_api      [  77% ] 5/5 VUs  1m01.5s/1m20.0s
+employee_api   [  77% ] 5/5 VUs  1m01.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m03.0s), 10/14 VUs, 689 complete and 0 interrupted iterations
+admin_api      [  78% ] 5/5 VUs  1m02.5s/1m20.0s
+employee_api   [  78% ] 5/5 VUs  1m02.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m04.0s), 10/14 VUs, 699 complete and 0 interrupted iterations
+admin_api      [  79% ] 5/5 VUs  1m03.5s/1m20.0s
+employee_api   [  79% ] 5/5 VUs  1m03.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m05.0s), 09/14 VUs, 709 complete and 0 interrupted iterations
+admin_api      [  81% ] 4/5 VUs  1m04.5s/1m20.0s
+employee_api   [  81% ] 5/5 VUs  1m04.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m06.0s), 08/14 VUs, 718 complete and 0 interrupted iterations
+admin_api      [  82% ] 4/5 VUs  1m05.5s/1m20.0s
+employee_api   [  82% ] 4/5 VUs  1m05.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m07.0s), 08/14 VUs, 726 complete and 0 interrupted iterations
+admin_api      [  83% ] 4/5 VUs  1m06.5s/1m20.0s
+employee_api   [  83% ] 4/5 VUs  1m06.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m08.0s), 08/14 VUs, 731 complete and 0 interrupted iterations
+admin_api      [  84% ] 4/5 VUs  1m07.5s/1m20.0s
+employee_api   [  84% ] 4/5 VUs  1m07.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m09.0s), 08/14 VUs, 739 complete and 0 interrupted iterations
+admin_api      [  86% ] 4/5 VUs  1m08.5s/1m20.0s
+employee_api   [  86% ] 4/5 VUs  1m08.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m10.0s), 06/14 VUs, 747 complete and 0 interrupted iterations
+admin_api      [  87% ] 3/5 VUs  1m09.5s/1m20.0s
+employee_api   [  87% ] 3/5 VUs  1m09.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m11.0s), 06/14 VUs, 753 complete and 0 interrupted iterations
+admin_api      [  88% ] 3/5 VUs  1m10.5s/1m20.0s
+employee_api   [  88% ] 3/5 VUs  1m10.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m12.0s), 06/14 VUs, 759 complete and 0 interrupted iterations
+admin_api      [  89% ] 3/5 VUs  1m11.5s/1m20.0s
+employee_api   [  89% ] 3/5 VUs  1m11.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m13.0s), 06/14 VUs, 765 complete and 0 interrupted iterations
+admin_api      [  91% ] 3/5 VUs  1m12.5s/1m20.0s
+employee_api   [  91% ] 3/5 VUs  1m12.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m14.0s), 04/14 VUs, 771 complete and 0 interrupted iterations
+admin_api      [  92% ] 2/5 VUs  1m13.5s/1m20.0s
+employee_api   [  92% ] 2/5 VUs  1m13.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m15.0s), 04/14 VUs, 775 complete and 0 interrupted iterations
+admin_api      [  93% ] 2/5 VUs  1m14.5s/1m20.0s
+employee_api   [  93% ] 2/5 VUs  1m14.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m16.0s), 04/14 VUs, 779 complete and 0 interrupted iterations
+admin_api      [  94% ] 2/5 VUs  1m15.5s/1m20.0s
+employee_api   [  94% ] 2/5 VUs  1m15.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m17.0s), 03/14 VUs, 783 complete and 0 interrupted iterations
+admin_api      [  96% ] 2/5 VUs  1m16.5s/1m20.0s
+employee_api   [  96% ] 1/5 VUs  1m16.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m18.0s), 02/14 VUs, 786 complete and 0 interrupted iterations
+admin_api      [  97% ] 1/5 VUs  1m17.5s/1m20.0s
+employee_api   [  97% ] 1/5 VUs  1m17.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m19.0s), 02/14 VUs, 788 complete and 0 interrupted iterations
+admin_api      [  98% ] 1/5 VUs  1m18.5s/1m20.0s
+employee_api   [  98% ] 1/5 VUs  1m18.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+
+running (1m20.0s), 02/14 VUs, 790 complete and 0 interrupted iterations
+admin_api      [  99% ] 1/5 VUs  1m19.5s/1m20.0s
+employee_api   [  99% ] 1/5 VUs  1m19.5s/1m20.0s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+Итоговая сводка k6-нагрузочного тестирования
+Цель: http://127.0.0.1:8080
+Всего HTTP-запросов: 2626
+Всего итераций: 792
+Доля HTTP-ошибок: 41.51%
+p95 времени ответа: 15.60 ms
+Доля успешных checks: 57.44%
+
+Статус: failed
+
+running (1m20.7s), 00/14 VUs, 792 complete and 0 interrupted iterations
+admin_api    ✓ [ 100% ] 0/5 VUs  1m20s
+employee_api ✓ [ 100% ] 0/5 VUs  1m20s
+health       ✓ [ 100% ] 2 VUs    1m0s 
+login        ✓ [ 100% ] 0/2 VUs  1m0s  1.00 iters/s
+time="2026-05-07T17:39:13Z" level=error msg="thresholds on metrics 'checks, http_req_failed' have been crossed"

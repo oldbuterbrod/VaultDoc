@@ -1,0 +1,154 @@
+import http from "k6/http";
+import { check, sleep } from "k6";
+
+const BASE_URL = __ENV.TARGET_URL || "http://127.0.0.1:8080";
+
+const ADMIN_EMAIL = __ENV.ADMIN_EMAIL || "admin@vaultdoc.ru";
+const ADMIN_PASSWORD = __ENV.ADMIN_PASSWORD || "AdminPass123!";
+const EMPLOYEE_EMAIL = __ENV.EMPLOYEE_EMAIL || "employee1@vaultdoc.ru";
+const EMPLOYEE_PASSWORD = __ENV.EMPLOYEE_PASSWORD || "EmployeePass123!";
+
+export const options = {
+  scenarios: {
+    baseline_api: {
+      executor: "constant-vus",
+      vus: 1,
+      duration: "1m",
+      exec: "baselineScenario",
+    },
+  },
+  thresholds: {
+    http_req_failed: ["rate<0.05"],
+    http_req_duration: ["p(95)<1500"],
+    checks: ["rate>0.95"],
+  },
+};
+
+function formBody(data) {
+  return Object.entries(data)
+    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+    .join("&");
+}
+
+function login(email, password) {
+  const response = http.post(
+    `${BASE_URL}/api/auth/login`,
+    formBody({ username: email, password }),
+    {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      redirects: 0,
+      tags: {
+        endpoint: "login",
+      },
+    }
+  );
+
+  check(response, {
+    "login status is 200": (r) => r.status === 200,
+    "login has token": (r) => {
+      try {
+        const data = r.json();
+        return Boolean(data.access_token || data.token || data.accessToken);
+      } catch {
+        return false;
+      }
+    },
+  });
+
+  const data = response.json();
+  return data.access_token || data.token || data.accessToken;
+}
+
+export function setup() {
+  const adminToken = login(ADMIN_EMAIL, ADMIN_PASSWORD);
+  sleep(2);
+  const employeeToken = login(EMPLOYEE_EMAIL, EMPLOYEE_PASSWORD);
+
+  if (!adminToken) {
+    throw new Error("admin token not received");
+  }
+
+  if (!employeeToken) {
+    throw new Error("employee token not received");
+  }
+
+  return {
+    adminToken,
+    employeeToken,
+  };
+}
+
+function authParams(token, endpoint) {
+  return {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    redirects: 0,
+    tags: {
+      endpoint,
+    },
+  };
+}
+
+function getOk(url, params, name) {
+  const response = http.get(url, params);
+
+  if (response.status < 200 || response.status >= 300) {
+    console.log(`${name} ${response.status} ${url}`);
+  }
+
+  check(response, {
+    [`${name} status is 2xx`]: (r) => r.status >= 200 && r.status < 300,
+  });
+
+  sleep(2);
+
+  return response;
+}
+
+export function baselineScenario(data) {
+  getOk(`${BASE_URL}/health`, { redirects: 0, tags: { endpoint: "health" } }, "health");
+
+  getOk(`${BASE_URL}/api/auth/me`, authParams(data.adminToken, "admin_me"), "admin_me");
+  getOk(`${BASE_URL}/api/users/`, authParams(data.adminToken, "admin_users"), "admin_users");
+  getOk(`${BASE_URL}/api/folders/`, authParams(data.adminToken, "admin_folders"), "admin_folders");
+  getOk(`${BASE_URL}/api/documents/`, authParams(data.adminToken, "admin_documents"), "admin_documents");
+  getOk(`${BASE_URL}/api/audit/?limit=10`, authParams(data.adminToken, "admin_audit"), "admin_audit");
+
+  getOk(`${BASE_URL}/api/auth/me`, authParams(data.employeeToken, "employee_me"), "employee_me");
+  getOk(`${BASE_URL}/api/folders/`, authParams(data.employeeToken, "employee_folders"), "employee_folders");
+  getOk(`${BASE_URL}/api/documents/`, authParams(data.employeeToken, "employee_documents"), "employee_documents");
+
+  sleep(5);
+}
+
+export function handleSummary(data) {
+  const reportPath = __ENV.K6_SUMMARY_TXT || "/reports/k6_summary.txt";
+
+  const failedRate = data.metrics.http_req_failed?.values?.rate ?? 0;
+  const p95 = data.metrics.http_req_duration?.values?.["p(95)"] ?? 0;
+  const checksRate = data.metrics.checks?.values?.rate ?? 0;
+  const requests = data.metrics.http_reqs?.values?.count ?? 0;
+  const iterations = data.metrics.iterations?.values?.count ?? 0;
+
+  const text = [
+    "Итоговая сводка k6-нагрузочного тестирования",
+    `Цель: ${BASE_URL}`,
+    `Всего HTTP-запросов: ${requests}`,
+    `Всего итераций: ${iterations}`,
+    `Доля HTTP-ошибок: ${(failedRate * 100).toFixed(2)}%`,
+    `p95 времени ответа: ${p95.toFixed(2)} ms`,
+    `Доля успешных checks: ${(checksRate * 100).toFixed(2)}%`,
+    "",
+    failedRate < 0.05 && p95 < 1500 && checksRate > 0.95
+      ? "Статус: passed"
+      : "Статус: failed",
+  ].join("\n");
+
+  return {
+    stdout: `${text}\n`,
+    [reportPath]: `${text}\n`,
+  };
+}

@@ -1,0 +1,23 @@
+[OK]   login admin
+[OK]   login employee
+[OK]   GET /api/auth/me employee
+[OK]   Создание тестовой папки
+[OK]   Создание тестового документа
+[OK]   Employee не читает чужую папку без права
+[OK]   Admin выдаёт can_read на папку
+[OK]   Employee читает папку после grant
+[OK]   Admin отзывает право на папку
+[OK]   Employee снова не читает папку после revoke
+[OK]   Employee не читает чужой документ без права
+[OK]   Admin выдаёт can_read на документ
+[OK]   Employee читает документ после grant
+[OK]   Admin отзывает право на документ
+[OK]   Employee снова не читает документ после revoke
+[OK]   Admin читает журнал аудита
+[OK]   Аудит по папке содержит grant/revoke/denied
+[OK]   Аудит по документу содержит grant/revoke/denied
+
+Тестовая папка: idor-folder-20260512221405 (1fc47e3b-88af-47ac-b9a1-4bc1be5dd621)
+Тестовый документ: idor-document-20260512221405 (564c62a2-3dd9-4340-b978-32052af95b72)
+
+Итог: OK

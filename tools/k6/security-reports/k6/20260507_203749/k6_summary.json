@@ -1,0 +1,257 @@
+{
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {
+                        "login status is 200": {
+                            "passes": 2,
+                            "fails": 0,
+                            "name": "login status is 200",
+                            "path": "::setup::login status is 200",
+                            "id": "bb27b460b057923f4a083e3603c038b9"
+                        },
+                        "login has token": {
+                            "name": "login has token",
+                            "path": "::setup::login has token",
+                            "id": "2a64ccc0036069b6bf05082925ff90b6",
+                            "passes": 2,
+                            "fails": 0
+                        }
+                    }
+            },
+            "employee api": {
+                "id": "db319be52c98282f3c9d57090d2fc95d",
+                "groups": {},
+                "checks": {
+                        "employee_me status is 2xx": {
+                            "id": "553ae3abf02f42e2d307b60a80c6ee68",
+                            "passes": 4,
+                            "fails": 304,
+                            "name": "employee_me status is 2xx",
+                            "path": "::employee api::employee_me status is 2xx"
+                        },
+                        "employee_folders status is 2xx": {
+                            "name": "employee_folders status is 2xx",
+                            "path": "::employee api::employee_folders status is 2xx",
+                            "id": "df4d8237a366a95ce0edb6beb6ab950a",
+                            "passes": 305,
+                            "fails": 3
+                        },
+                        "employee_documents status is 2xx": {
+                            "path": "::employee api::employee_documents status is 2xx",
+                            "id": "35da1b7288800c613cfa922c94933508",
+                            "passes": 273,
+                            "fails": 35,
+                            "name": "employee_documents status is 2xx"
+                        }
+                    },
+                "name": "employee api",
+                "path": "::employee api"
+            },
+            "admin api": {
+                "id": "774c347262cdb2411e2ec722c7debd73",
+                "groups": {},
+                "checks": {
+                        "admin_me status is 2xx": {
+                            "name": "admin_me status is 2xx",
+                            "path": "::admin api::admin_me status is 2xx",
+                            "id": "8702e447e39bd33e932606c03e795f66",
+                            "passes": 7,
+                            "fails": 297
+                        },
+                        "admin_users status is 2xx": {
+                            "name": "admin_users status is 2xx",
+                            "path": "::admin api::admin_users status is 2xx",
+                            "id": "613c2b3029c4dfbe42ce5ef7b697b7a2",
+                            "passes": 292,
+                            "fails": 12
+                        },
+                        "admin_folders status is 2xx": {
+                            "fails": 70,
+                            "name": "admin_folders status is 2xx",
+                            "path": "::admin api::admin_folders status is 2xx",
+                            "id": "086828075a8872a0ade3bbc817d5883a",
+                            "passes": 234
+                        },
+                        "admin_documents status is 2xx": {
+                            "passes": 162,
+                            "fails": 142,
+                            "name": "admin_documents status is 2xx",
+                            "path": "::admin api::admin_documents status is 2xx",
+                            "id": "043e45a98262771b8f362418fbbe4989"
+                        },
+                        "admin_audit status is 2xx": {
+                            "passes": 131,
+                            "fails": 173,
+                            "name": "admin_audit status is 2xx",
+                            "path": "::admin api::admin_audit status is 2xx",
+                            "id": "23249ddc1b680b599a8e7cf0eb9629ca"
+                        }
+                    },
+                "name": "admin api",
+                "path": "::admin api"
+            }
+        },
+        "checks": {
+            "health status is 2xx": {
+                "path": "::health status is 2xx",
+                "id": "c291436c43b3dea3dbf530be3d59be0a",
+                "passes": 120,
+                "fails": 0,
+                "name": "health status is 2xx"
+            },
+            "login status is 200": {
+                "passes": 6,
+                "fails": 54,
+                "name": "login status is 200",
+                "path": "::login status is 200",
+                "id": "baba87e761865dc93085ee0c1fe25f4c"
+            },
+            "login has token": {
+                "fails": 54,
+                "name": "login has token",
+                "path": "::login has token",
+                "id": "76fad3378234b1d9b3859991679a6c46",
+                "passes": 6
+            }
+        },
+        "name": ""
+    },
+    "metrics": {
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.0016872189642041123,
+            "min": 0,
+            "med": 0,
+            "max": 1.166138,
+            "p(90)": 0
+        },
+        "http_req_receiving": {
+            "avg": 0.09296689832444796,
+            "min": 0.019848,
+            "med": 0.0730485,
+            "max": 0.822443,
+            "p(90)": 0.1740105,
+            "p(95)": 0.22425425000000002
+        },
+        "http_req_sending": {
+            "p(95)": 0.051683,
+            "avg": 0.01778302437166794,
+            "min": 0.005039,
+            "med": 0.011617,
+            "max": 0.427934,
+            "p(90)": 0.0265155
+        },
+        "data_received": {
+            "rate": 51674.389274210705,
+            "count": 4170093
+        },
+        "vus": {
+            "min": 2,
+            "max": 13,
+            "value": 2
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "data_sent": {
+            "count": 749793,
+            "rate": 9291.18256045567
+        },
+        "vus_max": {
+            "value": 14,
+            "min": 14,
+            "max": 14
+        },
+        "http_req_failed": {
+            "passes": 1090,
+            "fails": 1536,
+            "thresholds": {
+                "rate<0.05": true
+            },
+            "value": 0.4150799695354151
+        },
+        "checks": {
+            "passes": 1544,
+            "fails": 1144,
+            "thresholds": {
+                "rate>0.95": true
+            },
+            "value": 0.5744047619047619
+        },
+        "http_req_duration": {
+            "avg": 5.586363826732674,
+            "min": 0.180663,
+            "med": 5.1488515,
+            "max": 259.739791,
+            "p(90)": 10.096676500000001,
+            "p(95)": 15.598059750000001,
+            "thresholds": {
+                "p(95)<1500": false
+            }
+        },
+        "http_reqs": {
+            "count": 2626,
+            "rate": 32.540508385323136
+        },
+        "iteration_duration": {
+            "min": 0.730249,
+            "med": 1015.49487,
+            "max": 1259.695762,
+            "p(90)": 1033.3378254,
+            "p(95)": 1039.082124,
+            "avg": 950.9787262070704
+        },
+        "http_req_blocked": {
+            "max": 3.030704,
+            "p(90)": 0.006598,
+            "p(95)": 0.0078975,
+            "avg": 0.007991277227722755,
+            "min": 0.001473,
+            "med": 0.0039074999999999995
+        },
+        "iterations": {
+            "count": 792,
+            "rate": 9.814197502351837
+        },
+        "http_req_waiting": {
+            "med": 5.0366915,
+            "max": 259.287511,
+            "p(90)": 9.9899945,
+            "p(95)": 15.523356999999999,
+            "avg": 5.475613904036566,
+            "min": 0.149515
+        },
+        "group_duration": {
+            "avg": 20.722143163398666,
+            "min": 1.654797,
+            "med": 16.368188500000002,
+            "max": 53.810346,
+            "p(90)": 33.683550600000004,
+            "p(95)": 39.05452529999996
+        },
+        "http_req_duration{expected_response:true}": {
+            "med": 6.5009185,
+            "max": 259.739791,
+            "p(90)": 14.5153875,
+            "p(95)": 18.80809925,
+            "avg": 9.093828888671867,
+            "min": 1.344385
+        }
+    },
+    "setup_data": {
+        "adminToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNTg3MTJmYy02ODFmLTRkODEtYTc0Zi1mZThkOTAwYTNiMWEiLCJleHAiOjE3NzgxNzcyNzAsInJvbGUiOiJhZG1pbiJ9.YQz56cF7pp22eeIRcdDiNIM4eT94rgNU7qccEoAso0E",
+        "employeeToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGMxMTRjMC1kNGU4LTQ3YTgtYWI3Ni04NDM5NTI4ZjgxYjkiLCJleHAiOjE3NzgxNzcyNzAsInJvbGUiOiJlbXBsb3llZSJ9.h_LVwG7Pzu68m0xIjINhv6krK4-eogmWyeP4z9w9ef4"
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
+import './DashboardPage.css';
 
 const DashboardPage: React.FC = () => {
   const { user } = useAuth();
@@ -7,9 +8,13 @@ const DashboardPage: React.FC = () => {
   const getRoleLabel = (role?: string) => {
     switch (role) {
       case 'admin':
-        return 'Администратор';
+        return 'Администратор системы';
+      case 'security_admin':
+        return 'Администратор безопасности';
+      case 'developer':
+        return 'Разработчик';
       case 'manager':
-        return 'Менеджер';
+        return 'Руководитель';
       case 'employee':
         return 'Сотрудник';
       default:
@@ -18,57 +23,51 @@ const DashboardPage: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1 style={{ color: '#2C3E50', marginBottom: '20px' }}>Главная</h1>
-
-      <div
-        style={{
-          backgroundColor: 'white',
-          padding: '24px',
-          borderRadius: '10px',
-          boxShadow: '0 2px 10px rgba(0,0,0,0.08)',
-          marginBottom: '20px',
-        }}
-      >
-        <h2 style={{ marginTop: 0 }}>Текущий пользователь</h2>
-
-        <div style={{ display: 'grid', gap: '12px' }}>
-          <div>
-            <strong>ФИО:</strong> {user?.full_name}
-          </div>
-          <div>
-            <strong>Email:</strong> {user?.email}
-          </div>
-          <div>
-            <strong>Роль:</strong> {getRoleLabel(user?.role)}
-          </div>
-          <div>
-            <strong>Статус:</strong> {user?.is_active ? 'Активен' : 'Неактивен'}
-          </div>
-          <div>
-            <strong>Public ID:</strong> {user?.public_id}
-          </div>
-        </div>
+    <div className="dashboard-page">
+      <div className="dashboard-page__header">
+        <h1 className="dashboard-page__title">Главная</h1>
+        <p className="dashboard-page__subtitle">
+          VaultDoc — защищённый корпоративный веб-сервис для хранения документов,
+          управления доступом к папкам и документам, а также контроля действий пользователей.
+        </p>
       </div>
 
-      <div
-        style={{
-          backgroundColor: 'white',
-          padding: '24px',
-          borderRadius: '10px',
-          boxShadow: '0 2px 10px rgba(0,0,0,0.08)',
-        }}
-      >
-        <h2 style={{ marginTop: 0 }}>Назначение панели</h2>
-        <p style={{ marginBottom: 8 }}>
-          Этот интерфейс нужен для демонстрации:
-        </p>
-        <ul style={{ marginTop: 0, paddingLeft: '20px' }}>
-          <li>авторизации и ролей;</li>
-          <li>работы с папками и документами;</li>
-          <li>серверной проверки доступа;</li>
-          <li>выдачи и отзыва прав доступа.</li>
-        </ul>
+      <div className="dashboard-page__grid">
+        <section className="dashboard-page__card">
+          <h2>Текущий пользователь</h2>
+
+          <div className="dashboard-page__info-list">
+            <div className="dashboard-page__info-row">
+              <span className="dashboard-page__label">ФИО</span>
+              <span>{user?.full_name || '-'}</span>
+            </div>
+
+            <div className="dashboard-page__info-row">
+              <span className="dashboard-page__label">Email</span>
+              <span>{user?.email || '-'}</span>
+            </div>
+
+            <div className="dashboard-page__info-row">
+              <span className="dashboard-page__label">Роль</span>
+              <span>{getRoleLabel(user?.role)}</span>
+            </div>
+
+            <div className="dashboard-page__info-row">
+              <span className="dashboard-page__label">Статус</span>
+              <span>{user?.is_active ? 'Активен' : 'Неактивен'}</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="dashboard-page__card">
+          <h2>Назначение системы</h2>
+
+          <p className="dashboard-page__text">
+            Система предназначена для централизованного хранения документов,
+            разграничения доступа к ресурсам на уровне папок и документов,
+            а также регистрации значимых событий безопасности в журнале аудита.
+          </p>
+        </section>
       </div>
     </div>
   );

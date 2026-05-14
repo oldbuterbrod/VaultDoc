@@ -1,0 +1,9 @@
+Итоговая сводка
+Цель: http://127.0.0.1:8080
+Папка отчёта: /home/sidorov/projects/diplom/vaultdoc/tools/sqlmap/security-reports/sqlmap/20260506_221343
+
+Подтверждённых SQL-инъекций sqlmap не обнаружил.
+
+Проверенные цели:
+get_http_127_0_0_1_8080_api_audit_limit_1.log
+login_form.log

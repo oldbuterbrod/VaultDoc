@@ -1,0 +1,20 @@
+Итоговая сводка наполнения пользователями и правами
+Цель: http://127.0.0.1:8080
+Папка отчёта: /home/sidorov/projects/diplom/vaultdoc/tools/seed/generated_users_permissions/20260507_212054
+Пользователей обработано: 8
+Папок найдено: 33
+Документов найдено: 118
+Прав на папки выдано/обновлено: 28
+Ошибок прав на папки: 0
+Прав на документы выдано/обновлено: 100
+Ошибок прав на документы: 0
+
+Тестовые учётные записи:
+ivan.petrov@vaultdoc.ru / PetrovPass123! / manager / Иван Петров
+anna.smirnova@vaultdoc.ru / SmirnovaPass123! / employee / Анна Смирнова
+dmitry.volkov@vaultdoc.ru / VolkovPass123! / employee / Дмитрий Волков
+elena.kuznetsova@vaultdoc.ru / KuznetsovaPass123! / employee / Елена Кузнецова
+sergey.orlov@vaultdoc.ru / OrlovPass123! / employee / Сергей Орлов
+maria.fedorova@vaultdoc.ru / FedorovaPass123! / employee / Мария Фёдорова
+alexey.novikov@vaultdoc.ru / NovikovPass123! / developer / Алексей Новиков
+olga.morozova@vaultdoc.ru / MorozovaPass123! / security_admin / Ольга Морозова

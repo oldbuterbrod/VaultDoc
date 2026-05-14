@@ -1,0 +1,25 @@
+Итоговая сводка расширенной проверки матрицы доступа
+Цель: http://127.0.0.1:8080
+Папка отчёта: /home/sidorov/projects/diplom/vaultdoc/tools/idor_check/security-reports/matrix/20260512_203450
+Пользователей в проверке: 9
+Ошибок входа пользователей: 3
+Папок проверено: 34
+Документов проверено: 119
+Всего проверок доступа: 918
+Успешных проверок: 902
+Ошибочных проверок: 16
+ККДА: 0.9826
+Проверок папок: 196/204
+Проверок документов: 706/714
+Событий отказа доступа в последних 100 событиях аудита: 85
+
+Проверенные пользователи:
+admin@vaultdoc.ru / admin
+ivan.petrov@vaultdoc.ru / manager
+anna.smirnova@vaultdoc.ru / employee
+dmitry.volkov@vaultdoc.ru / employee
+elena.kuznetsova@vaultdoc.ru / employee
+sergey.orlov@vaultdoc.ru / employee
+maria.fedorova@vaultdoc.ru / employee
+alexey.novikov@vaultdoc.ru / developer
+olga.morozova@vaultdoc.ru / security_admin

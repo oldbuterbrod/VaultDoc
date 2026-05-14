@@ -1,0 +1,22 @@
+Итоговая сводка XSS-проверки
+Цель: http://127.0.0.1:8080
+Папка отчёта: /home/sidorov/projects/diplom/vaultdoc/tools/xss/security-reports/xss/20260506_223633
+Статус: passed
+
+Создание тестовых объектов:
+201
+201
+201
+201
+
+Проверенные страницы:
+http://127.0.0.1:8080/
+http://127.0.0.1:8080/dashboard
+http://127.0.0.1:8080/documents
+http://127.0.0.1:8080/users
+http://127.0.0.1:8080/permissions
+http://127.0.0.1:8080/audit
+
+Dialog/alert срабатывания: 0
+JS marker срабатывания: 0
+Выполнение XSS-payload-ов не обнаружено.

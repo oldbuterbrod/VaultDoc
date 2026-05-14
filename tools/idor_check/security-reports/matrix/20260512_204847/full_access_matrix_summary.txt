@@ -1,0 +1,36 @@
+Итоговая сводка расширенной проверки матрицы доступа
+Цель: http://127.0.0.1:8080
+Папка отчёта: /home/sidorov/projects/diplom/vaultdoc/tools/idor_check/security-reports/matrix/20260512_204847
+Пользователей в проверке: 9
+Ошибок входа пользователей: 0
+Папок проверено: 34
+Документов проверено: 119
+Всего проверок доступа: 1377
+Успешных проверок: 1377
+Ошибочных проверок: 0
+ККДА: 1.0000
+Проверок папок: 306/306
+Проверок документов: 1071/1071
+Событий отказа доступа в последних 100 событиях аудита: 80
+
+Проверенные пользователи:
+admin@vaultdoc.ru / admin
+ivan.petrov@vaultdoc.ru / manager
+anna.smirnova@vaultdoc.ru / employee
+dmitry.volkov@vaultdoc.ru / employee
+elena.kuznetsova@vaultdoc.ru / employee
+sergey.orlov@vaultdoc.ru / employee
+maria.fedorova@vaultdoc.ru / employee
+alexey.novikov@vaultdoc.ru / developer
+olga.morozova@vaultdoc.ru / security_admin
+
+Проверка списков доступных объектов:
+admin@vaultdoc.ru / admin / folders=34 / documents=119 / folder_status=200 / document_status=200
+ivan.petrov@vaultdoc.ru / manager / folders=8 / documents=20 / folder_status=200 / document_status=200
+anna.smirnova@vaultdoc.ru / employee / folders=4 / documents=15 / folder_status=200 / document_status=200
+dmitry.volkov@vaultdoc.ru / employee / folders=4 / documents=15 / folder_status=200 / document_status=200
+elena.kuznetsova@vaultdoc.ru / employee / folders=4 / documents=15 / folder_status=200 / document_status=200
+sergey.orlov@vaultdoc.ru / employee / folders=4 / documents=15 / folder_status=200 / document_status=200
+maria.fedorova@vaultdoc.ru / employee / folders=4 / documents=20 / folder_status=200 / document_status=200
+alexey.novikov@vaultdoc.ru / developer / folders=0 / documents=0 / folder_status=403 / document_status=403
+olga.morozova@vaultdoc.ru / security_admin / folders=0 / documents=0 / folder_status=403 / document_status=403

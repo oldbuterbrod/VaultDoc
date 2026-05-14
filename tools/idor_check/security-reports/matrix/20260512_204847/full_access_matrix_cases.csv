@@ -1,0 +1,1378 @@
+user,role,resource_type,resource_public_id,resource_title,expected_access,actual_access,status_code,passed
+admin@vaultdoc.ru,admin,folder,0d9f8eba-d824-4c50-9c63-69120efa6781,idor-folder-20260512202141,True,True,200,True
+admin@vaultdoc.ru,admin,folder,45dd8581-f84c-47a5-9914-97633b5f584b,20_Тестовые_материалы,True,True,200,True
+admin@vaultdoc.ru,admin,folder,1161a00d-4720-43ed-88fa-015eefe0aab8,19_Обучение,True,True,200,True
+admin@vaultdoc.ru,admin,folder,080bd761-bcb6-41bf-8d17-e13c4951789a,18_Шаблоны,True,True,200,True
+admin@vaultdoc.ru,admin,folder,6970e8a2-9e9f-4a43-8cbd-1098edd1d0cf,17_Внутренние_приказы,True,True,200,True
+admin@vaultdoc.ru,admin,folder,5b032b08-1799-4b65-b67a-d5c318e00586,15_Аудит,True,True,200,True
+admin@vaultdoc.ru,admin,folder,3195792a-be01-4817-960f-f2f88dad20df,14_Инфраструктура,True,True,200,True
+admin@vaultdoc.ru,admin,folder,ed8f7677-9dd9-4a30-b349-e78524a7564e,13_Разработка,True,True,200,True
+admin@vaultdoc.ru,admin,folder,398c7217-cffe-4811-8e77-6f9d511011a7,12_Финансы,True,True,200,True
+admin@vaultdoc.ru,admin,folder,0c479fbc-1316-4d2a-ae85-3329a64edfb0,11_HR,True,True,200,True
+admin@vaultdoc.ru,admin,folder,e8676755-8404-40d7-8b67-3c399359af29,10_Служебные_записки,True,True,200,True
+admin@vaultdoc.ru,admin,folder,d390757b-cc4d-4fb2-b130-a9d357748999,09_Заявки,True,True,200,True
+admin@vaultdoc.ru,admin,folder,4b7d6ebd-5d2e-414e-961c-24870423590e,16_Архив,True,True,200,True
+admin@vaultdoc.ru,admin,folder,09141c47-9954-4f15-a42d-5ecd9d96d162,08_Акты,True,True,200,True
+admin@vaultdoc.ru,admin,folder,1ece4274-f41c-4d3b-ace6-e85a8b0c7319,07_Договоры,True,True,200,True
+admin@vaultdoc.ru,admin,folder,011aae34-5120-4c49-91d0-71ee2c3560d7,06_Техническая_документация,True,True,200,True
+admin@vaultdoc.ru,admin,folder,610db1d6-fdf3-45a4-8156-48c200b27261,05_Проектная_документация,True,True,200,True
+admin@vaultdoc.ru,admin,folder,33cb9974-3809-4f17-8570-d3fd7f9fc1a2,04_Отчеты,True,True,200,True
+admin@vaultdoc.ru,admin,folder,d9d48ae3-675a-4a85-b776-da1f25a5b16b,03_Инструкции,True,True,200,True
+admin@vaultdoc.ru,admin,folder,639cdb8e-aa74-49ed-afc4-159653f7d6e4,02_Политики_безопасности,True,True,200,True
+admin@vaultdoc.ru,admin,folder,31c88aa0-f104-4502-9db1-6e151220f2ec,01_Регламенты,True,True,200,True
+admin@vaultdoc.ru,admin,folder,e0d10247-d160-49fb-8a26-5b0f05cedc46,xss-test-20260506_223633-3-<script>window.__vaultdoc_xss=1;alert('xss')</script>,True,True,200,True
+admin@vaultdoc.ru,admin,folder,e939aba8-d89e-438d-8ec6-6303de5e0c9d,"xss-test-20260506_223633-2-<svg onload=""window.__vaultdoc_xss=1;alert('xss')""></svg>",True,True,200,True
+admin@vaultdoc.ru,admin,folder,e77e3f73-c2e9-4362-a6c3-34a8970ca47c,"xss-test-20260506_223633-1-<img src=x onerror=""window.__vaultdoc_xss=1;alert('xss')"">",True,True,200,True
+admin@vaultdoc.ru,admin,folder,a01e65ad-cb04-41f2-9450-fe5eb0178899,<script>alert(1)</script>,True,True,200,True
+admin@vaultdoc.ru,admin,folder,b5a2e2a1-4d2e-4c5f-8ad2-08b71f138670,idor-folder-20260504224917,True,True,200,True
+admin@vaultdoc.ru,admin,folder,944b54de-2beb-4ed9-8ea5-ff9b8c045f23,idor-folder-20260504224540,True,True,200,True
+admin@vaultdoc.ru,admin,folder,ed11ac74-a907-4cee-a424-4ec3e898c3e6,idor-folder-20260504224214,True,True,200,True
+admin@vaultdoc.ru,admin,folder,c82e59ea-e85e-4db3-acba-4814780c0354,idor-folder-20260504223755,True,True,200,True
+admin@vaultdoc.ru,admin,folder,dc43aeb6-6d72-448d-ad17-57f581e2d17e,idor-folder-20260504221729,True,True,200,True
+admin@vaultdoc.ru,admin,folder,235d660a-c4e9-4ebd-9b84-48a29dace00a,idor-folder-20260504221334,True,True,200,True
+admin@vaultdoc.ru,admin,folder,72ca9251-79aa-4134-a650-d6c99a3fc637,Техническая информация,True,True,200,True
+admin@vaultdoc.ru,admin,folder,296835cf-3233-41a5-b801-c32ee93b9385,Главное,True,True,200,True
+admin@vaultdoc.ru,admin,folder,a8603074-5418-434e-a33e-ee1ac9e7ae44,Финансы,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,folder,0d9f8eba-d824-4c50-9c63-69120efa6781,idor-folder-20260512202141,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,45dd8581-f84c-47a5-9914-97633b5f584b,20_Тестовые_материалы,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,folder,1161a00d-4720-43ed-88fa-015eefe0aab8,19_Обучение,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,folder,080bd761-bcb6-41bf-8d17-e13c4951789a,18_Шаблоны,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,folder,6970e8a2-9e9f-4a43-8cbd-1098edd1d0cf,17_Внутренние_приказы,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,folder,5b032b08-1799-4b65-b67a-d5c318e00586,15_Аудит,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,folder,3195792a-be01-4817-960f-f2f88dad20df,14_Инфраструктура,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,folder,ed8f7677-9dd9-4a30-b349-e78524a7564e,13_Разработка,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,folder,398c7217-cffe-4811-8e77-6f9d511011a7,12_Финансы,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,folder,0c479fbc-1316-4d2a-ae85-3329a64edfb0,11_HR,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,e8676755-8404-40d7-8b67-3c399359af29,10_Служебные_записки,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,d390757b-cc4d-4fb2-b130-a9d357748999,09_Заявки,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,4b7d6ebd-5d2e-414e-961c-24870423590e,16_Архив,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,09141c47-9954-4f15-a42d-5ecd9d96d162,08_Акты,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,1ece4274-f41c-4d3b-ace6-e85a8b0c7319,07_Договоры,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,011aae34-5120-4c49-91d0-71ee2c3560d7,06_Техническая_документация,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,610db1d6-fdf3-45a4-8156-48c200b27261,05_Проектная_документация,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,33cb9974-3809-4f17-8570-d3fd7f9fc1a2,04_Отчеты,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,d9d48ae3-675a-4a85-b776-da1f25a5b16b,03_Инструкции,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,639cdb8e-aa74-49ed-afc4-159653f7d6e4,02_Политики_безопасности,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,31c88aa0-f104-4502-9db1-6e151220f2ec,01_Регламенты,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,e0d10247-d160-49fb-8a26-5b0f05cedc46,xss-test-20260506_223633-3-<script>window.__vaultdoc_xss=1;alert('xss')</script>,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,e939aba8-d89e-438d-8ec6-6303de5e0c9d,"xss-test-20260506_223633-2-<svg onload=""window.__vaultdoc_xss=1;alert('xss')""></svg>",False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,e77e3f73-c2e9-4362-a6c3-34a8970ca47c,"xss-test-20260506_223633-1-<img src=x onerror=""window.__vaultdoc_xss=1;alert('xss')"">",False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,a01e65ad-cb04-41f2-9450-fe5eb0178899,<script>alert(1)</script>,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,b5a2e2a1-4d2e-4c5f-8ad2-08b71f138670,idor-folder-20260504224917,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,944b54de-2beb-4ed9-8ea5-ff9b8c045f23,idor-folder-20260504224540,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,ed11ac74-a907-4cee-a424-4ec3e898c3e6,idor-folder-20260504224214,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,c82e59ea-e85e-4db3-acba-4814780c0354,idor-folder-20260504223755,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,dc43aeb6-6d72-448d-ad17-57f581e2d17e,idor-folder-20260504221729,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,235d660a-c4e9-4ebd-9b84-48a29dace00a,idor-folder-20260504221334,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,72ca9251-79aa-4134-a650-d6c99a3fc637,Техническая информация,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,296835cf-3233-41a5-b801-c32ee93b9385,Главное,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,folder,a8603074-5418-434e-a33e-ee1ac9e7ae44,Финансы,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,0d9f8eba-d824-4c50-9c63-69120efa6781,idor-folder-20260512202141,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,45dd8581-f84c-47a5-9914-97633b5f584b,20_Тестовые_материалы,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,folder,1161a00d-4720-43ed-88fa-015eefe0aab8,19_Обучение,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,folder,080bd761-bcb6-41bf-8d17-e13c4951789a,18_Шаблоны,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,folder,6970e8a2-9e9f-4a43-8cbd-1098edd1d0cf,17_Внутренние_приказы,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,folder,5b032b08-1799-4b65-b67a-d5c318e00586,15_Аудит,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,3195792a-be01-4817-960f-f2f88dad20df,14_Инфраструктура,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,ed8f7677-9dd9-4a30-b349-e78524a7564e,13_Разработка,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,398c7217-cffe-4811-8e77-6f9d511011a7,12_Финансы,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,0c479fbc-1316-4d2a-ae85-3329a64edfb0,11_HR,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,e8676755-8404-40d7-8b67-3c399359af29,10_Служебные_записки,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,d390757b-cc4d-4fb2-b130-a9d357748999,09_Заявки,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,4b7d6ebd-5d2e-414e-961c-24870423590e,16_Архив,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,09141c47-9954-4f15-a42d-5ecd9d96d162,08_Акты,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,1ece4274-f41c-4d3b-ace6-e85a8b0c7319,07_Договоры,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,011aae34-5120-4c49-91d0-71ee2c3560d7,06_Техническая_документация,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,610db1d6-fdf3-45a4-8156-48c200b27261,05_Проектная_документация,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,33cb9974-3809-4f17-8570-d3fd7f9fc1a2,04_Отчеты,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,d9d48ae3-675a-4a85-b776-da1f25a5b16b,03_Инструкции,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,639cdb8e-aa74-49ed-afc4-159653f7d6e4,02_Политики_безопасности,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,31c88aa0-f104-4502-9db1-6e151220f2ec,01_Регламенты,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,e0d10247-d160-49fb-8a26-5b0f05cedc46,xss-test-20260506_223633-3-<script>window.__vaultdoc_xss=1;alert('xss')</script>,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,e939aba8-d89e-438d-8ec6-6303de5e0c9d,"xss-test-20260506_223633-2-<svg onload=""window.__vaultdoc_xss=1;alert('xss')""></svg>",False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,e77e3f73-c2e9-4362-a6c3-34a8970ca47c,"xss-test-20260506_223633-1-<img src=x onerror=""window.__vaultdoc_xss=1;alert('xss')"">",False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,a01e65ad-cb04-41f2-9450-fe5eb0178899,<script>alert(1)</script>,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,b5a2e2a1-4d2e-4c5f-8ad2-08b71f138670,idor-folder-20260504224917,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,944b54de-2beb-4ed9-8ea5-ff9b8c045f23,idor-folder-20260504224540,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,ed11ac74-a907-4cee-a424-4ec3e898c3e6,idor-folder-20260504224214,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,c82e59ea-e85e-4db3-acba-4814780c0354,idor-folder-20260504223755,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,dc43aeb6-6d72-448d-ad17-57f581e2d17e,idor-folder-20260504221729,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,235d660a-c4e9-4ebd-9b84-48a29dace00a,idor-folder-20260504221334,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,72ca9251-79aa-4134-a650-d6c99a3fc637,Техническая информация,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,296835cf-3233-41a5-b801-c32ee93b9385,Главное,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,folder,a8603074-5418-434e-a33e-ee1ac9e7ae44,Финансы,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,0d9f8eba-d824-4c50-9c63-69120efa6781,idor-folder-20260512202141,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,45dd8581-f84c-47a5-9914-97633b5f584b,20_Тестовые_материалы,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,1161a00d-4720-43ed-88fa-015eefe0aab8,19_Обучение,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,080bd761-bcb6-41bf-8d17-e13c4951789a,18_Шаблоны,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,6970e8a2-9e9f-4a43-8cbd-1098edd1d0cf,17_Внутренние_приказы,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,5b032b08-1799-4b65-b67a-d5c318e00586,15_Аудит,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,folder,3195792a-be01-4817-960f-f2f88dad20df,14_Инфраструктура,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,folder,ed8f7677-9dd9-4a30-b349-e78524a7564e,13_Разработка,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,folder,398c7217-cffe-4811-8e77-6f9d511011a7,12_Финансы,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,folder,0c479fbc-1316-4d2a-ae85-3329a64edfb0,11_HR,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,e8676755-8404-40d7-8b67-3c399359af29,10_Служебные_записки,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,d390757b-cc4d-4fb2-b130-a9d357748999,09_Заявки,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,4b7d6ebd-5d2e-414e-961c-24870423590e,16_Архив,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,09141c47-9954-4f15-a42d-5ecd9d96d162,08_Акты,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,1ece4274-f41c-4d3b-ace6-e85a8b0c7319,07_Договоры,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,011aae34-5120-4c49-91d0-71ee2c3560d7,06_Техническая_документация,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,610db1d6-fdf3-45a4-8156-48c200b27261,05_Проектная_документация,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,33cb9974-3809-4f17-8570-d3fd7f9fc1a2,04_Отчеты,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,d9d48ae3-675a-4a85-b776-da1f25a5b16b,03_Инструкции,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,639cdb8e-aa74-49ed-afc4-159653f7d6e4,02_Политики_безопасности,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,31c88aa0-f104-4502-9db1-6e151220f2ec,01_Регламенты,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,e0d10247-d160-49fb-8a26-5b0f05cedc46,xss-test-20260506_223633-3-<script>window.__vaultdoc_xss=1;alert('xss')</script>,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,e939aba8-d89e-438d-8ec6-6303de5e0c9d,"xss-test-20260506_223633-2-<svg onload=""window.__vaultdoc_xss=1;alert('xss')""></svg>",False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,e77e3f73-c2e9-4362-a6c3-34a8970ca47c,"xss-test-20260506_223633-1-<img src=x onerror=""window.__vaultdoc_xss=1;alert('xss')"">",False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,a01e65ad-cb04-41f2-9450-fe5eb0178899,<script>alert(1)</script>,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,b5a2e2a1-4d2e-4c5f-8ad2-08b71f138670,idor-folder-20260504224917,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,944b54de-2beb-4ed9-8ea5-ff9b8c045f23,idor-folder-20260504224540,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,ed11ac74-a907-4cee-a424-4ec3e898c3e6,idor-folder-20260504224214,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,c82e59ea-e85e-4db3-acba-4814780c0354,idor-folder-20260504223755,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,dc43aeb6-6d72-448d-ad17-57f581e2d17e,idor-folder-20260504221729,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,235d660a-c4e9-4ebd-9b84-48a29dace00a,idor-folder-20260504221334,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,72ca9251-79aa-4134-a650-d6c99a3fc637,Техническая информация,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,296835cf-3233-41a5-b801-c32ee93b9385,Главное,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,folder,a8603074-5418-434e-a33e-ee1ac9e7ae44,Финансы,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,0d9f8eba-d824-4c50-9c63-69120efa6781,idor-folder-20260512202141,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,45dd8581-f84c-47a5-9914-97633b5f584b,20_Тестовые_материалы,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,1161a00d-4720-43ed-88fa-015eefe0aab8,19_Обучение,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,080bd761-bcb6-41bf-8d17-e13c4951789a,18_Шаблоны,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,6970e8a2-9e9f-4a43-8cbd-1098edd1d0cf,17_Внутренние_приказы,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,5b032b08-1799-4b65-b67a-d5c318e00586,15_Аудит,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,3195792a-be01-4817-960f-f2f88dad20df,14_Инфраструктура,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,ed8f7677-9dd9-4a30-b349-e78524a7564e,13_Разработка,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,398c7217-cffe-4811-8e77-6f9d511011a7,12_Финансы,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,0c479fbc-1316-4d2a-ae85-3329a64edfb0,11_HR,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,e8676755-8404-40d7-8b67-3c399359af29,10_Служебные_записки,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,d390757b-cc4d-4fb2-b130-a9d357748999,09_Заявки,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,4b7d6ebd-5d2e-414e-961c-24870423590e,16_Архив,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,09141c47-9954-4f15-a42d-5ecd9d96d162,08_Акты,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,1ece4274-f41c-4d3b-ace6-e85a8b0c7319,07_Договоры,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,011aae34-5120-4c49-91d0-71ee2c3560d7,06_Техническая_документация,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,610db1d6-fdf3-45a4-8156-48c200b27261,05_Проектная_документация,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,33cb9974-3809-4f17-8570-d3fd7f9fc1a2,04_Отчеты,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,d9d48ae3-675a-4a85-b776-da1f25a5b16b,03_Инструкции,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,639cdb8e-aa74-49ed-afc4-159653f7d6e4,02_Политики_безопасности,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,31c88aa0-f104-4502-9db1-6e151220f2ec,01_Регламенты,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,e0d10247-d160-49fb-8a26-5b0f05cedc46,xss-test-20260506_223633-3-<script>window.__vaultdoc_xss=1;alert('xss')</script>,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,e939aba8-d89e-438d-8ec6-6303de5e0c9d,"xss-test-20260506_223633-2-<svg onload=""window.__vaultdoc_xss=1;alert('xss')""></svg>",False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,e77e3f73-c2e9-4362-a6c3-34a8970ca47c,"xss-test-20260506_223633-1-<img src=x onerror=""window.__vaultdoc_xss=1;alert('xss')"">",False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,a01e65ad-cb04-41f2-9450-fe5eb0178899,<script>alert(1)</script>,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,b5a2e2a1-4d2e-4c5f-8ad2-08b71f138670,idor-folder-20260504224917,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,944b54de-2beb-4ed9-8ea5-ff9b8c045f23,idor-folder-20260504224540,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,ed11ac74-a907-4cee-a424-4ec3e898c3e6,idor-folder-20260504224214,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,c82e59ea-e85e-4db3-acba-4814780c0354,idor-folder-20260504223755,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,dc43aeb6-6d72-448d-ad17-57f581e2d17e,idor-folder-20260504221729,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,235d660a-c4e9-4ebd-9b84-48a29dace00a,idor-folder-20260504221334,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,72ca9251-79aa-4134-a650-d6c99a3fc637,Техническая информация,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,296835cf-3233-41a5-b801-c32ee93b9385,Главное,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,folder,a8603074-5418-434e-a33e-ee1ac9e7ae44,Финансы,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,0d9f8eba-d824-4c50-9c63-69120efa6781,idor-folder-20260512202141,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,45dd8581-f84c-47a5-9914-97633b5f584b,20_Тестовые_материалы,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,1161a00d-4720-43ed-88fa-015eefe0aab8,19_Обучение,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,080bd761-bcb6-41bf-8d17-e13c4951789a,18_Шаблоны,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,6970e8a2-9e9f-4a43-8cbd-1098edd1d0cf,17_Внутренние_приказы,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,5b032b08-1799-4b65-b67a-d5c318e00586,15_Аудит,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,3195792a-be01-4817-960f-f2f88dad20df,14_Инфраструктура,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,ed8f7677-9dd9-4a30-b349-e78524a7564e,13_Разработка,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,398c7217-cffe-4811-8e77-6f9d511011a7,12_Финансы,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,0c479fbc-1316-4d2a-ae85-3329a64edfb0,11_HR,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,e8676755-8404-40d7-8b67-3c399359af29,10_Служебные_записки,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,d390757b-cc4d-4fb2-b130-a9d357748999,09_Заявки,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,4b7d6ebd-5d2e-414e-961c-24870423590e,16_Архив,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,09141c47-9954-4f15-a42d-5ecd9d96d162,08_Акты,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,folder,1ece4274-f41c-4d3b-ace6-e85a8b0c7319,07_Договоры,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,folder,011aae34-5120-4c49-91d0-71ee2c3560d7,06_Техническая_документация,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,folder,610db1d6-fdf3-45a4-8156-48c200b27261,05_Проектная_документация,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,folder,33cb9974-3809-4f17-8570-d3fd7f9fc1a2,04_Отчеты,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,d9d48ae3-675a-4a85-b776-da1f25a5b16b,03_Инструкции,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,639cdb8e-aa74-49ed-afc4-159653f7d6e4,02_Политики_безопасности,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,31c88aa0-f104-4502-9db1-6e151220f2ec,01_Регламенты,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,e0d10247-d160-49fb-8a26-5b0f05cedc46,xss-test-20260506_223633-3-<script>window.__vaultdoc_xss=1;alert('xss')</script>,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,e939aba8-d89e-438d-8ec6-6303de5e0c9d,"xss-test-20260506_223633-2-<svg onload=""window.__vaultdoc_xss=1;alert('xss')""></svg>",False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,e77e3f73-c2e9-4362-a6c3-34a8970ca47c,"xss-test-20260506_223633-1-<img src=x onerror=""window.__vaultdoc_xss=1;alert('xss')"">",False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,a01e65ad-cb04-41f2-9450-fe5eb0178899,<script>alert(1)</script>,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,b5a2e2a1-4d2e-4c5f-8ad2-08b71f138670,idor-folder-20260504224917,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,944b54de-2beb-4ed9-8ea5-ff9b8c045f23,idor-folder-20260504224540,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,ed11ac74-a907-4cee-a424-4ec3e898c3e6,idor-folder-20260504224214,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,c82e59ea-e85e-4db3-acba-4814780c0354,idor-folder-20260504223755,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,dc43aeb6-6d72-448d-ad17-57f581e2d17e,idor-folder-20260504221729,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,235d660a-c4e9-4ebd-9b84-48a29dace00a,idor-folder-20260504221334,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,72ca9251-79aa-4134-a650-d6c99a3fc637,Техническая информация,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,296835cf-3233-41a5-b801-c32ee93b9385,Главное,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,folder,a8603074-5418-434e-a33e-ee1ac9e7ae44,Финансы,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,0d9f8eba-d824-4c50-9c63-69120efa6781,idor-folder-20260512202141,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,45dd8581-f84c-47a5-9914-97633b5f584b,20_Тестовые_материалы,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,1161a00d-4720-43ed-88fa-015eefe0aab8,19_Обучение,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,080bd761-bcb6-41bf-8d17-e13c4951789a,18_Шаблоны,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,6970e8a2-9e9f-4a43-8cbd-1098edd1d0cf,17_Внутренние_приказы,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,5b032b08-1799-4b65-b67a-d5c318e00586,15_Аудит,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,3195792a-be01-4817-960f-f2f88dad20df,14_Инфраструктура,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,ed8f7677-9dd9-4a30-b349-e78524a7564e,13_Разработка,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,398c7217-cffe-4811-8e77-6f9d511011a7,12_Финансы,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,0c479fbc-1316-4d2a-ae85-3329a64edfb0,11_HR,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,e8676755-8404-40d7-8b67-3c399359af29,10_Служебные_записки,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,d390757b-cc4d-4fb2-b130-a9d357748999,09_Заявки,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,4b7d6ebd-5d2e-414e-961c-24870423590e,16_Архив,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,09141c47-9954-4f15-a42d-5ecd9d96d162,08_Акты,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,1ece4274-f41c-4d3b-ace6-e85a8b0c7319,07_Договоры,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,011aae34-5120-4c49-91d0-71ee2c3560d7,06_Техническая_документация,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,610db1d6-fdf3-45a4-8156-48c200b27261,05_Проектная_документация,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,33cb9974-3809-4f17-8570-d3fd7f9fc1a2,04_Отчеты,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,folder,d9d48ae3-675a-4a85-b776-da1f25a5b16b,03_Инструкции,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,folder,639cdb8e-aa74-49ed-afc4-159653f7d6e4,02_Политики_безопасности,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,folder,31c88aa0-f104-4502-9db1-6e151220f2ec,01_Регламенты,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,folder,e0d10247-d160-49fb-8a26-5b0f05cedc46,xss-test-20260506_223633-3-<script>window.__vaultdoc_xss=1;alert('xss')</script>,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,e939aba8-d89e-438d-8ec6-6303de5e0c9d,"xss-test-20260506_223633-2-<svg onload=""window.__vaultdoc_xss=1;alert('xss')""></svg>",False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,e77e3f73-c2e9-4362-a6c3-34a8970ca47c,"xss-test-20260506_223633-1-<img src=x onerror=""window.__vaultdoc_xss=1;alert('xss')"">",False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,a01e65ad-cb04-41f2-9450-fe5eb0178899,<script>alert(1)</script>,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,b5a2e2a1-4d2e-4c5f-8ad2-08b71f138670,idor-folder-20260504224917,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,944b54de-2beb-4ed9-8ea5-ff9b8c045f23,idor-folder-20260504224540,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,ed11ac74-a907-4cee-a424-4ec3e898c3e6,idor-folder-20260504224214,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,c82e59ea-e85e-4db3-acba-4814780c0354,idor-folder-20260504223755,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,dc43aeb6-6d72-448d-ad17-57f581e2d17e,idor-folder-20260504221729,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,235d660a-c4e9-4ebd-9b84-48a29dace00a,idor-folder-20260504221334,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,72ca9251-79aa-4134-a650-d6c99a3fc637,Техническая информация,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,296835cf-3233-41a5-b801-c32ee93b9385,Главное,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,folder,a8603074-5418-434e-a33e-ee1ac9e7ae44,Финансы,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,0d9f8eba-d824-4c50-9c63-69120efa6781,idor-folder-20260512202141,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,45dd8581-f84c-47a5-9914-97633b5f584b,20_Тестовые_материалы,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,1161a00d-4720-43ed-88fa-015eefe0aab8,19_Обучение,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,080bd761-bcb6-41bf-8d17-e13c4951789a,18_Шаблоны,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,6970e8a2-9e9f-4a43-8cbd-1098edd1d0cf,17_Внутренние_приказы,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,5b032b08-1799-4b65-b67a-d5c318e00586,15_Аудит,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,3195792a-be01-4817-960f-f2f88dad20df,14_Инфраструктура,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,ed8f7677-9dd9-4a30-b349-e78524a7564e,13_Разработка,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,398c7217-cffe-4811-8e77-6f9d511011a7,12_Финансы,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,0c479fbc-1316-4d2a-ae85-3329a64edfb0,11_HR,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,e8676755-8404-40d7-8b67-3c399359af29,10_Служебные_записки,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,d390757b-cc4d-4fb2-b130-a9d357748999,09_Заявки,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,4b7d6ebd-5d2e-414e-961c-24870423590e,16_Архив,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,09141c47-9954-4f15-a42d-5ecd9d96d162,08_Акты,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,1ece4274-f41c-4d3b-ace6-e85a8b0c7319,07_Договоры,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,011aae34-5120-4c49-91d0-71ee2c3560d7,06_Техническая_документация,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,610db1d6-fdf3-45a4-8156-48c200b27261,05_Проектная_документация,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,33cb9974-3809-4f17-8570-d3fd7f9fc1a2,04_Отчеты,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,d9d48ae3-675a-4a85-b776-da1f25a5b16b,03_Инструкции,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,639cdb8e-aa74-49ed-afc4-159653f7d6e4,02_Политики_безопасности,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,31c88aa0-f104-4502-9db1-6e151220f2ec,01_Регламенты,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,e0d10247-d160-49fb-8a26-5b0f05cedc46,xss-test-20260506_223633-3-<script>window.__vaultdoc_xss=1;alert('xss')</script>,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,e939aba8-d89e-438d-8ec6-6303de5e0c9d,"xss-test-20260506_223633-2-<svg onload=""window.__vaultdoc_xss=1;alert('xss')""></svg>",False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,e77e3f73-c2e9-4362-a6c3-34a8970ca47c,"xss-test-20260506_223633-1-<img src=x onerror=""window.__vaultdoc_xss=1;alert('xss')"">",False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,a01e65ad-cb04-41f2-9450-fe5eb0178899,<script>alert(1)</script>,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,b5a2e2a1-4d2e-4c5f-8ad2-08b71f138670,idor-folder-20260504224917,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,944b54de-2beb-4ed9-8ea5-ff9b8c045f23,idor-folder-20260504224540,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,ed11ac74-a907-4cee-a424-4ec3e898c3e6,idor-folder-20260504224214,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,c82e59ea-e85e-4db3-acba-4814780c0354,idor-folder-20260504223755,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,dc43aeb6-6d72-448d-ad17-57f581e2d17e,idor-folder-20260504221729,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,235d660a-c4e9-4ebd-9b84-48a29dace00a,idor-folder-20260504221334,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,72ca9251-79aa-4134-a650-d6c99a3fc637,Техническая информация,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,296835cf-3233-41a5-b801-c32ee93b9385,Главное,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,folder,a8603074-5418-434e-a33e-ee1ac9e7ae44,Финансы,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,0d9f8eba-d824-4c50-9c63-69120efa6781,idor-folder-20260512202141,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,45dd8581-f84c-47a5-9914-97633b5f584b,20_Тестовые_материалы,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,1161a00d-4720-43ed-88fa-015eefe0aab8,19_Обучение,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,080bd761-bcb6-41bf-8d17-e13c4951789a,18_Шаблоны,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,6970e8a2-9e9f-4a43-8cbd-1098edd1d0cf,17_Внутренние_приказы,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,5b032b08-1799-4b65-b67a-d5c318e00586,15_Аудит,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,3195792a-be01-4817-960f-f2f88dad20df,14_Инфраструктура,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,ed8f7677-9dd9-4a30-b349-e78524a7564e,13_Разработка,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,398c7217-cffe-4811-8e77-6f9d511011a7,12_Финансы,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,0c479fbc-1316-4d2a-ae85-3329a64edfb0,11_HR,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,e8676755-8404-40d7-8b67-3c399359af29,10_Служебные_записки,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,d390757b-cc4d-4fb2-b130-a9d357748999,09_Заявки,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,4b7d6ebd-5d2e-414e-961c-24870423590e,16_Архив,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,09141c47-9954-4f15-a42d-5ecd9d96d162,08_Акты,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,1ece4274-f41c-4d3b-ace6-e85a8b0c7319,07_Договоры,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,011aae34-5120-4c49-91d0-71ee2c3560d7,06_Техническая_документация,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,610db1d6-fdf3-45a4-8156-48c200b27261,05_Проектная_документация,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,33cb9974-3809-4f17-8570-d3fd7f9fc1a2,04_Отчеты,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,d9d48ae3-675a-4a85-b776-da1f25a5b16b,03_Инструкции,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,639cdb8e-aa74-49ed-afc4-159653f7d6e4,02_Политики_безопасности,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,31c88aa0-f104-4502-9db1-6e151220f2ec,01_Регламенты,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,e0d10247-d160-49fb-8a26-5b0f05cedc46,xss-test-20260506_223633-3-<script>window.__vaultdoc_xss=1;alert('xss')</script>,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,e939aba8-d89e-438d-8ec6-6303de5e0c9d,"xss-test-20260506_223633-2-<svg onload=""window.__vaultdoc_xss=1;alert('xss')""></svg>",False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,e77e3f73-c2e9-4362-a6c3-34a8970ca47c,"xss-test-20260506_223633-1-<img src=x onerror=""window.__vaultdoc_xss=1;alert('xss')"">",False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,a01e65ad-cb04-41f2-9450-fe5eb0178899,<script>alert(1)</script>,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,b5a2e2a1-4d2e-4c5f-8ad2-08b71f138670,idor-folder-20260504224917,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,944b54de-2beb-4ed9-8ea5-ff9b8c045f23,idor-folder-20260504224540,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,ed11ac74-a907-4cee-a424-4ec3e898c3e6,idor-folder-20260504224214,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,c82e59ea-e85e-4db3-acba-4814780c0354,idor-folder-20260504223755,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,dc43aeb6-6d72-448d-ad17-57f581e2d17e,idor-folder-20260504221729,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,235d660a-c4e9-4ebd-9b84-48a29dace00a,idor-folder-20260504221334,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,72ca9251-79aa-4134-a650-d6c99a3fc637,Техническая информация,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,296835cf-3233-41a5-b801-c32ee93b9385,Главное,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,folder,a8603074-5418-434e-a33e-ee1ac9e7ae44,Финансы,False,False,403,True
+admin@vaultdoc.ru,admin,document,3dc09d34-18b6-4792-8723-fcc6629e1ce3,idor-document-20260512202141,True,True,200,True
+admin@vaultdoc.ru,admin,document,9687d2de-3bd3-45fa-bfba-0e9f40037875,Тестовый документ файлового архива №100,True,True,200,True
+admin@vaultdoc.ru,admin,document,4f0535f2-5153-4d7c-84c8-317cc06b1b30,Материалы обучения пользователей №099,True,True,200,True
+admin@vaultdoc.ru,admin,document,2f23219b-c753-47b7-b16c-d694bc9c3855,Описание модели ролей №098,True,True,200,True
+admin@vaultdoc.ru,admin,document,039c7a32-e149-4af6-8170-00198f1613cd,План проверки отказоустойчивости №097,True,True,200,True
+admin@vaultdoc.ru,admin,document,69662d82-40cc-4531-9b56-2683cdf23fff,Инструкция администратора №096,True,True,200,True
+admin@vaultdoc.ru,admin,document,8a4073f2-b53f-4151-b613-f5224fab9219,Реестр внутренних документов №095,True,True,200,True
+admin@vaultdoc.ru,admin,document,8cd85ef9-80f3-42cf-b1dc-995a937d6aca,Описание сценариев тестирования №094,True,True,200,True
+admin@vaultdoc.ru,admin,document,22bdede0-9a59-414a-a465-95cd80ac03d6,Отчет о проверке прав доступа №093,True,True,200,True
+admin@vaultdoc.ru,admin,document,d6b39940-cef1-4d50-9b7c-198d9fcfc44b,Памятка сотрудника №092,True,True,200,True
+admin@vaultdoc.ru,admin,document,aee2acb6-466a-46a1-a1eb-f90bac6b7d8c,Положение о хранении документов №091,True,True,200,True
+admin@vaultdoc.ru,admin,document,b7d9766f-10b2-4f5f-a4c6-26716fa0329a,Служебная записка по безопасности №090,True,True,200,True
+admin@vaultdoc.ru,admin,document,d66ea33b-ffa3-4b92-97c9-b5b260f8160b,Акт проверки документа №089,True,True,200,True
+admin@vaultdoc.ru,admin,document,e85b7843-0bbf-456f-91c0-b896bdf79646,Заявка на предоставление доступа №088,True,True,200,True
+admin@vaultdoc.ru,admin,document,db5eece1-ea4b-4f35-8cd6-32897731484a,Инструкция по загрузке файлов №087,True,True,200,True
+admin@vaultdoc.ru,admin,document,a4249078-2a2a-4297-9bd9-561a6c513543,Описание архитектуры frontend №086,True,True,200,True
+admin@vaultdoc.ru,admin,document,c8a49fd6-18c1-45b8-a151-1284acc289b7,Описание архитектуры backend №085,True,True,200,True
+admin@vaultdoc.ru,admin,document,1785bd8b-c45a-406c-b878-b7d3dd8c391b,Отчет по аудиту действий №084,True,True,200,True
+admin@vaultdoc.ru,admin,document,c030c6ea-e2a4-4fdd-a66d-ac63c5f251d9,Инструкция пользователя VaultDoc №083,True,True,200,True
+admin@vaultdoc.ru,admin,document,62bcc90a-2d57-4224-80c2-86b1f4265525,Политика разграничения доступа №082,True,True,200,True
+admin@vaultdoc.ru,admin,document,2e348972-d407-4752-81dd-29e2803298d1,Регламент обработки документов №081,True,True,200,True
+admin@vaultdoc.ru,admin,document,b42a9fa7-8160-4621-bd68-6d29a375b223,Тестовый документ файлового архива №080,True,True,200,True
+admin@vaultdoc.ru,admin,document,6edd6404-6f62-4b0c-a9d6-a08f3f764383,Материалы обучения пользователей №079,True,True,200,True
+admin@vaultdoc.ru,admin,document,b33d4904-8933-447a-98b7-48e4de643f77,Описание модели ролей №078,True,True,200,True
+admin@vaultdoc.ru,admin,document,2345c80f-a281-4c6c-85ab-996032e56b73,План проверки отказоустойчивости №077,True,True,200,True
+admin@vaultdoc.ru,admin,document,431a1959-6bc4-4cf8-8464-f895d4e59a64,Инструкция администратора №076,True,True,200,True
+admin@vaultdoc.ru,admin,document,e781e460-24d1-4949-965c-d921b869005c,Реестр внутренних документов №075,True,True,200,True
+admin@vaultdoc.ru,admin,document,7b668650-689f-40be-ac22-a9d091532345,Описание сценариев тестирования №074,True,True,200,True
+admin@vaultdoc.ru,admin,document,e77e1d9d-48c0-461c-8a09-144034a4d896,Отчет о проверке прав доступа №073,True,True,200,True
+admin@vaultdoc.ru,admin,document,5f533525-78ae-4904-8489-b38730bdaafa,Памятка сотрудника №072,True,True,200,True
+admin@vaultdoc.ru,admin,document,ee977596-e5eb-4b8c-b6a3-d6d7a93a79f6,Положение о хранении документов №071,True,True,200,True
+admin@vaultdoc.ru,admin,document,07f1e46f-5d2d-482f-a412-b0f717cc9cfa,Служебная записка по безопасности №070,True,True,200,True
+admin@vaultdoc.ru,admin,document,8aafcd59-f8ff-4487-a421-5fc3acf85aaf,Акт проверки документа №069,True,True,200,True
+admin@vaultdoc.ru,admin,document,a928270a-20a2-48c5-8682-88cdcf98fc0f,Заявка на предоставление доступа №068,True,True,200,True
+admin@vaultdoc.ru,admin,document,20e2c8a5-e67d-46cb-bc88-08b5eb21d625,Инструкция по загрузке файлов №067,True,True,200,True
+admin@vaultdoc.ru,admin,document,c7eb0f70-ffd2-49f1-ba5a-0a5885e2a09b,Описание архитектуры frontend №066,True,True,200,True
+admin@vaultdoc.ru,admin,document,bebb5bc2-32b0-4f86-8668-2c0196b16876,Описание архитектуры backend №065,True,True,200,True
+admin@vaultdoc.ru,admin,document,7c99055f-80c8-427a-bd22-496d1c6f016f,Отчет по аудиту действий №064,True,True,200,True
+admin@vaultdoc.ru,admin,document,b58e5fcb-6402-48cd-a3d8-e87481c1858e,Инструкция пользователя VaultDoc №063,True,True,200,True
+admin@vaultdoc.ru,admin,document,21495084-6688-4785-96b1-f49b3b398b08,Политика разграничения доступа №062,True,True,200,True
+admin@vaultdoc.ru,admin,document,71900376-c7f7-4441-9b5c-40c7027da3ea,Регламент обработки документов №061,True,True,200,True
+admin@vaultdoc.ru,admin,document,c597def1-10aa-48e7-a929-fd864a9acd64,Тестовый документ файлового архива №060,True,True,200,True
+admin@vaultdoc.ru,admin,document,58a7eb51-e0e8-47c6-bd5e-8eda0ddc28a2,Материалы обучения пользователей №059,True,True,200,True
+admin@vaultdoc.ru,admin,document,06580d80-e811-4422-b79d-9e007d15b93a,Описание модели ролей №058,True,True,200,True
+admin@vaultdoc.ru,admin,document,dc46d28d-00bb-468f-becd-d8ee65803df8,План проверки отказоустойчивости №057,True,True,200,True
+admin@vaultdoc.ru,admin,document,c937e301-1875-47e5-ba85-32bd339f629c,Инструкция администратора №056,True,True,200,True
+admin@vaultdoc.ru,admin,document,9aa2eabb-f188-4c5f-ace8-574e42f07041,Реестр внутренних документов №055,True,True,200,True
+admin@vaultdoc.ru,admin,document,5aa52832-039b-4339-94ca-4ba7ae0baa6a,Описание сценариев тестирования №054,True,True,200,True
+admin@vaultdoc.ru,admin,document,448c2bb9-bf58-4dd8-8e3c-b0e7b71f3ad6,Отчет о проверке прав доступа №053,True,True,200,True
+admin@vaultdoc.ru,admin,document,20ff555d-f0f5-46ff-a34e-ad8d9a649da1,Памятка сотрудника №052,True,True,200,True
+admin@vaultdoc.ru,admin,document,1159a339-6a57-4191-ab3a-4df35c4e40ad,Положение о хранении документов №051,True,True,200,True
+admin@vaultdoc.ru,admin,document,e90cc335-8523-4292-a9cf-7f79ed6b73bf,Служебная записка по безопасности №050,True,True,200,True
+admin@vaultdoc.ru,admin,document,02c162a3-8ab7-4722-b164-bf6455d7bd1a,Акт проверки документа №049,True,True,200,True
+admin@vaultdoc.ru,admin,document,a69abfb3-cbef-44bc-994b-eed930aa5444,Заявка на предоставление доступа №048,True,True,200,True
+admin@vaultdoc.ru,admin,document,a8ffe71b-9e77-435c-8d18-a5062784e243,Инструкция по загрузке файлов №047,True,True,200,True
+admin@vaultdoc.ru,admin,document,602f96f5-5973-4e35-b224-842f54cfa727,Описание архитектуры frontend №046,True,True,200,True
+admin@vaultdoc.ru,admin,document,9fe0c081-e890-4787-b354-d72e2abbef13,Описание архитектуры backend №045,True,True,200,True
+admin@vaultdoc.ru,admin,document,2c899152-53f9-4d37-b7a2-95294e39f89d,Отчет по аудиту действий №044,True,True,200,True
+admin@vaultdoc.ru,admin,document,9d65cb23-7f54-4170-8eea-c2ed5579a230,Инструкция пользователя VaultDoc №043,True,True,200,True
+admin@vaultdoc.ru,admin,document,6d7f6887-c69d-45d5-a693-3647dd59b3be,Политика разграничения доступа №042,True,True,200,True
+admin@vaultdoc.ru,admin,document,11f0857b-8e5e-4224-80c6-a2127119f6ed,Регламент обработки документов №041,True,True,200,True
+admin@vaultdoc.ru,admin,document,d244db1e-c446-4e71-9baa-ce4fe52cd76f,Тестовый документ файлового архива №040,True,True,200,True
+admin@vaultdoc.ru,admin,document,b28236d1-7afe-4ac7-a3a6-d2bb71b94359,Материалы обучения пользователей №039,True,True,200,True
+admin@vaultdoc.ru,admin,document,d9f2061a-f009-40fd-ac02-92f909dbc396,Описание модели ролей №038,True,True,200,True
+admin@vaultdoc.ru,admin,document,f49c2a88-a5a9-4cfc-8999-43dfc723fb28,План проверки отказоустойчивости №037,True,True,200,True
+admin@vaultdoc.ru,admin,document,5aa96b70-37ab-48d5-8bdd-efe2aa07491e,Инструкция администратора №036,True,True,200,True
+admin@vaultdoc.ru,admin,document,dba73c4a-26c6-4632-b61e-2bafb95f3720,Реестр внутренних документов №035,True,True,200,True
+admin@vaultdoc.ru,admin,document,03e966d3-2f27-42be-b542-9da182cb3b75,Описание сценариев тестирования №034,True,True,200,True
+admin@vaultdoc.ru,admin,document,08c97083-3df0-4fe4-8ab0-85bce6a95257,Отчет о проверке прав доступа №033,True,True,200,True
+admin@vaultdoc.ru,admin,document,ee97dd05-5b91-4827-999b-1014720425b5,Памятка сотрудника №032,True,True,200,True
+admin@vaultdoc.ru,admin,document,ede9347f-f3ac-48a2-b6f0-59572d730d5c,Положение о хранении документов №031,True,True,200,True
+admin@vaultdoc.ru,admin,document,853400d4-a7fc-4e9d-88eb-2bd8257d1d57,Служебная записка по безопасности №030,True,True,200,True
+admin@vaultdoc.ru,admin,document,456250c8-f9d1-43c9-a065-dfad5dca5942,Акт проверки документа №029,True,True,200,True
+admin@vaultdoc.ru,admin,document,3def2506-1d9b-4aee-bf87-6d7187d60d31,Заявка на предоставление доступа №028,True,True,200,True
+admin@vaultdoc.ru,admin,document,d486792d-9acd-465f-b3f0-d0a699d1f327,Инструкция по загрузке файлов №027,True,True,200,True
+admin@vaultdoc.ru,admin,document,76bafdd8-ab4d-4a05-8ad0-ddb85df550fa,Описание архитектуры frontend №026,True,True,200,True
+admin@vaultdoc.ru,admin,document,33d530de-d59e-4b9b-8657-5983b9fa6ad6,Описание архитектуры backend №025,True,True,200,True
+admin@vaultdoc.ru,admin,document,947d0ee6-7d5b-414c-8a64-71b0b6619e83,Отчет по аудиту действий №024,True,True,200,True
+admin@vaultdoc.ru,admin,document,ac35a164-6d40-4624-b579-10e43979ffce,Инструкция пользователя VaultDoc №023,True,True,200,True
+admin@vaultdoc.ru,admin,document,41d4a898-98c0-4cd6-821a-35708082e1d4,Политика разграничения доступа №022,True,True,200,True
+admin@vaultdoc.ru,admin,document,c626bed3-ede0-4f30-aaac-06ae8989047c,Регламент обработки документов №021,True,True,200,True
+admin@vaultdoc.ru,admin,document,adafd09e-8891-4b76-a5c8-76f3f87d1827,Тестовый документ файлового архива №020,True,True,200,True
+admin@vaultdoc.ru,admin,document,50768829-5b93-4e35-a516-ae7b6c534269,Материалы обучения пользователей №019,True,True,200,True
+admin@vaultdoc.ru,admin,document,5ce14512-5e1f-4015-a5f5-0a82f52f2b1f,Описание модели ролей №018,True,True,200,True
+admin@vaultdoc.ru,admin,document,6c2ca964-78c4-4713-bcf6-e5f98678d850,План проверки отказоустойчивости №017,True,True,200,True
+admin@vaultdoc.ru,admin,document,f570c098-a2ab-4dbd-b5c5-08b00d09ee0e,Инструкция администратора №016,True,True,200,True
+admin@vaultdoc.ru,admin,document,4cf8924b-25eb-4404-aebb-cac82ae02716,Реестр внутренних документов №015,True,True,200,True
+admin@vaultdoc.ru,admin,document,3bba2a2c-0e03-42d9-b1a5-17d5d66e6ed1,Описание сценариев тестирования №014,True,True,200,True
+admin@vaultdoc.ru,admin,document,fe87ce54-63dd-4267-a0ae-55ba6d81e7b9,Отчет о проверке прав доступа №013,True,True,200,True
+admin@vaultdoc.ru,admin,document,7a6f41df-a025-44e8-9df6-c7803c7f1f4c,Памятка сотрудника №012,True,True,200,True
+admin@vaultdoc.ru,admin,document,374d2041-0c29-40e0-9d89-36845317b887,Положение о хранении документов №011,True,True,200,True
+admin@vaultdoc.ru,admin,document,a96f417c-6b3b-4d12-a642-0e1312c4314d,Служебная записка по безопасности №010,True,True,200,True
+admin@vaultdoc.ru,admin,document,7f4cfb41-5a04-44ea-93bb-07cf45f23d68,Акт проверки документа №009,True,True,200,True
+admin@vaultdoc.ru,admin,document,3771a37e-b998-4c93-af3f-b518361fc4ae,Заявка на предоставление доступа №008,True,True,200,True
+admin@vaultdoc.ru,admin,document,4f1c9271-006b-4be0-94f5-7225ca28c860,Инструкция по загрузке файлов №007,True,True,200,True
+admin@vaultdoc.ru,admin,document,c81fb5b5-02c2-413b-bd54-771beb2b8f6d,Описание архитектуры frontend №006,True,True,200,True
+admin@vaultdoc.ru,admin,document,cf25c8fb-cc5d-4893-ab71-05b3c8776989,Описание архитектуры backend №005,True,True,200,True
+admin@vaultdoc.ru,admin,document,d3e8cb1e-7955-4520-aad5-346a871c82bc,Отчет по аудиту действий №004,True,True,200,True
+admin@vaultdoc.ru,admin,document,a443d04d-6990-4614-916f-b7f4b47947f3,Инструкция пользователя VaultDoc №003,True,True,200,True
+admin@vaultdoc.ru,admin,document,17c57ae8-6891-4e6a-b740-f6220d1067df,Политика разграничения доступа №002,True,True,200,True
+admin@vaultdoc.ru,admin,document,ea5e2ab0-b805-4253-8119-71b70043b5f5,Регламент обработки документов №001,True,True,200,True
+admin@vaultdoc.ru,admin,document,c99629c0-be8e-4b11-9aaf-c1eb35401773,Описание архитектуры backend №005,True,True,200,True
+admin@vaultdoc.ru,admin,document,4664239e-b9f8-4d91-b6e6-83cc4e06b4ea,Отчет по аудиту действий №004,True,True,200,True
+admin@vaultdoc.ru,admin,document,5b33daf5-0d03-44f0-8355-9d252de2fa7a,Инструкция пользователя VaultDoc №003,True,True,200,True
+admin@vaultdoc.ru,admin,document,775349b5-2f9e-4a34-a789-17e0a0c6f0ca,Политика разграничения доступа №002,True,True,200,True
+admin@vaultdoc.ru,admin,document,f267bd24-63fd-4a32-8a8d-a070f928ffeb,Регламент обработки документов №001,True,True,200,True
+admin@vaultdoc.ru,admin,document,6c60a21b-10cd-4d2b-bd6b-85748e57fa2c,Политика разграничения доступа №002,True,True,200,True
+admin@vaultdoc.ru,admin,document,dd547473-2f2b-4cd1-9d68-500c8535d132,Регламент обработки документов №001,True,True,200,True
+admin@vaultdoc.ru,admin,document,b51b999a-6f06-4d4c-84ad-43f294e02e32,<img src=x onerror=alert(1)>.pdf,True,True,200,True
+admin@vaultdoc.ru,admin,document,53383ab7-a60d-4951-99e9-ae249d69ffdd,<script>alert(1)</script>,True,True,200,True
+admin@vaultdoc.ru,admin,document,d02280c6-05c3-4a50-9787-208b9ce8e61a,idor-document-20260504224917,True,True,200,True
+admin@vaultdoc.ru,admin,document,8d7e627d-32cb-4638-94dc-660bc2872435,idor-document-20260504224540,True,True,200,True
+admin@vaultdoc.ru,admin,document,c5937f21-fbb8-4565-8a35-948fefb56843,idor-document-20260504224214,True,True,200,True
+admin@vaultdoc.ru,admin,document,e09ce25f-75a4-401c-bd6d-85b180d8c09c,idor-document-20260504223755,True,True,200,True
+admin@vaultdoc.ru,admin,document,0679ba62-c132-4e70-94c2-bda40c214626,idor-document-20260504221729,True,True,200,True
+admin@vaultdoc.ru,admin,document,4bd9e39f-b74b-411f-9be8-3fb335ef32c5,idor-document-20260504221334,True,True,200,True
+admin@vaultdoc.ru,admin,document,a77ac14b-6895-4788-a0d7-5f46bc91283a,Главное,True,True,200,True
+admin@vaultdoc.ru,admin,document,12ce81ee-760d-45ad-b714-888220ac3019,ДокХранилище_документация,True,True,200,True
+admin@vaultdoc.ru,admin,document,5a9a9e04-c543-486a-ba34-5ee121e1f242,Отчет_январь,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,3dc09d34-18b6-4792-8723-fcc6629e1ce3,idor-document-20260512202141,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,9687d2de-3bd3-45fa-bfba-0e9f40037875,Тестовый документ файлового архива №100,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,4f0535f2-5153-4d7c-84c8-317cc06b1b30,Материалы обучения пользователей №099,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,2f23219b-c753-47b7-b16c-d694bc9c3855,Описание модели ролей №098,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,039c7a32-e149-4af6-8170-00198f1613cd,План проверки отказоустойчивости №097,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,69662d82-40cc-4531-9b56-2683cdf23fff,Инструкция администратора №096,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,8a4073f2-b53f-4151-b613-f5224fab9219,Реестр внутренних документов №095,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,8cd85ef9-80f3-42cf-b1dc-995a937d6aca,Описание сценариев тестирования №094,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,22bdede0-9a59-414a-a465-95cd80ac03d6,Отчет о проверке прав доступа №093,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,d6b39940-cef1-4d50-9b7c-198d9fcfc44b,Памятка сотрудника №092,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,aee2acb6-466a-46a1-a1eb-f90bac6b7d8c,Положение о хранении документов №091,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,b7d9766f-10b2-4f5f-a4c6-26716fa0329a,Служебная записка по безопасности №090,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,d66ea33b-ffa3-4b92-97c9-b5b260f8160b,Акт проверки документа №089,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,e85b7843-0bbf-456f-91c0-b896bdf79646,Заявка на предоставление доступа №088,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,db5eece1-ea4b-4f35-8cd6-32897731484a,Инструкция по загрузке файлов №087,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,a4249078-2a2a-4297-9bd9-561a6c513543,Описание архитектуры frontend №086,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,c8a49fd6-18c1-45b8-a151-1284acc289b7,Описание архитектуры backend №085,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,1785bd8b-c45a-406c-b878-b7d3dd8c391b,Отчет по аудиту действий №084,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,c030c6ea-e2a4-4fdd-a66d-ac63c5f251d9,Инструкция пользователя VaultDoc №083,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,62bcc90a-2d57-4224-80c2-86b1f4265525,Политика разграничения доступа №082,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,2e348972-d407-4752-81dd-29e2803298d1,Регламент обработки документов №081,True,True,200,True
+ivan.petrov@vaultdoc.ru,manager,document,b42a9fa7-8160-4621-bd68-6d29a375b223,Тестовый документ файлового архива №080,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,6edd6404-6f62-4b0c-a9d6-a08f3f764383,Материалы обучения пользователей №079,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,b33d4904-8933-447a-98b7-48e4de643f77,Описание модели ролей №078,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,2345c80f-a281-4c6c-85ab-996032e56b73,План проверки отказоустойчивости №077,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,431a1959-6bc4-4cf8-8464-f895d4e59a64,Инструкция администратора №076,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,e781e460-24d1-4949-965c-d921b869005c,Реестр внутренних документов №075,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,7b668650-689f-40be-ac22-a9d091532345,Описание сценариев тестирования №074,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,e77e1d9d-48c0-461c-8a09-144034a4d896,Отчет о проверке прав доступа №073,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,5f533525-78ae-4904-8489-b38730bdaafa,Памятка сотрудника №072,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,ee977596-e5eb-4b8c-b6a3-d6d7a93a79f6,Положение о хранении документов №071,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,07f1e46f-5d2d-482f-a412-b0f717cc9cfa,Служебная записка по безопасности №070,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,8aafcd59-f8ff-4487-a421-5fc3acf85aaf,Акт проверки документа №069,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,a928270a-20a2-48c5-8682-88cdcf98fc0f,Заявка на предоставление доступа №068,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,20e2c8a5-e67d-46cb-bc88-08b5eb21d625,Инструкция по загрузке файлов №067,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,c7eb0f70-ffd2-49f1-ba5a-0a5885e2a09b,Описание архитектуры frontend №066,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,bebb5bc2-32b0-4f86-8668-2c0196b16876,Описание архитектуры backend №065,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,7c99055f-80c8-427a-bd22-496d1c6f016f,Отчет по аудиту действий №064,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,b58e5fcb-6402-48cd-a3d8-e87481c1858e,Инструкция пользователя VaultDoc №063,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,21495084-6688-4785-96b1-f49b3b398b08,Политика разграничения доступа №062,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,71900376-c7f7-4441-9b5c-40c7027da3ea,Регламент обработки документов №061,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,c597def1-10aa-48e7-a929-fd864a9acd64,Тестовый документ файлового архива №060,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,58a7eb51-e0e8-47c6-bd5e-8eda0ddc28a2,Материалы обучения пользователей №059,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,06580d80-e811-4422-b79d-9e007d15b93a,Описание модели ролей №058,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,dc46d28d-00bb-468f-becd-d8ee65803df8,План проверки отказоустойчивости №057,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,c937e301-1875-47e5-ba85-32bd339f629c,Инструкция администратора №056,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,9aa2eabb-f188-4c5f-ace8-574e42f07041,Реестр внутренних документов №055,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,5aa52832-039b-4339-94ca-4ba7ae0baa6a,Описание сценариев тестирования №054,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,448c2bb9-bf58-4dd8-8e3c-b0e7b71f3ad6,Отчет о проверке прав доступа №053,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,20ff555d-f0f5-46ff-a34e-ad8d9a649da1,Памятка сотрудника №052,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,1159a339-6a57-4191-ab3a-4df35c4e40ad,Положение о хранении документов №051,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,e90cc335-8523-4292-a9cf-7f79ed6b73bf,Служебная записка по безопасности №050,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,02c162a3-8ab7-4722-b164-bf6455d7bd1a,Акт проверки документа №049,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,a69abfb3-cbef-44bc-994b-eed930aa5444,Заявка на предоставление доступа №048,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,a8ffe71b-9e77-435c-8d18-a5062784e243,Инструкция по загрузке файлов №047,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,602f96f5-5973-4e35-b224-842f54cfa727,Описание архитектуры frontend №046,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,9fe0c081-e890-4787-b354-d72e2abbef13,Описание архитектуры backend №045,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,2c899152-53f9-4d37-b7a2-95294e39f89d,Отчет по аудиту действий №044,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,9d65cb23-7f54-4170-8eea-c2ed5579a230,Инструкция пользователя VaultDoc №043,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,6d7f6887-c69d-45d5-a693-3647dd59b3be,Политика разграничения доступа №042,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,11f0857b-8e5e-4224-80c6-a2127119f6ed,Регламент обработки документов №041,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,d244db1e-c446-4e71-9baa-ce4fe52cd76f,Тестовый документ файлового архива №040,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,b28236d1-7afe-4ac7-a3a6-d2bb71b94359,Материалы обучения пользователей №039,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,d9f2061a-f009-40fd-ac02-92f909dbc396,Описание модели ролей №038,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,f49c2a88-a5a9-4cfc-8999-43dfc723fb28,План проверки отказоустойчивости №037,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,5aa96b70-37ab-48d5-8bdd-efe2aa07491e,Инструкция администратора №036,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,dba73c4a-26c6-4632-b61e-2bafb95f3720,Реестр внутренних документов №035,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,03e966d3-2f27-42be-b542-9da182cb3b75,Описание сценариев тестирования №034,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,08c97083-3df0-4fe4-8ab0-85bce6a95257,Отчет о проверке прав доступа №033,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,ee97dd05-5b91-4827-999b-1014720425b5,Памятка сотрудника №032,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,ede9347f-f3ac-48a2-b6f0-59572d730d5c,Положение о хранении документов №031,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,853400d4-a7fc-4e9d-88eb-2bd8257d1d57,Служебная записка по безопасности №030,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,456250c8-f9d1-43c9-a065-dfad5dca5942,Акт проверки документа №029,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,3def2506-1d9b-4aee-bf87-6d7187d60d31,Заявка на предоставление доступа №028,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,d486792d-9acd-465f-b3f0-d0a699d1f327,Инструкция по загрузке файлов №027,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,76bafdd8-ab4d-4a05-8ad0-ddb85df550fa,Описание архитектуры frontend №026,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,33d530de-d59e-4b9b-8657-5983b9fa6ad6,Описание архитектуры backend №025,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,947d0ee6-7d5b-414c-8a64-71b0b6619e83,Отчет по аудиту действий №024,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,ac35a164-6d40-4624-b579-10e43979ffce,Инструкция пользователя VaultDoc №023,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,41d4a898-98c0-4cd6-821a-35708082e1d4,Политика разграничения доступа №022,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,c626bed3-ede0-4f30-aaac-06ae8989047c,Регламент обработки документов №021,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,adafd09e-8891-4b76-a5c8-76f3f87d1827,Тестовый документ файлового архива №020,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,50768829-5b93-4e35-a516-ae7b6c534269,Материалы обучения пользователей №019,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,5ce14512-5e1f-4015-a5f5-0a82f52f2b1f,Описание модели ролей №018,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,6c2ca964-78c4-4713-bcf6-e5f98678d850,План проверки отказоустойчивости №017,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,f570c098-a2ab-4dbd-b5c5-08b00d09ee0e,Инструкция администратора №016,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,4cf8924b-25eb-4404-aebb-cac82ae02716,Реестр внутренних документов №015,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,3bba2a2c-0e03-42d9-b1a5-17d5d66e6ed1,Описание сценариев тестирования №014,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,fe87ce54-63dd-4267-a0ae-55ba6d81e7b9,Отчет о проверке прав доступа №013,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,7a6f41df-a025-44e8-9df6-c7803c7f1f4c,Памятка сотрудника №012,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,374d2041-0c29-40e0-9d89-36845317b887,Положение о хранении документов №011,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,a96f417c-6b3b-4d12-a642-0e1312c4314d,Служебная записка по безопасности №010,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,7f4cfb41-5a04-44ea-93bb-07cf45f23d68,Акт проверки документа №009,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,3771a37e-b998-4c93-af3f-b518361fc4ae,Заявка на предоставление доступа №008,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,4f1c9271-006b-4be0-94f5-7225ca28c860,Инструкция по загрузке файлов №007,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,c81fb5b5-02c2-413b-bd54-771beb2b8f6d,Описание архитектуры frontend №006,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,cf25c8fb-cc5d-4893-ab71-05b3c8776989,Описание архитектуры backend №005,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,d3e8cb1e-7955-4520-aad5-346a871c82bc,Отчет по аудиту действий №004,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,a443d04d-6990-4614-916f-b7f4b47947f3,Инструкция пользователя VaultDoc №003,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,17c57ae8-6891-4e6a-b740-f6220d1067df,Политика разграничения доступа №002,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,ea5e2ab0-b805-4253-8119-71b70043b5f5,Регламент обработки документов №001,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,c99629c0-be8e-4b11-9aaf-c1eb35401773,Описание архитектуры backend №005,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,4664239e-b9f8-4d91-b6e6-83cc4e06b4ea,Отчет по аудиту действий №004,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,5b33daf5-0d03-44f0-8355-9d252de2fa7a,Инструкция пользователя VaultDoc №003,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,775349b5-2f9e-4a34-a789-17e0a0c6f0ca,Политика разграничения доступа №002,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,f267bd24-63fd-4a32-8a8d-a070f928ffeb,Регламент обработки документов №001,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,6c60a21b-10cd-4d2b-bd6b-85748e57fa2c,Политика разграничения доступа №002,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,dd547473-2f2b-4cd1-9d68-500c8535d132,Регламент обработки документов №001,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,b51b999a-6f06-4d4c-84ad-43f294e02e32,<img src=x onerror=alert(1)>.pdf,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,53383ab7-a60d-4951-99e9-ae249d69ffdd,<script>alert(1)</script>,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,d02280c6-05c3-4a50-9787-208b9ce8e61a,idor-document-20260504224917,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,8d7e627d-32cb-4638-94dc-660bc2872435,idor-document-20260504224540,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,c5937f21-fbb8-4565-8a35-948fefb56843,idor-document-20260504224214,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,e09ce25f-75a4-401c-bd6d-85b180d8c09c,idor-document-20260504223755,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,0679ba62-c132-4e70-94c2-bda40c214626,idor-document-20260504221729,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,4bd9e39f-b74b-411f-9be8-3fb335ef32c5,idor-document-20260504221334,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,a77ac14b-6895-4788-a0d7-5f46bc91283a,Главное,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,12ce81ee-760d-45ad-b714-888220ac3019,ДокХранилище_документация,False,False,403,True
+ivan.petrov@vaultdoc.ru,manager,document,5a9a9e04-c543-486a-ba34-5ee121e1f242,Отчет_январь,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,3dc09d34-18b6-4792-8723-fcc6629e1ce3,idor-document-20260512202141,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,9687d2de-3bd3-45fa-bfba-0e9f40037875,Тестовый документ файлового архива №100,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,4f0535f2-5153-4d7c-84c8-317cc06b1b30,Материалы обучения пользователей №099,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,2f23219b-c753-47b7-b16c-d694bc9c3855,Описание модели ролей №098,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,039c7a32-e149-4af6-8170-00198f1613cd,План проверки отказоустойчивости №097,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,69662d82-40cc-4531-9b56-2683cdf23fff,Инструкция администратора №096,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,8a4073f2-b53f-4151-b613-f5224fab9219,Реестр внутренних документов №095,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,8cd85ef9-80f3-42cf-b1dc-995a937d6aca,Описание сценариев тестирования №094,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,22bdede0-9a59-414a-a465-95cd80ac03d6,Отчет о проверке прав доступа №093,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,d6b39940-cef1-4d50-9b7c-198d9fcfc44b,Памятка сотрудника №092,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,aee2acb6-466a-46a1-a1eb-f90bac6b7d8c,Положение о хранении документов №091,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,b7d9766f-10b2-4f5f-a4c6-26716fa0329a,Служебная записка по безопасности №090,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,d66ea33b-ffa3-4b92-97c9-b5b260f8160b,Акт проверки документа №089,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,e85b7843-0bbf-456f-91c0-b896bdf79646,Заявка на предоставление доступа №088,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,db5eece1-ea4b-4f35-8cd6-32897731484a,Инструкция по загрузке файлов №087,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,a4249078-2a2a-4297-9bd9-561a6c513543,Описание архитектуры frontend №086,True,True,200,True
+anna.smirnova@vaultdoc.ru,employee,document,c8a49fd6-18c1-45b8-a151-1284acc289b7,Описание архитектуры backend №085,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,1785bd8b-c45a-406c-b878-b7d3dd8c391b,Отчет по аудиту действий №084,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,c030c6ea-e2a4-4fdd-a66d-ac63c5f251d9,Инструкция пользователя VaultDoc №083,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,62bcc90a-2d57-4224-80c2-86b1f4265525,Политика разграничения доступа №082,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,2e348972-d407-4752-81dd-29e2803298d1,Регламент обработки документов №081,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,b42a9fa7-8160-4621-bd68-6d29a375b223,Тестовый документ файлового архива №080,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,6edd6404-6f62-4b0c-a9d6-a08f3f764383,Материалы обучения пользователей №079,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,b33d4904-8933-447a-98b7-48e4de643f77,Описание модели ролей №078,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,2345c80f-a281-4c6c-85ab-996032e56b73,План проверки отказоустойчивости №077,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,431a1959-6bc4-4cf8-8464-f895d4e59a64,Инструкция администратора №076,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,e781e460-24d1-4949-965c-d921b869005c,Реестр внутренних документов №075,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,7b668650-689f-40be-ac22-a9d091532345,Описание сценариев тестирования №074,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,e77e1d9d-48c0-461c-8a09-144034a4d896,Отчет о проверке прав доступа №073,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,5f533525-78ae-4904-8489-b38730bdaafa,Памятка сотрудника №072,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,ee977596-e5eb-4b8c-b6a3-d6d7a93a79f6,Положение о хранении документов №071,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,07f1e46f-5d2d-482f-a412-b0f717cc9cfa,Служебная записка по безопасности №070,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,8aafcd59-f8ff-4487-a421-5fc3acf85aaf,Акт проверки документа №069,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,a928270a-20a2-48c5-8682-88cdcf98fc0f,Заявка на предоставление доступа №068,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,20e2c8a5-e67d-46cb-bc88-08b5eb21d625,Инструкция по загрузке файлов №067,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,c7eb0f70-ffd2-49f1-ba5a-0a5885e2a09b,Описание архитектуры frontend №066,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,bebb5bc2-32b0-4f86-8668-2c0196b16876,Описание архитектуры backend №065,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,7c99055f-80c8-427a-bd22-496d1c6f016f,Отчет по аудиту действий №064,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,b58e5fcb-6402-48cd-a3d8-e87481c1858e,Инструкция пользователя VaultDoc №063,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,21495084-6688-4785-96b1-f49b3b398b08,Политика разграничения доступа №062,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,71900376-c7f7-4441-9b5c-40c7027da3ea,Регламент обработки документов №061,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,c597def1-10aa-48e7-a929-fd864a9acd64,Тестовый документ файлового архива №060,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,58a7eb51-e0e8-47c6-bd5e-8eda0ddc28a2,Материалы обучения пользователей №059,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,06580d80-e811-4422-b79d-9e007d15b93a,Описание модели ролей №058,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,dc46d28d-00bb-468f-becd-d8ee65803df8,План проверки отказоустойчивости №057,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,c937e301-1875-47e5-ba85-32bd339f629c,Инструкция администратора №056,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,9aa2eabb-f188-4c5f-ace8-574e42f07041,Реестр внутренних документов №055,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,5aa52832-039b-4339-94ca-4ba7ae0baa6a,Описание сценариев тестирования №054,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,448c2bb9-bf58-4dd8-8e3c-b0e7b71f3ad6,Отчет о проверке прав доступа №053,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,20ff555d-f0f5-46ff-a34e-ad8d9a649da1,Памятка сотрудника №052,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,1159a339-6a57-4191-ab3a-4df35c4e40ad,Положение о хранении документов №051,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,e90cc335-8523-4292-a9cf-7f79ed6b73bf,Служебная записка по безопасности №050,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,02c162a3-8ab7-4722-b164-bf6455d7bd1a,Акт проверки документа №049,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,a69abfb3-cbef-44bc-994b-eed930aa5444,Заявка на предоставление доступа №048,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,a8ffe71b-9e77-435c-8d18-a5062784e243,Инструкция по загрузке файлов №047,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,602f96f5-5973-4e35-b224-842f54cfa727,Описание архитектуры frontend №046,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,9fe0c081-e890-4787-b354-d72e2abbef13,Описание архитектуры backend №045,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,2c899152-53f9-4d37-b7a2-95294e39f89d,Отчет по аудиту действий №044,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,9d65cb23-7f54-4170-8eea-c2ed5579a230,Инструкция пользователя VaultDoc №043,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,6d7f6887-c69d-45d5-a693-3647dd59b3be,Политика разграничения доступа №042,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,11f0857b-8e5e-4224-80c6-a2127119f6ed,Регламент обработки документов №041,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,d244db1e-c446-4e71-9baa-ce4fe52cd76f,Тестовый документ файлового архива №040,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,b28236d1-7afe-4ac7-a3a6-d2bb71b94359,Материалы обучения пользователей №039,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,d9f2061a-f009-40fd-ac02-92f909dbc396,Описание модели ролей №038,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,f49c2a88-a5a9-4cfc-8999-43dfc723fb28,План проверки отказоустойчивости №037,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,5aa96b70-37ab-48d5-8bdd-efe2aa07491e,Инструкция администратора №036,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,dba73c4a-26c6-4632-b61e-2bafb95f3720,Реестр внутренних документов №035,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,03e966d3-2f27-42be-b542-9da182cb3b75,Описание сценариев тестирования №034,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,08c97083-3df0-4fe4-8ab0-85bce6a95257,Отчет о проверке прав доступа №033,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,ee97dd05-5b91-4827-999b-1014720425b5,Памятка сотрудника №032,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,ede9347f-f3ac-48a2-b6f0-59572d730d5c,Положение о хранении документов №031,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,853400d4-a7fc-4e9d-88eb-2bd8257d1d57,Служебная записка по безопасности №030,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,456250c8-f9d1-43c9-a065-dfad5dca5942,Акт проверки документа №029,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,3def2506-1d9b-4aee-bf87-6d7187d60d31,Заявка на предоставление доступа №028,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,d486792d-9acd-465f-b3f0-d0a699d1f327,Инструкция по загрузке файлов №027,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,76bafdd8-ab4d-4a05-8ad0-ddb85df550fa,Описание архитектуры frontend №026,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,33d530de-d59e-4b9b-8657-5983b9fa6ad6,Описание архитектуры backend №025,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,947d0ee6-7d5b-414c-8a64-71b0b6619e83,Отчет по аудиту действий №024,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,ac35a164-6d40-4624-b579-10e43979ffce,Инструкция пользователя VaultDoc №023,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,41d4a898-98c0-4cd6-821a-35708082e1d4,Политика разграничения доступа №022,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,c626bed3-ede0-4f30-aaac-06ae8989047c,Регламент обработки документов №021,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,adafd09e-8891-4b76-a5c8-76f3f87d1827,Тестовый документ файлового архива №020,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,50768829-5b93-4e35-a516-ae7b6c534269,Материалы обучения пользователей №019,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,5ce14512-5e1f-4015-a5f5-0a82f52f2b1f,Описание модели ролей №018,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,6c2ca964-78c4-4713-bcf6-e5f98678d850,План проверки отказоустойчивости №017,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,f570c098-a2ab-4dbd-b5c5-08b00d09ee0e,Инструкция администратора №016,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,4cf8924b-25eb-4404-aebb-cac82ae02716,Реестр внутренних документов №015,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,3bba2a2c-0e03-42d9-b1a5-17d5d66e6ed1,Описание сценариев тестирования №014,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,fe87ce54-63dd-4267-a0ae-55ba6d81e7b9,Отчет о проверке прав доступа №013,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,7a6f41df-a025-44e8-9df6-c7803c7f1f4c,Памятка сотрудника №012,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,374d2041-0c29-40e0-9d89-36845317b887,Положение о хранении документов №011,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,a96f417c-6b3b-4d12-a642-0e1312c4314d,Служебная записка по безопасности №010,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,7f4cfb41-5a04-44ea-93bb-07cf45f23d68,Акт проверки документа №009,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,3771a37e-b998-4c93-af3f-b518361fc4ae,Заявка на предоставление доступа №008,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,4f1c9271-006b-4be0-94f5-7225ca28c860,Инструкция по загрузке файлов №007,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,c81fb5b5-02c2-413b-bd54-771beb2b8f6d,Описание архитектуры frontend №006,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,cf25c8fb-cc5d-4893-ab71-05b3c8776989,Описание архитектуры backend №005,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,d3e8cb1e-7955-4520-aad5-346a871c82bc,Отчет по аудиту действий №004,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,a443d04d-6990-4614-916f-b7f4b47947f3,Инструкция пользователя VaultDoc №003,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,17c57ae8-6891-4e6a-b740-f6220d1067df,Политика разграничения доступа №002,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,ea5e2ab0-b805-4253-8119-71b70043b5f5,Регламент обработки документов №001,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,c99629c0-be8e-4b11-9aaf-c1eb35401773,Описание архитектуры backend №005,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,4664239e-b9f8-4d91-b6e6-83cc4e06b4ea,Отчет по аудиту действий №004,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,5b33daf5-0d03-44f0-8355-9d252de2fa7a,Инструкция пользователя VaultDoc №003,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,775349b5-2f9e-4a34-a789-17e0a0c6f0ca,Политика разграничения доступа №002,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,f267bd24-63fd-4a32-8a8d-a070f928ffeb,Регламент обработки документов №001,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,6c60a21b-10cd-4d2b-bd6b-85748e57fa2c,Политика разграничения доступа №002,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,dd547473-2f2b-4cd1-9d68-500c8535d132,Регламент обработки документов №001,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,b51b999a-6f06-4d4c-84ad-43f294e02e32,<img src=x onerror=alert(1)>.pdf,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,53383ab7-a60d-4951-99e9-ae249d69ffdd,<script>alert(1)</script>,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,d02280c6-05c3-4a50-9787-208b9ce8e61a,idor-document-20260504224917,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,8d7e627d-32cb-4638-94dc-660bc2872435,idor-document-20260504224540,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,c5937f21-fbb8-4565-8a35-948fefb56843,idor-document-20260504224214,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,e09ce25f-75a4-401c-bd6d-85b180d8c09c,idor-document-20260504223755,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,0679ba62-c132-4e70-94c2-bda40c214626,idor-document-20260504221729,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,4bd9e39f-b74b-411f-9be8-3fb335ef32c5,idor-document-20260504221334,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,a77ac14b-6895-4788-a0d7-5f46bc91283a,Главное,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,12ce81ee-760d-45ad-b714-888220ac3019,ДокХранилище_документация,False,False,403,True
+anna.smirnova@vaultdoc.ru,employee,document,5a9a9e04-c543-486a-ba34-5ee121e1f242,Отчет_январь,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,3dc09d34-18b6-4792-8723-fcc6629e1ce3,idor-document-20260512202141,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,9687d2de-3bd3-45fa-bfba-0e9f40037875,Тестовый документ файлового архива №100,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,4f0535f2-5153-4d7c-84c8-317cc06b1b30,Материалы обучения пользователей №099,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,2f23219b-c753-47b7-b16c-d694bc9c3855,Описание модели ролей №098,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,039c7a32-e149-4af6-8170-00198f1613cd,План проверки отказоустойчивости №097,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,69662d82-40cc-4531-9b56-2683cdf23fff,Инструкция администратора №096,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,8a4073f2-b53f-4151-b613-f5224fab9219,Реестр внутренних документов №095,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,8cd85ef9-80f3-42cf-b1dc-995a937d6aca,Описание сценариев тестирования №094,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,22bdede0-9a59-414a-a465-95cd80ac03d6,Отчет о проверке прав доступа №093,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,d6b39940-cef1-4d50-9b7c-198d9fcfc44b,Памятка сотрудника №092,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,aee2acb6-466a-46a1-a1eb-f90bac6b7d8c,Положение о хранении документов №091,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,b7d9766f-10b2-4f5f-a4c6-26716fa0329a,Служебная записка по безопасности №090,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,d66ea33b-ffa3-4b92-97c9-b5b260f8160b,Акт проверки документа №089,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,e85b7843-0bbf-456f-91c0-b896bdf79646,Заявка на предоставление доступа №088,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,db5eece1-ea4b-4f35-8cd6-32897731484a,Инструкция по загрузке файлов №087,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,a4249078-2a2a-4297-9bd9-561a6c513543,Описание архитектуры frontend №086,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,c8a49fd6-18c1-45b8-a151-1284acc289b7,Описание архитектуры backend №085,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,1785bd8b-c45a-406c-b878-b7d3dd8c391b,Отчет по аудиту действий №084,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,c030c6ea-e2a4-4fdd-a66d-ac63c5f251d9,Инструкция пользователя VaultDoc №083,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,62bcc90a-2d57-4224-80c2-86b1f4265525,Политика разграничения доступа №082,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,2e348972-d407-4752-81dd-29e2803298d1,Регламент обработки документов №081,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,b42a9fa7-8160-4621-bd68-6d29a375b223,Тестовый документ файлового архива №080,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,6edd6404-6f62-4b0c-a9d6-a08f3f764383,Материалы обучения пользователей №079,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,b33d4904-8933-447a-98b7-48e4de643f77,Описание модели ролей №078,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,2345c80f-a281-4c6c-85ab-996032e56b73,План проверки отказоустойчивости №077,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,431a1959-6bc4-4cf8-8464-f895d4e59a64,Инструкция администратора №076,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,e781e460-24d1-4949-965c-d921b869005c,Реестр внутренних документов №075,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,7b668650-689f-40be-ac22-a9d091532345,Описание сценариев тестирования №074,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,e77e1d9d-48c0-461c-8a09-144034a4d896,Отчет о проверке прав доступа №073,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,5f533525-78ae-4904-8489-b38730bdaafa,Памятка сотрудника №072,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,ee977596-e5eb-4b8c-b6a3-d6d7a93a79f6,Положение о хранении документов №071,True,True,200,True
+dmitry.volkov@vaultdoc.ru,employee,document,07f1e46f-5d2d-482f-a412-b0f717cc9cfa,Служебная записка по безопасности №070,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,8aafcd59-f8ff-4487-a421-5fc3acf85aaf,Акт проверки документа №069,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,a928270a-20a2-48c5-8682-88cdcf98fc0f,Заявка на предоставление доступа №068,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,20e2c8a5-e67d-46cb-bc88-08b5eb21d625,Инструкция по загрузке файлов №067,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,c7eb0f70-ffd2-49f1-ba5a-0a5885e2a09b,Описание архитектуры frontend №066,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,bebb5bc2-32b0-4f86-8668-2c0196b16876,Описание архитектуры backend №065,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,7c99055f-80c8-427a-bd22-496d1c6f016f,Отчет по аудиту действий №064,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,b58e5fcb-6402-48cd-a3d8-e87481c1858e,Инструкция пользователя VaultDoc №063,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,21495084-6688-4785-96b1-f49b3b398b08,Политика разграничения доступа №062,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,71900376-c7f7-4441-9b5c-40c7027da3ea,Регламент обработки документов №061,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,c597def1-10aa-48e7-a929-fd864a9acd64,Тестовый документ файлового архива №060,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,58a7eb51-e0e8-47c6-bd5e-8eda0ddc28a2,Материалы обучения пользователей №059,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,06580d80-e811-4422-b79d-9e007d15b93a,Описание модели ролей №058,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,dc46d28d-00bb-468f-becd-d8ee65803df8,План проверки отказоустойчивости №057,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,c937e301-1875-47e5-ba85-32bd339f629c,Инструкция администратора №056,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,9aa2eabb-f188-4c5f-ace8-574e42f07041,Реестр внутренних документов №055,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,5aa52832-039b-4339-94ca-4ba7ae0baa6a,Описание сценариев тестирования №054,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,448c2bb9-bf58-4dd8-8e3c-b0e7b71f3ad6,Отчет о проверке прав доступа №053,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,20ff555d-f0f5-46ff-a34e-ad8d9a649da1,Памятка сотрудника №052,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,1159a339-6a57-4191-ab3a-4df35c4e40ad,Положение о хранении документов №051,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,e90cc335-8523-4292-a9cf-7f79ed6b73bf,Служебная записка по безопасности №050,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,02c162a3-8ab7-4722-b164-bf6455d7bd1a,Акт проверки документа №049,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,a69abfb3-cbef-44bc-994b-eed930aa5444,Заявка на предоставление доступа №048,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,a8ffe71b-9e77-435c-8d18-a5062784e243,Инструкция по загрузке файлов №047,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,602f96f5-5973-4e35-b224-842f54cfa727,Описание архитектуры frontend №046,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,9fe0c081-e890-4787-b354-d72e2abbef13,Описание архитектуры backend №045,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,2c899152-53f9-4d37-b7a2-95294e39f89d,Отчет по аудиту действий №044,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,9d65cb23-7f54-4170-8eea-c2ed5579a230,Инструкция пользователя VaultDoc №043,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,6d7f6887-c69d-45d5-a693-3647dd59b3be,Политика разграничения доступа №042,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,11f0857b-8e5e-4224-80c6-a2127119f6ed,Регламент обработки документов №041,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,d244db1e-c446-4e71-9baa-ce4fe52cd76f,Тестовый документ файлового архива №040,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,b28236d1-7afe-4ac7-a3a6-d2bb71b94359,Материалы обучения пользователей №039,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,d9f2061a-f009-40fd-ac02-92f909dbc396,Описание модели ролей №038,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,f49c2a88-a5a9-4cfc-8999-43dfc723fb28,План проверки отказоустойчивости №037,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,5aa96b70-37ab-48d5-8bdd-efe2aa07491e,Инструкция администратора №036,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,dba73c4a-26c6-4632-b61e-2bafb95f3720,Реестр внутренних документов №035,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,03e966d3-2f27-42be-b542-9da182cb3b75,Описание сценариев тестирования №034,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,08c97083-3df0-4fe4-8ab0-85bce6a95257,Отчет о проверке прав доступа №033,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,ee97dd05-5b91-4827-999b-1014720425b5,Памятка сотрудника №032,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,ede9347f-f3ac-48a2-b6f0-59572d730d5c,Положение о хранении документов №031,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,853400d4-a7fc-4e9d-88eb-2bd8257d1d57,Служебная записка по безопасности №030,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,456250c8-f9d1-43c9-a065-dfad5dca5942,Акт проверки документа №029,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,3def2506-1d9b-4aee-bf87-6d7187d60d31,Заявка на предоставление доступа №028,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,d486792d-9acd-465f-b3f0-d0a699d1f327,Инструкция по загрузке файлов №027,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,76bafdd8-ab4d-4a05-8ad0-ddb85df550fa,Описание архитектуры frontend №026,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,33d530de-d59e-4b9b-8657-5983b9fa6ad6,Описание архитектуры backend №025,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,947d0ee6-7d5b-414c-8a64-71b0b6619e83,Отчет по аудиту действий №024,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,ac35a164-6d40-4624-b579-10e43979ffce,Инструкция пользователя VaultDoc №023,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,41d4a898-98c0-4cd6-821a-35708082e1d4,Политика разграничения доступа №022,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,c626bed3-ede0-4f30-aaac-06ae8989047c,Регламент обработки документов №021,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,adafd09e-8891-4b76-a5c8-76f3f87d1827,Тестовый документ файлового архива №020,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,50768829-5b93-4e35-a516-ae7b6c534269,Материалы обучения пользователей №019,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,5ce14512-5e1f-4015-a5f5-0a82f52f2b1f,Описание модели ролей №018,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,6c2ca964-78c4-4713-bcf6-e5f98678d850,План проверки отказоустойчивости №017,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,f570c098-a2ab-4dbd-b5c5-08b00d09ee0e,Инструкция администратора №016,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,4cf8924b-25eb-4404-aebb-cac82ae02716,Реестр внутренних документов №015,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,3bba2a2c-0e03-42d9-b1a5-17d5d66e6ed1,Описание сценариев тестирования №014,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,fe87ce54-63dd-4267-a0ae-55ba6d81e7b9,Отчет о проверке прав доступа №013,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,7a6f41df-a025-44e8-9df6-c7803c7f1f4c,Памятка сотрудника №012,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,374d2041-0c29-40e0-9d89-36845317b887,Положение о хранении документов №011,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,a96f417c-6b3b-4d12-a642-0e1312c4314d,Служебная записка по безопасности №010,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,7f4cfb41-5a04-44ea-93bb-07cf45f23d68,Акт проверки документа №009,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,3771a37e-b998-4c93-af3f-b518361fc4ae,Заявка на предоставление доступа №008,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,4f1c9271-006b-4be0-94f5-7225ca28c860,Инструкция по загрузке файлов №007,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,c81fb5b5-02c2-413b-bd54-771beb2b8f6d,Описание архитектуры frontend №006,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,cf25c8fb-cc5d-4893-ab71-05b3c8776989,Описание архитектуры backend №005,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,d3e8cb1e-7955-4520-aad5-346a871c82bc,Отчет по аудиту действий №004,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,a443d04d-6990-4614-916f-b7f4b47947f3,Инструкция пользователя VaultDoc №003,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,17c57ae8-6891-4e6a-b740-f6220d1067df,Политика разграничения доступа №002,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,ea5e2ab0-b805-4253-8119-71b70043b5f5,Регламент обработки документов №001,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,c99629c0-be8e-4b11-9aaf-c1eb35401773,Описание архитектуры backend №005,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,4664239e-b9f8-4d91-b6e6-83cc4e06b4ea,Отчет по аудиту действий №004,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,5b33daf5-0d03-44f0-8355-9d252de2fa7a,Инструкция пользователя VaultDoc №003,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,775349b5-2f9e-4a34-a789-17e0a0c6f0ca,Политика разграничения доступа №002,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,f267bd24-63fd-4a32-8a8d-a070f928ffeb,Регламент обработки документов №001,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,6c60a21b-10cd-4d2b-bd6b-85748e57fa2c,Политика разграничения доступа №002,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,dd547473-2f2b-4cd1-9d68-500c8535d132,Регламент обработки документов №001,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,b51b999a-6f06-4d4c-84ad-43f294e02e32,<img src=x onerror=alert(1)>.pdf,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,53383ab7-a60d-4951-99e9-ae249d69ffdd,<script>alert(1)</script>,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,d02280c6-05c3-4a50-9787-208b9ce8e61a,idor-document-20260504224917,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,8d7e627d-32cb-4638-94dc-660bc2872435,idor-document-20260504224540,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,c5937f21-fbb8-4565-8a35-948fefb56843,idor-document-20260504224214,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,e09ce25f-75a4-401c-bd6d-85b180d8c09c,idor-document-20260504223755,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,0679ba62-c132-4e70-94c2-bda40c214626,idor-document-20260504221729,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,4bd9e39f-b74b-411f-9be8-3fb335ef32c5,idor-document-20260504221334,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,a77ac14b-6895-4788-a0d7-5f46bc91283a,Главное,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,12ce81ee-760d-45ad-b714-888220ac3019,ДокХранилище_документация,False,False,403,True
+dmitry.volkov@vaultdoc.ru,employee,document,5a9a9e04-c543-486a-ba34-5ee121e1f242,Отчет_январь,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,3dc09d34-18b6-4792-8723-fcc6629e1ce3,idor-document-20260512202141,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,9687d2de-3bd3-45fa-bfba-0e9f40037875,Тестовый документ файлового архива №100,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,4f0535f2-5153-4d7c-84c8-317cc06b1b30,Материалы обучения пользователей №099,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,2f23219b-c753-47b7-b16c-d694bc9c3855,Описание модели ролей №098,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,039c7a32-e149-4af6-8170-00198f1613cd,План проверки отказоустойчивости №097,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,69662d82-40cc-4531-9b56-2683cdf23fff,Инструкция администратора №096,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,8a4073f2-b53f-4151-b613-f5224fab9219,Реестр внутренних документов №095,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,8cd85ef9-80f3-42cf-b1dc-995a937d6aca,Описание сценариев тестирования №094,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,22bdede0-9a59-414a-a465-95cd80ac03d6,Отчет о проверке прав доступа №093,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,d6b39940-cef1-4d50-9b7c-198d9fcfc44b,Памятка сотрудника №092,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,aee2acb6-466a-46a1-a1eb-f90bac6b7d8c,Положение о хранении документов №091,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,b7d9766f-10b2-4f5f-a4c6-26716fa0329a,Служебная записка по безопасности №090,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,d66ea33b-ffa3-4b92-97c9-b5b260f8160b,Акт проверки документа №089,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,e85b7843-0bbf-456f-91c0-b896bdf79646,Заявка на предоставление доступа №088,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,db5eece1-ea4b-4f35-8cd6-32897731484a,Инструкция по загрузке файлов №087,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,a4249078-2a2a-4297-9bd9-561a6c513543,Описание архитектуры frontend №086,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,c8a49fd6-18c1-45b8-a151-1284acc289b7,Описание архитектуры backend №085,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,1785bd8b-c45a-406c-b878-b7d3dd8c391b,Отчет по аудиту действий №084,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,c030c6ea-e2a4-4fdd-a66d-ac63c5f251d9,Инструкция пользователя VaultDoc №083,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,62bcc90a-2d57-4224-80c2-86b1f4265525,Политика разграничения доступа №082,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,2e348972-d407-4752-81dd-29e2803298d1,Регламент обработки документов №081,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,b42a9fa7-8160-4621-bd68-6d29a375b223,Тестовый документ файлового архива №080,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,6edd6404-6f62-4b0c-a9d6-a08f3f764383,Материалы обучения пользователей №079,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,b33d4904-8933-447a-98b7-48e4de643f77,Описание модели ролей №078,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,2345c80f-a281-4c6c-85ab-996032e56b73,План проверки отказоустойчивости №077,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,431a1959-6bc4-4cf8-8464-f895d4e59a64,Инструкция администратора №076,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,e781e460-24d1-4949-965c-d921b869005c,Реестр внутренних документов №075,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,7b668650-689f-40be-ac22-a9d091532345,Описание сценариев тестирования №074,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,e77e1d9d-48c0-461c-8a09-144034a4d896,Отчет о проверке прав доступа №073,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,5f533525-78ae-4904-8489-b38730bdaafa,Памятка сотрудника №072,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,ee977596-e5eb-4b8c-b6a3-d6d7a93a79f6,Положение о хранении документов №071,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,07f1e46f-5d2d-482f-a412-b0f717cc9cfa,Служебная записка по безопасности №070,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,8aafcd59-f8ff-4487-a421-5fc3acf85aaf,Акт проверки документа №069,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,a928270a-20a2-48c5-8682-88cdcf98fc0f,Заявка на предоставление доступа №068,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,20e2c8a5-e67d-46cb-bc88-08b5eb21d625,Инструкция по загрузке файлов №067,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,c7eb0f70-ffd2-49f1-ba5a-0a5885e2a09b,Описание архитектуры frontend №066,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,bebb5bc2-32b0-4f86-8668-2c0196b16876,Описание архитектуры backend №065,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,7c99055f-80c8-427a-bd22-496d1c6f016f,Отчет по аудиту действий №064,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,b58e5fcb-6402-48cd-a3d8-e87481c1858e,Инструкция пользователя VaultDoc №063,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,21495084-6688-4785-96b1-f49b3b398b08,Политика разграничения доступа №062,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,71900376-c7f7-4441-9b5c-40c7027da3ea,Регламент обработки документов №061,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,c597def1-10aa-48e7-a929-fd864a9acd64,Тестовый документ файлового архива №060,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,58a7eb51-e0e8-47c6-bd5e-8eda0ddc28a2,Материалы обучения пользователей №059,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,06580d80-e811-4422-b79d-9e007d15b93a,Описание модели ролей №058,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,dc46d28d-00bb-468f-becd-d8ee65803df8,План проверки отказоустойчивости №057,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,c937e301-1875-47e5-ba85-32bd339f629c,Инструкция администратора №056,True,True,200,True
+elena.kuznetsova@vaultdoc.ru,employee,document,9aa2eabb-f188-4c5f-ace8-574e42f07041,Реестр внутренних документов №055,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,5aa52832-039b-4339-94ca-4ba7ae0baa6a,Описание сценариев тестирования №054,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,448c2bb9-bf58-4dd8-8e3c-b0e7b71f3ad6,Отчет о проверке прав доступа №053,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,20ff555d-f0f5-46ff-a34e-ad8d9a649da1,Памятка сотрудника №052,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,1159a339-6a57-4191-ab3a-4df35c4e40ad,Положение о хранении документов №051,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,e90cc335-8523-4292-a9cf-7f79ed6b73bf,Служебная записка по безопасности №050,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,02c162a3-8ab7-4722-b164-bf6455d7bd1a,Акт проверки документа №049,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,a69abfb3-cbef-44bc-994b-eed930aa5444,Заявка на предоставление доступа №048,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,a8ffe71b-9e77-435c-8d18-a5062784e243,Инструкция по загрузке файлов №047,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,602f96f5-5973-4e35-b224-842f54cfa727,Описание архитектуры frontend №046,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,9fe0c081-e890-4787-b354-d72e2abbef13,Описание архитектуры backend №045,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,2c899152-53f9-4d37-b7a2-95294e39f89d,Отчет по аудиту действий №044,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,9d65cb23-7f54-4170-8eea-c2ed5579a230,Инструкция пользователя VaultDoc №043,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,6d7f6887-c69d-45d5-a693-3647dd59b3be,Политика разграничения доступа №042,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,11f0857b-8e5e-4224-80c6-a2127119f6ed,Регламент обработки документов №041,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,d244db1e-c446-4e71-9baa-ce4fe52cd76f,Тестовый документ файлового архива №040,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,b28236d1-7afe-4ac7-a3a6-d2bb71b94359,Материалы обучения пользователей №039,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,d9f2061a-f009-40fd-ac02-92f909dbc396,Описание модели ролей №038,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,f49c2a88-a5a9-4cfc-8999-43dfc723fb28,План проверки отказоустойчивости №037,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,5aa96b70-37ab-48d5-8bdd-efe2aa07491e,Инструкция администратора №036,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,dba73c4a-26c6-4632-b61e-2bafb95f3720,Реестр внутренних документов №035,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,03e966d3-2f27-42be-b542-9da182cb3b75,Описание сценариев тестирования №034,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,08c97083-3df0-4fe4-8ab0-85bce6a95257,Отчет о проверке прав доступа №033,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,ee97dd05-5b91-4827-999b-1014720425b5,Памятка сотрудника №032,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,ede9347f-f3ac-48a2-b6f0-59572d730d5c,Положение о хранении документов №031,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,853400d4-a7fc-4e9d-88eb-2bd8257d1d57,Служебная записка по безопасности №030,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,456250c8-f9d1-43c9-a065-dfad5dca5942,Акт проверки документа №029,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,3def2506-1d9b-4aee-bf87-6d7187d60d31,Заявка на предоставление доступа №028,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,d486792d-9acd-465f-b3f0-d0a699d1f327,Инструкция по загрузке файлов №027,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,76bafdd8-ab4d-4a05-8ad0-ddb85df550fa,Описание архитектуры frontend №026,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,33d530de-d59e-4b9b-8657-5983b9fa6ad6,Описание архитектуры backend №025,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,947d0ee6-7d5b-414c-8a64-71b0b6619e83,Отчет по аудиту действий №024,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,ac35a164-6d40-4624-b579-10e43979ffce,Инструкция пользователя VaultDoc №023,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,41d4a898-98c0-4cd6-821a-35708082e1d4,Политика разграничения доступа №022,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,c626bed3-ede0-4f30-aaac-06ae8989047c,Регламент обработки документов №021,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,adafd09e-8891-4b76-a5c8-76f3f87d1827,Тестовый документ файлового архива №020,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,50768829-5b93-4e35-a516-ae7b6c534269,Материалы обучения пользователей №019,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,5ce14512-5e1f-4015-a5f5-0a82f52f2b1f,Описание модели ролей №018,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,6c2ca964-78c4-4713-bcf6-e5f98678d850,План проверки отказоустойчивости №017,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,f570c098-a2ab-4dbd-b5c5-08b00d09ee0e,Инструкция администратора №016,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,4cf8924b-25eb-4404-aebb-cac82ae02716,Реестр внутренних документов №015,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,3bba2a2c-0e03-42d9-b1a5-17d5d66e6ed1,Описание сценариев тестирования №014,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,fe87ce54-63dd-4267-a0ae-55ba6d81e7b9,Отчет о проверке прав доступа №013,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,7a6f41df-a025-44e8-9df6-c7803c7f1f4c,Памятка сотрудника №012,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,374d2041-0c29-40e0-9d89-36845317b887,Положение о хранении документов №011,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,a96f417c-6b3b-4d12-a642-0e1312c4314d,Служебная записка по безопасности №010,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,7f4cfb41-5a04-44ea-93bb-07cf45f23d68,Акт проверки документа №009,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,3771a37e-b998-4c93-af3f-b518361fc4ae,Заявка на предоставление доступа №008,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,4f1c9271-006b-4be0-94f5-7225ca28c860,Инструкция по загрузке файлов №007,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,c81fb5b5-02c2-413b-bd54-771beb2b8f6d,Описание архитектуры frontend №006,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,cf25c8fb-cc5d-4893-ab71-05b3c8776989,Описание архитектуры backend №005,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,d3e8cb1e-7955-4520-aad5-346a871c82bc,Отчет по аудиту действий №004,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,a443d04d-6990-4614-916f-b7f4b47947f3,Инструкция пользователя VaultDoc №003,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,17c57ae8-6891-4e6a-b740-f6220d1067df,Политика разграничения доступа №002,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,ea5e2ab0-b805-4253-8119-71b70043b5f5,Регламент обработки документов №001,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,c99629c0-be8e-4b11-9aaf-c1eb35401773,Описание архитектуры backend №005,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,4664239e-b9f8-4d91-b6e6-83cc4e06b4ea,Отчет по аудиту действий №004,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,5b33daf5-0d03-44f0-8355-9d252de2fa7a,Инструкция пользователя VaultDoc №003,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,775349b5-2f9e-4a34-a789-17e0a0c6f0ca,Политика разграничения доступа №002,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,f267bd24-63fd-4a32-8a8d-a070f928ffeb,Регламент обработки документов №001,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,6c60a21b-10cd-4d2b-bd6b-85748e57fa2c,Политика разграничения доступа №002,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,dd547473-2f2b-4cd1-9d68-500c8535d132,Регламент обработки документов №001,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,b51b999a-6f06-4d4c-84ad-43f294e02e32,<img src=x onerror=alert(1)>.pdf,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,53383ab7-a60d-4951-99e9-ae249d69ffdd,<script>alert(1)</script>,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,d02280c6-05c3-4a50-9787-208b9ce8e61a,idor-document-20260504224917,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,8d7e627d-32cb-4638-94dc-660bc2872435,idor-document-20260504224540,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,c5937f21-fbb8-4565-8a35-948fefb56843,idor-document-20260504224214,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,e09ce25f-75a4-401c-bd6d-85b180d8c09c,idor-document-20260504223755,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,0679ba62-c132-4e70-94c2-bda40c214626,idor-document-20260504221729,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,4bd9e39f-b74b-411f-9be8-3fb335ef32c5,idor-document-20260504221334,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,a77ac14b-6895-4788-a0d7-5f46bc91283a,Главное,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,12ce81ee-760d-45ad-b714-888220ac3019,ДокХранилище_документация,False,False,403,True
+elena.kuznetsova@vaultdoc.ru,employee,document,5a9a9e04-c543-486a-ba34-5ee121e1f242,Отчет_январь,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,3dc09d34-18b6-4792-8723-fcc6629e1ce3,idor-document-20260512202141,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,9687d2de-3bd3-45fa-bfba-0e9f40037875,Тестовый документ файлового архива №100,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,4f0535f2-5153-4d7c-84c8-317cc06b1b30,Материалы обучения пользователей №099,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,2f23219b-c753-47b7-b16c-d694bc9c3855,Описание модели ролей №098,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,039c7a32-e149-4af6-8170-00198f1613cd,План проверки отказоустойчивости №097,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,69662d82-40cc-4531-9b56-2683cdf23fff,Инструкция администратора №096,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,8a4073f2-b53f-4151-b613-f5224fab9219,Реестр внутренних документов №095,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,8cd85ef9-80f3-42cf-b1dc-995a937d6aca,Описание сценариев тестирования №094,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,22bdede0-9a59-414a-a465-95cd80ac03d6,Отчет о проверке прав доступа №093,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,d6b39940-cef1-4d50-9b7c-198d9fcfc44b,Памятка сотрудника №092,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,aee2acb6-466a-46a1-a1eb-f90bac6b7d8c,Положение о хранении документов №091,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,b7d9766f-10b2-4f5f-a4c6-26716fa0329a,Служебная записка по безопасности №090,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,d66ea33b-ffa3-4b92-97c9-b5b260f8160b,Акт проверки документа №089,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,e85b7843-0bbf-456f-91c0-b896bdf79646,Заявка на предоставление доступа №088,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,db5eece1-ea4b-4f35-8cd6-32897731484a,Инструкция по загрузке файлов №087,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,a4249078-2a2a-4297-9bd9-561a6c513543,Описание архитектуры frontend №086,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,c8a49fd6-18c1-45b8-a151-1284acc289b7,Описание архитектуры backend №085,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,1785bd8b-c45a-406c-b878-b7d3dd8c391b,Отчет по аудиту действий №084,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,c030c6ea-e2a4-4fdd-a66d-ac63c5f251d9,Инструкция пользователя VaultDoc №083,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,62bcc90a-2d57-4224-80c2-86b1f4265525,Политика разграничения доступа №082,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,2e348972-d407-4752-81dd-29e2803298d1,Регламент обработки документов №081,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,b42a9fa7-8160-4621-bd68-6d29a375b223,Тестовый документ файлового архива №080,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,6edd6404-6f62-4b0c-a9d6-a08f3f764383,Материалы обучения пользователей №079,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,b33d4904-8933-447a-98b7-48e4de643f77,Описание модели ролей №078,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,2345c80f-a281-4c6c-85ab-996032e56b73,План проверки отказоустойчивости №077,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,431a1959-6bc4-4cf8-8464-f895d4e59a64,Инструкция администратора №076,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,e781e460-24d1-4949-965c-d921b869005c,Реестр внутренних документов №075,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,7b668650-689f-40be-ac22-a9d091532345,Описание сценариев тестирования №074,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,e77e1d9d-48c0-461c-8a09-144034a4d896,Отчет о проверке прав доступа №073,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,5f533525-78ae-4904-8489-b38730bdaafa,Памятка сотрудника №072,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,ee977596-e5eb-4b8c-b6a3-d6d7a93a79f6,Положение о хранении документов №071,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,07f1e46f-5d2d-482f-a412-b0f717cc9cfa,Служебная записка по безопасности №070,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,8aafcd59-f8ff-4487-a421-5fc3acf85aaf,Акт проверки документа №069,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,a928270a-20a2-48c5-8682-88cdcf98fc0f,Заявка на предоставление доступа №068,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,20e2c8a5-e67d-46cb-bc88-08b5eb21d625,Инструкция по загрузке файлов №067,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,c7eb0f70-ffd2-49f1-ba5a-0a5885e2a09b,Описание архитектуры frontend №066,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,bebb5bc2-32b0-4f86-8668-2c0196b16876,Описание архитектуры backend №065,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,7c99055f-80c8-427a-bd22-496d1c6f016f,Отчет по аудиту действий №064,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,b58e5fcb-6402-48cd-a3d8-e87481c1858e,Инструкция пользователя VaultDoc №063,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,21495084-6688-4785-96b1-f49b3b398b08,Политика разграничения доступа №062,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,71900376-c7f7-4441-9b5c-40c7027da3ea,Регламент обработки документов №061,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,c597def1-10aa-48e7-a929-fd864a9acd64,Тестовый документ файлового архива №060,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,58a7eb51-e0e8-47c6-bd5e-8eda0ddc28a2,Материалы обучения пользователей №059,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,06580d80-e811-4422-b79d-9e007d15b93a,Описание модели ролей №058,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,dc46d28d-00bb-468f-becd-d8ee65803df8,План проверки отказоустойчивости №057,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,c937e301-1875-47e5-ba85-32bd339f629c,Инструкция администратора №056,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,9aa2eabb-f188-4c5f-ace8-574e42f07041,Реестр внутренних документов №055,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,5aa52832-039b-4339-94ca-4ba7ae0baa6a,Описание сценариев тестирования №054,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,448c2bb9-bf58-4dd8-8e3c-b0e7b71f3ad6,Отчет о проверке прав доступа №053,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,20ff555d-f0f5-46ff-a34e-ad8d9a649da1,Памятка сотрудника №052,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,1159a339-6a57-4191-ab3a-4df35c4e40ad,Положение о хранении документов №051,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,e90cc335-8523-4292-a9cf-7f79ed6b73bf,Служебная записка по безопасности №050,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,02c162a3-8ab7-4722-b164-bf6455d7bd1a,Акт проверки документа №049,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,a69abfb3-cbef-44bc-994b-eed930aa5444,Заявка на предоставление доступа №048,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,a8ffe71b-9e77-435c-8d18-a5062784e243,Инструкция по загрузке файлов №047,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,602f96f5-5973-4e35-b224-842f54cfa727,Описание архитектуры frontend №046,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,9fe0c081-e890-4787-b354-d72e2abbef13,Описание архитектуры backend №045,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,2c899152-53f9-4d37-b7a2-95294e39f89d,Отчет по аудиту действий №044,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,9d65cb23-7f54-4170-8eea-c2ed5579a230,Инструкция пользователя VaultDoc №043,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,6d7f6887-c69d-45d5-a693-3647dd59b3be,Политика разграничения доступа №042,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,11f0857b-8e5e-4224-80c6-a2127119f6ed,Регламент обработки документов №041,True,True,200,True
+sergey.orlov@vaultdoc.ru,employee,document,d244db1e-c446-4e71-9baa-ce4fe52cd76f,Тестовый документ файлового архива №040,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,b28236d1-7afe-4ac7-a3a6-d2bb71b94359,Материалы обучения пользователей №039,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,d9f2061a-f009-40fd-ac02-92f909dbc396,Описание модели ролей №038,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,f49c2a88-a5a9-4cfc-8999-43dfc723fb28,План проверки отказоустойчивости №037,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,5aa96b70-37ab-48d5-8bdd-efe2aa07491e,Инструкция администратора №036,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,dba73c4a-26c6-4632-b61e-2bafb95f3720,Реестр внутренних документов №035,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,03e966d3-2f27-42be-b542-9da182cb3b75,Описание сценариев тестирования №034,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,08c97083-3df0-4fe4-8ab0-85bce6a95257,Отчет о проверке прав доступа №033,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,ee97dd05-5b91-4827-999b-1014720425b5,Памятка сотрудника №032,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,ede9347f-f3ac-48a2-b6f0-59572d730d5c,Положение о хранении документов №031,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,853400d4-a7fc-4e9d-88eb-2bd8257d1d57,Служебная записка по безопасности №030,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,456250c8-f9d1-43c9-a065-dfad5dca5942,Акт проверки документа №029,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,3def2506-1d9b-4aee-bf87-6d7187d60d31,Заявка на предоставление доступа №028,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,d486792d-9acd-465f-b3f0-d0a699d1f327,Инструкция по загрузке файлов №027,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,76bafdd8-ab4d-4a05-8ad0-ddb85df550fa,Описание архитектуры frontend №026,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,33d530de-d59e-4b9b-8657-5983b9fa6ad6,Описание архитектуры backend №025,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,947d0ee6-7d5b-414c-8a64-71b0b6619e83,Отчет по аудиту действий №024,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,ac35a164-6d40-4624-b579-10e43979ffce,Инструкция пользователя VaultDoc №023,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,41d4a898-98c0-4cd6-821a-35708082e1d4,Политика разграничения доступа №022,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,c626bed3-ede0-4f30-aaac-06ae8989047c,Регламент обработки документов №021,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,adafd09e-8891-4b76-a5c8-76f3f87d1827,Тестовый документ файлового архива №020,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,50768829-5b93-4e35-a516-ae7b6c534269,Материалы обучения пользователей №019,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,5ce14512-5e1f-4015-a5f5-0a82f52f2b1f,Описание модели ролей №018,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,6c2ca964-78c4-4713-bcf6-e5f98678d850,План проверки отказоустойчивости №017,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,f570c098-a2ab-4dbd-b5c5-08b00d09ee0e,Инструкция администратора №016,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,4cf8924b-25eb-4404-aebb-cac82ae02716,Реестр внутренних документов №015,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,3bba2a2c-0e03-42d9-b1a5-17d5d66e6ed1,Описание сценариев тестирования №014,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,fe87ce54-63dd-4267-a0ae-55ba6d81e7b9,Отчет о проверке прав доступа №013,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,7a6f41df-a025-44e8-9df6-c7803c7f1f4c,Памятка сотрудника №012,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,374d2041-0c29-40e0-9d89-36845317b887,Положение о хранении документов №011,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,a96f417c-6b3b-4d12-a642-0e1312c4314d,Служебная записка по безопасности №010,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,7f4cfb41-5a04-44ea-93bb-07cf45f23d68,Акт проверки документа №009,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,3771a37e-b998-4c93-af3f-b518361fc4ae,Заявка на предоставление доступа №008,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,4f1c9271-006b-4be0-94f5-7225ca28c860,Инструкция по загрузке файлов №007,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,c81fb5b5-02c2-413b-bd54-771beb2b8f6d,Описание архитектуры frontend №006,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,cf25c8fb-cc5d-4893-ab71-05b3c8776989,Описание архитектуры backend №005,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,d3e8cb1e-7955-4520-aad5-346a871c82bc,Отчет по аудиту действий №004,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,a443d04d-6990-4614-916f-b7f4b47947f3,Инструкция пользователя VaultDoc №003,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,17c57ae8-6891-4e6a-b740-f6220d1067df,Политика разграничения доступа №002,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,ea5e2ab0-b805-4253-8119-71b70043b5f5,Регламент обработки документов №001,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,c99629c0-be8e-4b11-9aaf-c1eb35401773,Описание архитектуры backend №005,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,4664239e-b9f8-4d91-b6e6-83cc4e06b4ea,Отчет по аудиту действий №004,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,5b33daf5-0d03-44f0-8355-9d252de2fa7a,Инструкция пользователя VaultDoc №003,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,775349b5-2f9e-4a34-a789-17e0a0c6f0ca,Политика разграничения доступа №002,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,f267bd24-63fd-4a32-8a8d-a070f928ffeb,Регламент обработки документов №001,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,6c60a21b-10cd-4d2b-bd6b-85748e57fa2c,Политика разграничения доступа №002,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,dd547473-2f2b-4cd1-9d68-500c8535d132,Регламент обработки документов №001,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,b51b999a-6f06-4d4c-84ad-43f294e02e32,<img src=x onerror=alert(1)>.pdf,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,53383ab7-a60d-4951-99e9-ae249d69ffdd,<script>alert(1)</script>,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,d02280c6-05c3-4a50-9787-208b9ce8e61a,idor-document-20260504224917,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,8d7e627d-32cb-4638-94dc-660bc2872435,idor-document-20260504224540,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,c5937f21-fbb8-4565-8a35-948fefb56843,idor-document-20260504224214,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,e09ce25f-75a4-401c-bd6d-85b180d8c09c,idor-document-20260504223755,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,0679ba62-c132-4e70-94c2-bda40c214626,idor-document-20260504221729,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,4bd9e39f-b74b-411f-9be8-3fb335ef32c5,idor-document-20260504221334,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,a77ac14b-6895-4788-a0d7-5f46bc91283a,Главное,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,12ce81ee-760d-45ad-b714-888220ac3019,ДокХранилище_документация,False,False,403,True
+sergey.orlov@vaultdoc.ru,employee,document,5a9a9e04-c543-486a-ba34-5ee121e1f242,Отчет_январь,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,3dc09d34-18b6-4792-8723-fcc6629e1ce3,idor-document-20260512202141,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,9687d2de-3bd3-45fa-bfba-0e9f40037875,Тестовый документ файлового архива №100,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,4f0535f2-5153-4d7c-84c8-317cc06b1b30,Материалы обучения пользователей №099,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,2f23219b-c753-47b7-b16c-d694bc9c3855,Описание модели ролей №098,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,039c7a32-e149-4af6-8170-00198f1613cd,План проверки отказоустойчивости №097,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,69662d82-40cc-4531-9b56-2683cdf23fff,Инструкция администратора №096,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,8a4073f2-b53f-4151-b613-f5224fab9219,Реестр внутренних документов №095,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,8cd85ef9-80f3-42cf-b1dc-995a937d6aca,Описание сценариев тестирования №094,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,22bdede0-9a59-414a-a465-95cd80ac03d6,Отчет о проверке прав доступа №093,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,d6b39940-cef1-4d50-9b7c-198d9fcfc44b,Памятка сотрудника №092,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,aee2acb6-466a-46a1-a1eb-f90bac6b7d8c,Положение о хранении документов №091,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,b7d9766f-10b2-4f5f-a4c6-26716fa0329a,Служебная записка по безопасности №090,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,d66ea33b-ffa3-4b92-97c9-b5b260f8160b,Акт проверки документа №089,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,e85b7843-0bbf-456f-91c0-b896bdf79646,Заявка на предоставление доступа №088,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,db5eece1-ea4b-4f35-8cd6-32897731484a,Инструкция по загрузке файлов №087,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,a4249078-2a2a-4297-9bd9-561a6c513543,Описание архитектуры frontend №086,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,c8a49fd6-18c1-45b8-a151-1284acc289b7,Описание архитектуры backend №085,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,1785bd8b-c45a-406c-b878-b7d3dd8c391b,Отчет по аудиту действий №084,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,c030c6ea-e2a4-4fdd-a66d-ac63c5f251d9,Инструкция пользователя VaultDoc №083,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,62bcc90a-2d57-4224-80c2-86b1f4265525,Политика разграничения доступа №082,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,2e348972-d407-4752-81dd-29e2803298d1,Регламент обработки документов №081,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,b42a9fa7-8160-4621-bd68-6d29a375b223,Тестовый документ файлового архива №080,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,6edd6404-6f62-4b0c-a9d6-a08f3f764383,Материалы обучения пользователей №079,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,b33d4904-8933-447a-98b7-48e4de643f77,Описание модели ролей №078,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,2345c80f-a281-4c6c-85ab-996032e56b73,План проверки отказоустойчивости №077,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,431a1959-6bc4-4cf8-8464-f895d4e59a64,Инструкция администратора №076,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,e781e460-24d1-4949-965c-d921b869005c,Реестр внутренних документов №075,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,7b668650-689f-40be-ac22-a9d091532345,Описание сценариев тестирования №074,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,e77e1d9d-48c0-461c-8a09-144034a4d896,Отчет о проверке прав доступа №073,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,5f533525-78ae-4904-8489-b38730bdaafa,Памятка сотрудника №072,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,ee977596-e5eb-4b8c-b6a3-d6d7a93a79f6,Положение о хранении документов №071,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,07f1e46f-5d2d-482f-a412-b0f717cc9cfa,Служебная записка по безопасности №070,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,8aafcd59-f8ff-4487-a421-5fc3acf85aaf,Акт проверки документа №069,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,a928270a-20a2-48c5-8682-88cdcf98fc0f,Заявка на предоставление доступа №068,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,20e2c8a5-e67d-46cb-bc88-08b5eb21d625,Инструкция по загрузке файлов №067,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,c7eb0f70-ffd2-49f1-ba5a-0a5885e2a09b,Описание архитектуры frontend №066,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,bebb5bc2-32b0-4f86-8668-2c0196b16876,Описание архитектуры backend №065,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,7c99055f-80c8-427a-bd22-496d1c6f016f,Отчет по аудиту действий №064,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,b58e5fcb-6402-48cd-a3d8-e87481c1858e,Инструкция пользователя VaultDoc №063,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,21495084-6688-4785-96b1-f49b3b398b08,Политика разграничения доступа №062,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,71900376-c7f7-4441-9b5c-40c7027da3ea,Регламент обработки документов №061,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,c597def1-10aa-48e7-a929-fd864a9acd64,Тестовый документ файлового архива №060,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,58a7eb51-e0e8-47c6-bd5e-8eda0ddc28a2,Материалы обучения пользователей №059,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,06580d80-e811-4422-b79d-9e007d15b93a,Описание модели ролей №058,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,dc46d28d-00bb-468f-becd-d8ee65803df8,План проверки отказоустойчивости №057,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,c937e301-1875-47e5-ba85-32bd339f629c,Инструкция администратора №056,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,9aa2eabb-f188-4c5f-ace8-574e42f07041,Реестр внутренних документов №055,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,5aa52832-039b-4339-94ca-4ba7ae0baa6a,Описание сценариев тестирования №054,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,448c2bb9-bf58-4dd8-8e3c-b0e7b71f3ad6,Отчет о проверке прав доступа №053,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,20ff555d-f0f5-46ff-a34e-ad8d9a649da1,Памятка сотрудника №052,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,1159a339-6a57-4191-ab3a-4df35c4e40ad,Положение о хранении документов №051,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,e90cc335-8523-4292-a9cf-7f79ed6b73bf,Служебная записка по безопасности №050,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,02c162a3-8ab7-4722-b164-bf6455d7bd1a,Акт проверки документа №049,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,a69abfb3-cbef-44bc-994b-eed930aa5444,Заявка на предоставление доступа №048,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,a8ffe71b-9e77-435c-8d18-a5062784e243,Инструкция по загрузке файлов №047,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,602f96f5-5973-4e35-b224-842f54cfa727,Описание архитектуры frontend №046,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,9fe0c081-e890-4787-b354-d72e2abbef13,Описание архитектуры backend №045,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,2c899152-53f9-4d37-b7a2-95294e39f89d,Отчет по аудиту действий №044,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,9d65cb23-7f54-4170-8eea-c2ed5579a230,Инструкция пользователя VaultDoc №043,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,6d7f6887-c69d-45d5-a693-3647dd59b3be,Политика разграничения доступа №042,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,11f0857b-8e5e-4224-80c6-a2127119f6ed,Регламент обработки документов №041,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,d244db1e-c446-4e71-9baa-ce4fe52cd76f,Тестовый документ файлового архива №040,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,b28236d1-7afe-4ac7-a3a6-d2bb71b94359,Материалы обучения пользователей №039,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,d9f2061a-f009-40fd-ac02-92f909dbc396,Описание модели ролей №038,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,f49c2a88-a5a9-4cfc-8999-43dfc723fb28,План проверки отказоустойчивости №037,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,5aa96b70-37ab-48d5-8bdd-efe2aa07491e,Инструкция администратора №036,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,dba73c4a-26c6-4632-b61e-2bafb95f3720,Реестр внутренних документов №035,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,03e966d3-2f27-42be-b542-9da182cb3b75,Описание сценариев тестирования №034,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,08c97083-3df0-4fe4-8ab0-85bce6a95257,Отчет о проверке прав доступа №033,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,ee97dd05-5b91-4827-999b-1014720425b5,Памятка сотрудника №032,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,ede9347f-f3ac-48a2-b6f0-59572d730d5c,Положение о хранении документов №031,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,853400d4-a7fc-4e9d-88eb-2bd8257d1d57,Служебная записка по безопасности №030,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,456250c8-f9d1-43c9-a065-dfad5dca5942,Акт проверки документа №029,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,3def2506-1d9b-4aee-bf87-6d7187d60d31,Заявка на предоставление доступа №028,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,d486792d-9acd-465f-b3f0-d0a699d1f327,Инструкция по загрузке файлов №027,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,76bafdd8-ab4d-4a05-8ad0-ddb85df550fa,Описание архитектуры frontend №026,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,33d530de-d59e-4b9b-8657-5983b9fa6ad6,Описание архитектуры backend №025,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,947d0ee6-7d5b-414c-8a64-71b0b6619e83,Отчет по аудиту действий №024,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,ac35a164-6d40-4624-b579-10e43979ffce,Инструкция пользователя VaultDoc №023,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,41d4a898-98c0-4cd6-821a-35708082e1d4,Политика разграничения доступа №022,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,c626bed3-ede0-4f30-aaac-06ae8989047c,Регламент обработки документов №021,True,True,200,True
+maria.fedorova@vaultdoc.ru,employee,document,adafd09e-8891-4b76-a5c8-76f3f87d1827,Тестовый документ файлового архива №020,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,50768829-5b93-4e35-a516-ae7b6c534269,Материалы обучения пользователей №019,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,5ce14512-5e1f-4015-a5f5-0a82f52f2b1f,Описание модели ролей №018,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,6c2ca964-78c4-4713-bcf6-e5f98678d850,План проверки отказоустойчивости №017,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,f570c098-a2ab-4dbd-b5c5-08b00d09ee0e,Инструкция администратора №016,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,4cf8924b-25eb-4404-aebb-cac82ae02716,Реестр внутренних документов №015,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,3bba2a2c-0e03-42d9-b1a5-17d5d66e6ed1,Описание сценариев тестирования №014,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,fe87ce54-63dd-4267-a0ae-55ba6d81e7b9,Отчет о проверке прав доступа №013,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,7a6f41df-a025-44e8-9df6-c7803c7f1f4c,Памятка сотрудника №012,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,374d2041-0c29-40e0-9d89-36845317b887,Положение о хранении документов №011,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,a96f417c-6b3b-4d12-a642-0e1312c4314d,Служебная записка по безопасности №010,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,7f4cfb41-5a04-44ea-93bb-07cf45f23d68,Акт проверки документа №009,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,3771a37e-b998-4c93-af3f-b518361fc4ae,Заявка на предоставление доступа №008,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,4f1c9271-006b-4be0-94f5-7225ca28c860,Инструкция по загрузке файлов №007,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,c81fb5b5-02c2-413b-bd54-771beb2b8f6d,Описание архитектуры frontend №006,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,cf25c8fb-cc5d-4893-ab71-05b3c8776989,Описание архитектуры backend №005,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,d3e8cb1e-7955-4520-aad5-346a871c82bc,Отчет по аудиту действий №004,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,a443d04d-6990-4614-916f-b7f4b47947f3,Инструкция пользователя VaultDoc №003,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,17c57ae8-6891-4e6a-b740-f6220d1067df,Политика разграничения доступа №002,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,ea5e2ab0-b805-4253-8119-71b70043b5f5,Регламент обработки документов №001,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,c99629c0-be8e-4b11-9aaf-c1eb35401773,Описание архитектуры backend №005,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,4664239e-b9f8-4d91-b6e6-83cc4e06b4ea,Отчет по аудиту действий №004,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,5b33daf5-0d03-44f0-8355-9d252de2fa7a,Инструкция пользователя VaultDoc №003,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,775349b5-2f9e-4a34-a789-17e0a0c6f0ca,Политика разграничения доступа №002,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,f267bd24-63fd-4a32-8a8d-a070f928ffeb,Регламент обработки документов №001,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,6c60a21b-10cd-4d2b-bd6b-85748e57fa2c,Политика разграничения доступа №002,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,dd547473-2f2b-4cd1-9d68-500c8535d132,Регламент обработки документов №001,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,b51b999a-6f06-4d4c-84ad-43f294e02e32,<img src=x onerror=alert(1)>.pdf,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,53383ab7-a60d-4951-99e9-ae249d69ffdd,<script>alert(1)</script>,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,d02280c6-05c3-4a50-9787-208b9ce8e61a,idor-document-20260504224917,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,8d7e627d-32cb-4638-94dc-660bc2872435,idor-document-20260504224540,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,c5937f21-fbb8-4565-8a35-948fefb56843,idor-document-20260504224214,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,e09ce25f-75a4-401c-bd6d-85b180d8c09c,idor-document-20260504223755,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,0679ba62-c132-4e70-94c2-bda40c214626,idor-document-20260504221729,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,4bd9e39f-b74b-411f-9be8-3fb335ef32c5,idor-document-20260504221334,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,a77ac14b-6895-4788-a0d7-5f46bc91283a,Главное,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,12ce81ee-760d-45ad-b714-888220ac3019,ДокХранилище_документация,False,False,403,True
+maria.fedorova@vaultdoc.ru,employee,document,5a9a9e04-c543-486a-ba34-5ee121e1f242,Отчет_январь,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,3dc09d34-18b6-4792-8723-fcc6629e1ce3,idor-document-20260512202141,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,9687d2de-3bd3-45fa-bfba-0e9f40037875,Тестовый документ файлового архива №100,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,4f0535f2-5153-4d7c-84c8-317cc06b1b30,Материалы обучения пользователей №099,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,2f23219b-c753-47b7-b16c-d694bc9c3855,Описание модели ролей №098,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,039c7a32-e149-4af6-8170-00198f1613cd,План проверки отказоустойчивости №097,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,69662d82-40cc-4531-9b56-2683cdf23fff,Инструкция администратора №096,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,8a4073f2-b53f-4151-b613-f5224fab9219,Реестр внутренних документов №095,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,8cd85ef9-80f3-42cf-b1dc-995a937d6aca,Описание сценариев тестирования №094,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,22bdede0-9a59-414a-a465-95cd80ac03d6,Отчет о проверке прав доступа №093,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,d6b39940-cef1-4d50-9b7c-198d9fcfc44b,Памятка сотрудника №092,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,aee2acb6-466a-46a1-a1eb-f90bac6b7d8c,Положение о хранении документов №091,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,b7d9766f-10b2-4f5f-a4c6-26716fa0329a,Служебная записка по безопасности №090,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,d66ea33b-ffa3-4b92-97c9-b5b260f8160b,Акт проверки документа №089,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,e85b7843-0bbf-456f-91c0-b896bdf79646,Заявка на предоставление доступа №088,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,db5eece1-ea4b-4f35-8cd6-32897731484a,Инструкция по загрузке файлов №087,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,a4249078-2a2a-4297-9bd9-561a6c513543,Описание архитектуры frontend №086,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,c8a49fd6-18c1-45b8-a151-1284acc289b7,Описание архитектуры backend №085,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,1785bd8b-c45a-406c-b878-b7d3dd8c391b,Отчет по аудиту действий №084,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,c030c6ea-e2a4-4fdd-a66d-ac63c5f251d9,Инструкция пользователя VaultDoc №083,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,62bcc90a-2d57-4224-80c2-86b1f4265525,Политика разграничения доступа №082,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,2e348972-d407-4752-81dd-29e2803298d1,Регламент обработки документов №081,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,b42a9fa7-8160-4621-bd68-6d29a375b223,Тестовый документ файлового архива №080,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,6edd6404-6f62-4b0c-a9d6-a08f3f764383,Материалы обучения пользователей №079,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,b33d4904-8933-447a-98b7-48e4de643f77,Описание модели ролей №078,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,2345c80f-a281-4c6c-85ab-996032e56b73,План проверки отказоустойчивости №077,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,431a1959-6bc4-4cf8-8464-f895d4e59a64,Инструкция администратора №076,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,e781e460-24d1-4949-965c-d921b869005c,Реестр внутренних документов №075,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,7b668650-689f-40be-ac22-a9d091532345,Описание сценариев тестирования №074,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,e77e1d9d-48c0-461c-8a09-144034a4d896,Отчет о проверке прав доступа №073,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,5f533525-78ae-4904-8489-b38730bdaafa,Памятка сотрудника №072,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,ee977596-e5eb-4b8c-b6a3-d6d7a93a79f6,Положение о хранении документов №071,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,07f1e46f-5d2d-482f-a412-b0f717cc9cfa,Служебная записка по безопасности №070,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,8aafcd59-f8ff-4487-a421-5fc3acf85aaf,Акт проверки документа №069,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,a928270a-20a2-48c5-8682-88cdcf98fc0f,Заявка на предоставление доступа №068,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,20e2c8a5-e67d-46cb-bc88-08b5eb21d625,Инструкция по загрузке файлов №067,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,c7eb0f70-ffd2-49f1-ba5a-0a5885e2a09b,Описание архитектуры frontend №066,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,bebb5bc2-32b0-4f86-8668-2c0196b16876,Описание архитектуры backend №065,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,7c99055f-80c8-427a-bd22-496d1c6f016f,Отчет по аудиту действий №064,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,b58e5fcb-6402-48cd-a3d8-e87481c1858e,Инструкция пользователя VaultDoc №063,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,21495084-6688-4785-96b1-f49b3b398b08,Политика разграничения доступа №062,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,71900376-c7f7-4441-9b5c-40c7027da3ea,Регламент обработки документов №061,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,c597def1-10aa-48e7-a929-fd864a9acd64,Тестовый документ файлового архива №060,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,58a7eb51-e0e8-47c6-bd5e-8eda0ddc28a2,Материалы обучения пользователей №059,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,06580d80-e811-4422-b79d-9e007d15b93a,Описание модели ролей №058,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,dc46d28d-00bb-468f-becd-d8ee65803df8,План проверки отказоустойчивости №057,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,c937e301-1875-47e5-ba85-32bd339f629c,Инструкция администратора №056,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,9aa2eabb-f188-4c5f-ace8-574e42f07041,Реестр внутренних документов №055,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,5aa52832-039b-4339-94ca-4ba7ae0baa6a,Описание сценариев тестирования №054,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,448c2bb9-bf58-4dd8-8e3c-b0e7b71f3ad6,Отчет о проверке прав доступа №053,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,20ff555d-f0f5-46ff-a34e-ad8d9a649da1,Памятка сотрудника №052,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,1159a339-6a57-4191-ab3a-4df35c4e40ad,Положение о хранении документов №051,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,e90cc335-8523-4292-a9cf-7f79ed6b73bf,Служебная записка по безопасности №050,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,02c162a3-8ab7-4722-b164-bf6455d7bd1a,Акт проверки документа №049,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,a69abfb3-cbef-44bc-994b-eed930aa5444,Заявка на предоставление доступа №048,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,a8ffe71b-9e77-435c-8d18-a5062784e243,Инструкция по загрузке файлов №047,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,602f96f5-5973-4e35-b224-842f54cfa727,Описание архитектуры frontend №046,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,9fe0c081-e890-4787-b354-d72e2abbef13,Описание архитектуры backend №045,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,2c899152-53f9-4d37-b7a2-95294e39f89d,Отчет по аудиту действий №044,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,9d65cb23-7f54-4170-8eea-c2ed5579a230,Инструкция пользователя VaultDoc №043,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,6d7f6887-c69d-45d5-a693-3647dd59b3be,Политика разграничения доступа №042,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,11f0857b-8e5e-4224-80c6-a2127119f6ed,Регламент обработки документов №041,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,d244db1e-c446-4e71-9baa-ce4fe52cd76f,Тестовый документ файлового архива №040,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,b28236d1-7afe-4ac7-a3a6-d2bb71b94359,Материалы обучения пользователей №039,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,d9f2061a-f009-40fd-ac02-92f909dbc396,Описание модели ролей №038,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,f49c2a88-a5a9-4cfc-8999-43dfc723fb28,План проверки отказоустойчивости №037,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,5aa96b70-37ab-48d5-8bdd-efe2aa07491e,Инструкция администратора №036,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,dba73c4a-26c6-4632-b61e-2bafb95f3720,Реестр внутренних документов №035,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,03e966d3-2f27-42be-b542-9da182cb3b75,Описание сценариев тестирования №034,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,08c97083-3df0-4fe4-8ab0-85bce6a95257,Отчет о проверке прав доступа №033,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,ee97dd05-5b91-4827-999b-1014720425b5,Памятка сотрудника №032,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,ede9347f-f3ac-48a2-b6f0-59572d730d5c,Положение о хранении документов №031,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,853400d4-a7fc-4e9d-88eb-2bd8257d1d57,Служебная записка по безопасности №030,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,456250c8-f9d1-43c9-a065-dfad5dca5942,Акт проверки документа №029,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,3def2506-1d9b-4aee-bf87-6d7187d60d31,Заявка на предоставление доступа №028,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,d486792d-9acd-465f-b3f0-d0a699d1f327,Инструкция по загрузке файлов №027,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,76bafdd8-ab4d-4a05-8ad0-ddb85df550fa,Описание архитектуры frontend №026,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,33d530de-d59e-4b9b-8657-5983b9fa6ad6,Описание архитектуры backend №025,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,947d0ee6-7d5b-414c-8a64-71b0b6619e83,Отчет по аудиту действий №024,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,ac35a164-6d40-4624-b579-10e43979ffce,Инструкция пользователя VaultDoc №023,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,41d4a898-98c0-4cd6-821a-35708082e1d4,Политика разграничения доступа №022,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,c626bed3-ede0-4f30-aaac-06ae8989047c,Регламент обработки документов №021,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,adafd09e-8891-4b76-a5c8-76f3f87d1827,Тестовый документ файлового архива №020,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,50768829-5b93-4e35-a516-ae7b6c534269,Материалы обучения пользователей №019,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,5ce14512-5e1f-4015-a5f5-0a82f52f2b1f,Описание модели ролей №018,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,6c2ca964-78c4-4713-bcf6-e5f98678d850,План проверки отказоустойчивости №017,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,f570c098-a2ab-4dbd-b5c5-08b00d09ee0e,Инструкция администратора №016,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,4cf8924b-25eb-4404-aebb-cac82ae02716,Реестр внутренних документов №015,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,3bba2a2c-0e03-42d9-b1a5-17d5d66e6ed1,Описание сценариев тестирования №014,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,fe87ce54-63dd-4267-a0ae-55ba6d81e7b9,Отчет о проверке прав доступа №013,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,7a6f41df-a025-44e8-9df6-c7803c7f1f4c,Памятка сотрудника №012,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,374d2041-0c29-40e0-9d89-36845317b887,Положение о хранении документов №011,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,a96f417c-6b3b-4d12-a642-0e1312c4314d,Служебная записка по безопасности №010,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,7f4cfb41-5a04-44ea-93bb-07cf45f23d68,Акт проверки документа №009,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,3771a37e-b998-4c93-af3f-b518361fc4ae,Заявка на предоставление доступа №008,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,4f1c9271-006b-4be0-94f5-7225ca28c860,Инструкция по загрузке файлов №007,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,c81fb5b5-02c2-413b-bd54-771beb2b8f6d,Описание архитектуры frontend №006,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,cf25c8fb-cc5d-4893-ab71-05b3c8776989,Описание архитектуры backend №005,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,d3e8cb1e-7955-4520-aad5-346a871c82bc,Отчет по аудиту действий №004,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,a443d04d-6990-4614-916f-b7f4b47947f3,Инструкция пользователя VaultDoc №003,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,17c57ae8-6891-4e6a-b740-f6220d1067df,Политика разграничения доступа №002,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,ea5e2ab0-b805-4253-8119-71b70043b5f5,Регламент обработки документов №001,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,c99629c0-be8e-4b11-9aaf-c1eb35401773,Описание архитектуры backend №005,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,4664239e-b9f8-4d91-b6e6-83cc4e06b4ea,Отчет по аудиту действий №004,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,5b33daf5-0d03-44f0-8355-9d252de2fa7a,Инструкция пользователя VaultDoc №003,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,775349b5-2f9e-4a34-a789-17e0a0c6f0ca,Политика разграничения доступа №002,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,f267bd24-63fd-4a32-8a8d-a070f928ffeb,Регламент обработки документов №001,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,6c60a21b-10cd-4d2b-bd6b-85748e57fa2c,Политика разграничения доступа №002,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,dd547473-2f2b-4cd1-9d68-500c8535d132,Регламент обработки документов №001,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,b51b999a-6f06-4d4c-84ad-43f294e02e32,<img src=x onerror=alert(1)>.pdf,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,53383ab7-a60d-4951-99e9-ae249d69ffdd,<script>alert(1)</script>,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,d02280c6-05c3-4a50-9787-208b9ce8e61a,idor-document-20260504224917,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,8d7e627d-32cb-4638-94dc-660bc2872435,idor-document-20260504224540,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,c5937f21-fbb8-4565-8a35-948fefb56843,idor-document-20260504224214,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,e09ce25f-75a4-401c-bd6d-85b180d8c09c,idor-document-20260504223755,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,0679ba62-c132-4e70-94c2-bda40c214626,idor-document-20260504221729,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,4bd9e39f-b74b-411f-9be8-3fb335ef32c5,idor-document-20260504221334,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,a77ac14b-6895-4788-a0d7-5f46bc91283a,Главное,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,12ce81ee-760d-45ad-b714-888220ac3019,ДокХранилище_документация,False,False,403,True
+alexey.novikov@vaultdoc.ru,developer,document,5a9a9e04-c543-486a-ba34-5ee121e1f242,Отчет_январь,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,3dc09d34-18b6-4792-8723-fcc6629e1ce3,idor-document-20260512202141,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,9687d2de-3bd3-45fa-bfba-0e9f40037875,Тестовый документ файлового архива №100,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,4f0535f2-5153-4d7c-84c8-317cc06b1b30,Материалы обучения пользователей №099,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,2f23219b-c753-47b7-b16c-d694bc9c3855,Описание модели ролей №098,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,039c7a32-e149-4af6-8170-00198f1613cd,План проверки отказоустойчивости №097,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,69662d82-40cc-4531-9b56-2683cdf23fff,Инструкция администратора №096,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,8a4073f2-b53f-4151-b613-f5224fab9219,Реестр внутренних документов №095,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,8cd85ef9-80f3-42cf-b1dc-995a937d6aca,Описание сценариев тестирования №094,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,22bdede0-9a59-414a-a465-95cd80ac03d6,Отчет о проверке прав доступа №093,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,d6b39940-cef1-4d50-9b7c-198d9fcfc44b,Памятка сотрудника №092,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,aee2acb6-466a-46a1-a1eb-f90bac6b7d8c,Положение о хранении документов №091,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,b7d9766f-10b2-4f5f-a4c6-26716fa0329a,Служебная записка по безопасности №090,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,d66ea33b-ffa3-4b92-97c9-b5b260f8160b,Акт проверки документа №089,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,e85b7843-0bbf-456f-91c0-b896bdf79646,Заявка на предоставление доступа №088,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,db5eece1-ea4b-4f35-8cd6-32897731484a,Инструкция по загрузке файлов №087,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,a4249078-2a2a-4297-9bd9-561a6c513543,Описание архитектуры frontend №086,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,c8a49fd6-18c1-45b8-a151-1284acc289b7,Описание архитектуры backend №085,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,1785bd8b-c45a-406c-b878-b7d3dd8c391b,Отчет по аудиту действий №084,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,c030c6ea-e2a4-4fdd-a66d-ac63c5f251d9,Инструкция пользователя VaultDoc №083,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,62bcc90a-2d57-4224-80c2-86b1f4265525,Политика разграничения доступа №082,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,2e348972-d407-4752-81dd-29e2803298d1,Регламент обработки документов №081,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,b42a9fa7-8160-4621-bd68-6d29a375b223,Тестовый документ файлового архива №080,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,6edd6404-6f62-4b0c-a9d6-a08f3f764383,Материалы обучения пользователей №079,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,b33d4904-8933-447a-98b7-48e4de643f77,Описание модели ролей №078,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,2345c80f-a281-4c6c-85ab-996032e56b73,План проверки отказоустойчивости №077,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,431a1959-6bc4-4cf8-8464-f895d4e59a64,Инструкция администратора №076,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,e781e460-24d1-4949-965c-d921b869005c,Реестр внутренних документов №075,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,7b668650-689f-40be-ac22-a9d091532345,Описание сценариев тестирования №074,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,e77e1d9d-48c0-461c-8a09-144034a4d896,Отчет о проверке прав доступа №073,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,5f533525-78ae-4904-8489-b38730bdaafa,Памятка сотрудника №072,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,ee977596-e5eb-4b8c-b6a3-d6d7a93a79f6,Положение о хранении документов №071,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,07f1e46f-5d2d-482f-a412-b0f717cc9cfa,Служебная записка по безопасности №070,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,8aafcd59-f8ff-4487-a421-5fc3acf85aaf,Акт проверки документа №069,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,a928270a-20a2-48c5-8682-88cdcf98fc0f,Заявка на предоставление доступа №068,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,20e2c8a5-e67d-46cb-bc88-08b5eb21d625,Инструкция по загрузке файлов №067,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,c7eb0f70-ffd2-49f1-ba5a-0a5885e2a09b,Описание архитектуры frontend №066,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,bebb5bc2-32b0-4f86-8668-2c0196b16876,Описание архитектуры backend №065,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,7c99055f-80c8-427a-bd22-496d1c6f016f,Отчет по аудиту действий №064,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,b58e5fcb-6402-48cd-a3d8-e87481c1858e,Инструкция пользователя VaultDoc №063,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,21495084-6688-4785-96b1-f49b3b398b08,Политика разграничения доступа №062,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,71900376-c7f7-4441-9b5c-40c7027da3ea,Регламент обработки документов №061,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,c597def1-10aa-48e7-a929-fd864a9acd64,Тестовый документ файлового архива №060,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,58a7eb51-e0e8-47c6-bd5e-8eda0ddc28a2,Материалы обучения пользователей №059,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,06580d80-e811-4422-b79d-9e007d15b93a,Описание модели ролей №058,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,dc46d28d-00bb-468f-becd-d8ee65803df8,План проверки отказоустойчивости №057,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,c937e301-1875-47e5-ba85-32bd339f629c,Инструкция администратора №056,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,9aa2eabb-f188-4c5f-ace8-574e42f07041,Реестр внутренних документов №055,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,5aa52832-039b-4339-94ca-4ba7ae0baa6a,Описание сценариев тестирования №054,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,448c2bb9-bf58-4dd8-8e3c-b0e7b71f3ad6,Отчет о проверке прав доступа №053,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,20ff555d-f0f5-46ff-a34e-ad8d9a649da1,Памятка сотрудника №052,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,1159a339-6a57-4191-ab3a-4df35c4e40ad,Положение о хранении документов №051,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,e90cc335-8523-4292-a9cf-7f79ed6b73bf,Служебная записка по безопасности №050,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,02c162a3-8ab7-4722-b164-bf6455d7bd1a,Акт проверки документа №049,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,a69abfb3-cbef-44bc-994b-eed930aa5444,Заявка на предоставление доступа №048,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,a8ffe71b-9e77-435c-8d18-a5062784e243,Инструкция по загрузке файлов №047,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,602f96f5-5973-4e35-b224-842f54cfa727,Описание архитектуры frontend №046,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,9fe0c081-e890-4787-b354-d72e2abbef13,Описание архитектуры backend №045,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,2c899152-53f9-4d37-b7a2-95294e39f89d,Отчет по аудиту действий №044,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,9d65cb23-7f54-4170-8eea-c2ed5579a230,Инструкция пользователя VaultDoc №043,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,6d7f6887-c69d-45d5-a693-3647dd59b3be,Политика разграничения доступа №042,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,11f0857b-8e5e-4224-80c6-a2127119f6ed,Регламент обработки документов №041,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,d244db1e-c446-4e71-9baa-ce4fe52cd76f,Тестовый документ файлового архива №040,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,b28236d1-7afe-4ac7-a3a6-d2bb71b94359,Материалы обучения пользователей №039,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,d9f2061a-f009-40fd-ac02-92f909dbc396,Описание модели ролей №038,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,f49c2a88-a5a9-4cfc-8999-43dfc723fb28,План проверки отказоустойчивости №037,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,5aa96b70-37ab-48d5-8bdd-efe2aa07491e,Инструкция администратора №036,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,dba73c4a-26c6-4632-b61e-2bafb95f3720,Реестр внутренних документов №035,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,03e966d3-2f27-42be-b542-9da182cb3b75,Описание сценариев тестирования №034,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,08c97083-3df0-4fe4-8ab0-85bce6a95257,Отчет о проверке прав доступа №033,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,ee97dd05-5b91-4827-999b-1014720425b5,Памятка сотрудника №032,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,ede9347f-f3ac-48a2-b6f0-59572d730d5c,Положение о хранении документов №031,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,853400d4-a7fc-4e9d-88eb-2bd8257d1d57,Служебная записка по безопасности №030,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,456250c8-f9d1-43c9-a065-dfad5dca5942,Акт проверки документа №029,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,3def2506-1d9b-4aee-bf87-6d7187d60d31,Заявка на предоставление доступа №028,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,d486792d-9acd-465f-b3f0-d0a699d1f327,Инструкция по загрузке файлов №027,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,76bafdd8-ab4d-4a05-8ad0-ddb85df550fa,Описание архитектуры frontend №026,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,33d530de-d59e-4b9b-8657-5983b9fa6ad6,Описание архитектуры backend №025,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,947d0ee6-7d5b-414c-8a64-71b0b6619e83,Отчет по аудиту действий №024,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,ac35a164-6d40-4624-b579-10e43979ffce,Инструкция пользователя VaultDoc №023,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,41d4a898-98c0-4cd6-821a-35708082e1d4,Политика разграничения доступа №022,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,c626bed3-ede0-4f30-aaac-06ae8989047c,Регламент обработки документов №021,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,adafd09e-8891-4b76-a5c8-76f3f87d1827,Тестовый документ файлового архива №020,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,50768829-5b93-4e35-a516-ae7b6c534269,Материалы обучения пользователей №019,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,5ce14512-5e1f-4015-a5f5-0a82f52f2b1f,Описание модели ролей №018,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,6c2ca964-78c4-4713-bcf6-e5f98678d850,План проверки отказоустойчивости №017,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,f570c098-a2ab-4dbd-b5c5-08b00d09ee0e,Инструкция администратора №016,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,4cf8924b-25eb-4404-aebb-cac82ae02716,Реестр внутренних документов №015,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,3bba2a2c-0e03-42d9-b1a5-17d5d66e6ed1,Описание сценариев тестирования №014,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,fe87ce54-63dd-4267-a0ae-55ba6d81e7b9,Отчет о проверке прав доступа №013,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,7a6f41df-a025-44e8-9df6-c7803c7f1f4c,Памятка сотрудника №012,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,374d2041-0c29-40e0-9d89-36845317b887,Положение о хранении документов №011,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,a96f417c-6b3b-4d12-a642-0e1312c4314d,Служебная записка по безопасности №010,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,7f4cfb41-5a04-44ea-93bb-07cf45f23d68,Акт проверки документа №009,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,3771a37e-b998-4c93-af3f-b518361fc4ae,Заявка на предоставление доступа №008,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,4f1c9271-006b-4be0-94f5-7225ca28c860,Инструкция по загрузке файлов №007,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,c81fb5b5-02c2-413b-bd54-771beb2b8f6d,Описание архитектуры frontend №006,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,cf25c8fb-cc5d-4893-ab71-05b3c8776989,Описание архитектуры backend №005,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,d3e8cb1e-7955-4520-aad5-346a871c82bc,Отчет по аудиту действий №004,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,a443d04d-6990-4614-916f-b7f4b47947f3,Инструкция пользователя VaultDoc №003,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,17c57ae8-6891-4e6a-b740-f6220d1067df,Политика разграничения доступа №002,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,ea5e2ab0-b805-4253-8119-71b70043b5f5,Регламент обработки документов №001,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,c99629c0-be8e-4b11-9aaf-c1eb35401773,Описание архитектуры backend №005,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,4664239e-b9f8-4d91-b6e6-83cc4e06b4ea,Отчет по аудиту действий №004,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,5b33daf5-0d03-44f0-8355-9d252de2fa7a,Инструкция пользователя VaultDoc №003,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,775349b5-2f9e-4a34-a789-17e0a0c6f0ca,Политика разграничения доступа №002,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,f267bd24-63fd-4a32-8a8d-a070f928ffeb,Регламент обработки документов №001,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,6c60a21b-10cd-4d2b-bd6b-85748e57fa2c,Политика разграничения доступа №002,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,dd547473-2f2b-4cd1-9d68-500c8535d132,Регламент обработки документов №001,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,b51b999a-6f06-4d4c-84ad-43f294e02e32,<img src=x onerror=alert(1)>.pdf,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,53383ab7-a60d-4951-99e9-ae249d69ffdd,<script>alert(1)</script>,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,d02280c6-05c3-4a50-9787-208b9ce8e61a,idor-document-20260504224917,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,8d7e627d-32cb-4638-94dc-660bc2872435,idor-document-20260504224540,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,c5937f21-fbb8-4565-8a35-948fefb56843,idor-document-20260504224214,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,e09ce25f-75a4-401c-bd6d-85b180d8c09c,idor-document-20260504223755,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,0679ba62-c132-4e70-94c2-bda40c214626,idor-document-20260504221729,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,4bd9e39f-b74b-411f-9be8-3fb335ef32c5,idor-document-20260504221334,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,a77ac14b-6895-4788-a0d7-5f46bc91283a,Главное,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,12ce81ee-760d-45ad-b714-888220ac3019,ДокХранилище_документация,False,False,403,True
+olga.morozova@vaultdoc.ru,security_admin,document,5a9a9e04-c543-486a-ba34-5ee121e1f242,Отчет_январь,False,False,403,True

@@ -1,0 +1,2780 @@
+{
+  "target": "http://127.0.0.1:8080",
+  "generated_at": "20260507_212054",
+  "users": [
+    {
+      "id": 13,
+      "public_id": "720b1c7c-2302-47e3-88ad-94aa3d55657b",
+      "email": "ivan.petrov@vaultdoc.ru",
+      "full_name": "Иван Петров",
+      "role": "manager",
+      "is_active": true,
+      "created_at": "2026-05-07T18:20:54.984514Z",
+      "updated_at": "2026-05-07T18:20:54.984514Z"
+    },
+    {
+      "id": 14,
+      "public_id": "171dca93-81de-49a4-9e97-bf6c4f0832d3",
+      "email": "anna.smirnova@vaultdoc.ru",
+      "full_name": "Анна Смирнова",
+      "role": "employee",
+      "is_active": true,
+      "created_at": "2026-05-07T18:20:57.760194Z",
+      "updated_at": "2026-05-07T18:20:57.760194Z"
+    },
+    {
+      "id": 15,
+      "public_id": "159a1171-fd20-4b3e-a1a7-2f107d65ef8a",
+      "email": "dmitry.volkov@vaultdoc.ru",
+      "full_name": "Дмитрий Волков",
+      "role": "employee",
+      "is_active": true,
+      "created_at": "2026-05-07T18:21:00.514817Z",
+      "updated_at": "2026-05-07T18:21:00.514817Z"
+    },
+    {
+      "id": 16,
+      "public_id": "08d8ba25-6b36-496d-ad5a-85714917cba4",
+      "email": "elena.kuznetsova@vaultdoc.ru",
+      "full_name": "Елена Кузнецова",
+      "role": "employee",
+      "is_active": true,
+      "created_at": "2026-05-07T18:21:03.268119Z",
+      "updated_at": "2026-05-07T18:21:03.268119Z"
+    },
+    {
+      "id": 17,
+      "public_id": "d8836e23-67c3-48c4-b019-259f14507644",
+      "email": "sergey.orlov@vaultdoc.ru",
+      "full_name": "Сергей Орлов",
+      "role": "employee",
+      "is_active": true,
+      "created_at": "2026-05-07T18:21:06.024650Z",
+      "updated_at": "2026-05-07T18:21:06.024650Z"
+    },
+    {
+      "id": 18,
+      "public_id": "0b34bd4c-2265-444a-af07-6b3dfe573b87",
+      "email": "maria.fedorova@vaultdoc.ru",
+      "full_name": "Мария Фёдорова",
+      "role": "employee",
+      "is_active": true,
+      "created_at": "2026-05-07T18:21:08.775473Z",
+      "updated_at": "2026-05-07T18:21:08.775473Z"
+    },
+    {
+      "id": 19,
+      "public_id": "d3697d53-f6bc-4ee9-8b03-29b540e56385",
+      "email": "alexey.novikov@vaultdoc.ru",
+      "full_name": "Алексей Новиков",
+      "role": "developer",
+      "is_active": true,
+      "created_at": "2026-05-07T18:21:11.533824Z",
+      "updated_at": "2026-05-07T18:21:11.533824Z"
+    },
+    {
+      "id": 20,
+      "public_id": "dd12573f-c167-4ec2-8cb2-58d171d92045",
+      "email": "olga.morozova@vaultdoc.ru",
+      "full_name": "Ольга Морозова",
+      "role": "security_admin",
+      "is_active": true,
+      "created_at": "2026-05-07T18:21:14.300337Z",
+      "updated_at": "2026-05-07T18:21:14.300337Z"
+    }
+  ],
+  "folders_total": 33,
+  "documents_total": 118,
+  "folder_permissions": [
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "folder": "20_Тестовые_материалы",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "folder_id": 40,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:17.092635Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "folder": "19_Обучение",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "folder_id": 39,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:19.622585Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "folder": "18_Шаблоны",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "folder_id": 38,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:22.143567Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "folder": "17_Внутренние_приказы",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "folder_id": 37,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:24.666282Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "folder": "15_Аудит",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "folder_id": 36,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:27.189439Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "folder": "14_Инфраструктура",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "folder_id": 35,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:29.712453Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "folder": "13_Разработка",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "folder_id": 34,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:32.234273Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "folder": "12_Финансы",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "folder_id": 33,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:34.754992Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "folder": "20_Тестовые_материалы",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "folder_id": 40,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:27.721745Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "folder": "19_Обучение",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "folder_id": 39,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:30.242590Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "folder": "18_Шаблоны",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "folder_id": 38,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:32.765474Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "folder": "17_Внутренние_приказы",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "folder_id": 37,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:35.287930Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "folder": "15_Аудит",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "folder_id": 36,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:15.633198Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "folder": "14_Инфраструктура",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "folder_id": 35,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:18.154409Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "folder": "13_Разработка",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "folder_id": 34,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:20.677342Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "folder": "12_Финансы",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "folder_id": 33,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:23.198000Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "folder": "11_HR",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "folder_id": 32,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:03.562645Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "folder": "10_Служебные_записки",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "folder_id": 31,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:06.089344Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "folder": "09_Заявки",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "folder_id": 30,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:08.613119Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "folder": "16_Архив",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "folder_id": 29,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:11.137146Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "folder": "08_Акты",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "folder_id": 28,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:51.528599Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "folder": "07_Договоры",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "folder_id": 27,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:54.054547Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "folder": "06_Техническая_документация",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "folder_id": 26,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:56.580512Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "folder": "05_Проектная_документация",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "folder_id": 25,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:59.105569Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "folder": "04_Отчеты",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "folder_id": 24,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:39.530777Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "folder": "03_Инструкции",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "folder_id": 23,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:42.056522Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "folder": "02_Политики_безопасности",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "folder_id": 22,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:44.581485Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "folder": "01_Регламенты",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "folder_id": 21,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:47.106721Z"
+      }
+    }
+  ],
+  "document_permissions": [
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Тестовый документ файлового архива №100",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 129,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:37.277277Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Материалы обучения пользователей №099",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 128,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:39.808862Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Описание модели ролей №098",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 127,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:42.329864Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "План проверки отказоустойчивости №097",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 126,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:44.852565Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Инструкция администратора №096",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 125,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:47.375496Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Реестр внутренних документов №095",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 124,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:49.897210Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Описание сценариев тестирования №094",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 123,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:52.419714Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Отчет о проверке прав доступа №093",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 122,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:54.941989Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Памятка сотрудника №092",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 121,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:57.462682Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Положение о хранении документов №091",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 120,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:21:59.984795Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Служебная записка по безопасности №090",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 119,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:02.504644Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Акт проверки документа №089",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 118,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:05.026369Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Заявка на предоставление доступа №088",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 117,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:07.547491Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Инструкция по загрузке файлов №087",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 116,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:10.069649Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Описание архитектуры frontend №086",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 115,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:12.592714Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Описание архитектуры backend №085",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 114,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:15.114609Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Отчет по аудиту действий №084",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 113,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:17.635659Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Инструкция пользователя VaultDoc №083",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 112,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:20.157825Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Политика разграничения доступа №082",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 111,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:22.678287Z"
+      }
+    },
+    {
+      "user": "ivan.petrov@vaultdoc.ru",
+      "document": "Регламент обработки документов №081",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true
+      },
+      "response": {
+        "user_id": 13,
+        "document_id": 110,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": true,
+        "granted_at": "2026-05-07T18:22:25.200777Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Тестовый документ файлового архива №100",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 129,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:37.807406Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Материалы обучения пользователей №099",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 128,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:40.329095Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Описание модели ролей №098",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 127,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:42.851902Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "План проверки отказоустойчивости №097",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 126,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:45.372102Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Инструкция администратора №096",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 125,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:47.894221Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Реестр внутренних документов №095",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 124,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:50.415477Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Описание сценариев тестирования №094",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 123,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:52.936407Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Отчет о проверке прав доступа №093",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 122,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:55.458401Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Памятка сотрудника №092",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 121,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:22:57.980244Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Положение о хранении документов №091",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 120,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:00.500483Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Служебная записка по безопасности №090",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 119,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:03.022909Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Акт проверки документа №089",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 118,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:05.544962Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Заявка на предоставление доступа №088",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 117,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:08.065651Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Инструкция по загрузке файлов №087",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 116,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:10.587646Z"
+      }
+    },
+    {
+      "user": "anna.smirnova@vaultdoc.ru",
+      "document": "Описание архитектуры frontend №086",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 14,
+        "document_id": 115,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:13.109486Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Описание архитектуры backend №085",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 114,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:25.720389Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Отчет по аудиту действий №084",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 113,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:28.242090Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Инструкция пользователя VaultDoc №083",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 112,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:30.763583Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Политика разграничения доступа №082",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 111,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:33.283698Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Регламент обработки документов №081",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 110,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:35.806678Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Тестовый документ файлового архива №080",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 109,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:38.328427Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Материалы обучения пользователей №079",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 108,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:40.849238Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Описание модели ролей №078",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 107,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:43.373213Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "План проверки отказоустойчивости №077",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 106,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:45.897478Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Инструкция администратора №076",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 105,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:48.418839Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Реестр внутренних документов №075",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 104,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:50.941001Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Описание сценариев тестирования №074",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 103,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:53.462552Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Отчет о проверке прав доступа №073",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 102,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:55.983113Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Памятка сотрудника №072",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 101,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:23:58.507733Z"
+      }
+    },
+    {
+      "user": "dmitry.volkov@vaultdoc.ru",
+      "document": "Положение о хранении документов №071",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 15,
+        "document_id": 100,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:01.035966Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Служебная записка по безопасности №070",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 99,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:13.663564Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Акт проверки документа №069",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 98,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:16.185286Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Заявка на предоставление доступа №068",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 97,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:18.708691Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Инструкция по загрузке файлов №067",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 96,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:21.232486Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Описание архитектуры frontend №066",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 95,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:23.757970Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Описание архитектуры backend №065",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 94,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:26.278826Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Отчет по аудиту действий №064",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 93,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:28.802133Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Инструкция пользователя VaultDoc №063",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 92,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:31.330643Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Политика разграничения доступа №062",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 91,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:33.857723Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Регламент обработки документов №061",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 90,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:36.380200Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Тестовый документ файлового архива №060",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 89,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:38.906477Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Материалы обучения пользователей №059",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 88,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:41.429562Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Описание модели ролей №058",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 87,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:43.955467Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "План проверки отказоустойчивости №057",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 86,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:46.480663Z"
+      }
+    },
+    {
+      "user": "elena.kuznetsova@vaultdoc.ru",
+      "document": "Инструкция администратора №056",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 16,
+        "document_id": 85,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:24:49.002114Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Реестр внутренних документов №055",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 84,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:01.644051Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Описание сценариев тестирования №054",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 83,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:04.169448Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Отчет о проверке прав доступа №053",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 82,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:06.691997Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Памятка сотрудника №052",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 81,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:09.217020Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Положение о хранении документов №051",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 80,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:11.739957Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Служебная записка по безопасности №050",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 79,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:14.263746Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Акт проверки документа №049",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 78,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:16.786093Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Заявка на предоставление доступа №048",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 77,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:19.309411Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Инструкция по загрузке файлов №047",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 76,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:21.833460Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Описание архитектуры frontend №046",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 75,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:24.362349Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Описание архитектуры backend №045",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 74,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:26.895435Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Отчет по аудиту действий №044",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 73,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:29.422364Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Инструкция пользователя VaultDoc №043",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 72,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:31.949562Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Политика разграничения доступа №042",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 71,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:34.478493Z"
+      }
+    },
+    {
+      "user": "sergey.orlov@vaultdoc.ru",
+      "document": "Регламент обработки документов №041",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 17,
+        "document_id": 70,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": true,
+        "can_delete": true,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:37.004519Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Тестовый документ файлового архива №040",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 69,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:49.626289Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Материалы обучения пользователей №039",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 68,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:52.147317Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Описание модели ролей №038",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 67,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:54.668793Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "План проверки отказоустойчивости №037",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 66,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:57.198785Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Инструкция администратора №036",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 65,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:25:59.722125Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Реестр внутренних документов №035",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 64,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:02.244594Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Описание сценариев тестирования №034",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 63,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:04.765859Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Отчет о проверке прав доступа №033",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 62,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:07.290673Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Памятка сотрудника №032",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 61,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:09.827006Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Положение о хранении документов №031",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 60,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:12.351340Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Служебная записка по безопасности №030",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 59,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:14.880382Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Акт проверки документа №029",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 58,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:17.412393Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Заявка на предоставление доступа №028",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 57,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:19.943644Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Инструкция по загрузке файлов №027",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 56,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:22.468301Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Описание архитектуры frontend №026",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 55,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:24.998404Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Описание архитектуры backend №025",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 54,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:27.523608Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Отчет по аудиту действий №024",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 53,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:30.046934Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Инструкция пользователя VaultDoc №023",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 52,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:32.572375Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Политика разграничения доступа №022",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 51,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:35.099840Z"
+      }
+    },
+    {
+      "user": "maria.fedorova@vaultdoc.ru",
+      "document": "Регламент обработки документов №021",
+      "ok": true,
+      "rights": {
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false
+      },
+      "response": {
+        "user_id": 18,
+        "document_id": 50,
+        "granted_by": 1,
+        "can_read": true,
+        "can_update": false,
+        "can_delete": false,
+        "can_manage_access": false,
+        "granted_at": "2026-05-07T18:26:37.627872Z"
+      }
+    }
+  ]
+}

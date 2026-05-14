@@ -1,0 +1,22 @@
+[OK]   login admin
+[OK]   login security_admin
+[OK]   login developer
+[OK]   login manager
+[OK]   login employee
+[OK]   admin видит пользователей
+[OK]   admin видит аудит
+[OK]   admin видит документы
+[OK]   security_admin видит пользователей
+[OK]   security_admin видит аудит
+[OK]   security_admin не видит документы
+[OK]   developer не видит пользователей
+[OK]   developer не видит аудит
+[OK]   developer не видит документы
+[OK]   manager не видит пользователей
+[OK]   manager не видит аудит
+[OK]   manager видит документы
+[OK]   employee не видит пользователей
+[OK]   employee не видит аудит
+[OK]   employee видит документы
+
+Итог: OK

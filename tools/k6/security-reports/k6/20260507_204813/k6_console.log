@@ -1,0 +1,240 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /scripts/vaultdoc_load_test.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1 max VUs, 1m30s max duration (incl. graceful stop):
+              * baseline_api: 1 looping VUs for 1m0s (exec: baselineScenario, gracefulStop: 30s)
+
+
+Run            [ 100% ] setup()
+baseline_api   [   0% ]
+
+Run            [ 100% ] setup()
+baseline_api   [   0% ]
+
+running (0m03.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [   1% ] 1 VUs  0m00.5s/1m0s
+
+running (0m04.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [   3% ] 1 VUs  0m01.5s/1m0s
+
+running (0m05.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [   4% ] 1 VUs  0m02.5s/1m0s
+
+running (0m06.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [   6% ] 1 VUs  0m03.5s/1m0s
+
+running (0m07.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [   8% ] 1 VUs  0m04.5s/1m0s
+
+running (0m08.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [   9% ] 1 VUs  0m05.5s/1m0s
+
+running (0m09.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  11% ] 1 VUs  0m06.5s/1m0s
+
+running (0m10.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  13% ] 1 VUs  0m07.5s/1m0s
+
+running (0m11.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  14% ] 1 VUs  0m08.5s/1m0s
+
+running (0m12.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  16% ] 1 VUs  0m09.5s/1m0s
+
+running (0m13.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  18% ] 1 VUs  0m10.5s/1m0s
+
+running (0m14.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  19% ] 1 VUs  0m11.5s/1m0s
+
+running (0m15.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  21% ] 1 VUs  0m12.5s/1m0s
+
+running (0m16.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  23% ] 1 VUs  0m13.5s/1m0s
+
+running (0m17.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  24% ] 1 VUs  0m14.5s/1m0s
+
+running (0m18.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  26% ] 1 VUs  0m15.5s/1m0s
+
+running (0m19.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  28% ] 1 VUs  0m16.5s/1m0s
+
+running (0m20.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  29% ] 1 VUs  0m17.5s/1m0s
+
+running (0m21.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  31% ] 1 VUs  0m18.5s/1m0s
+
+running (0m22.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  33% ] 1 VUs  0m19.5s/1m0s
+
+running (0m23.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  34% ] 1 VUs  0m20.5s/1m0s
+
+running (0m24.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  36% ] 1 VUs  0m21.5s/1m0s
+
+running (0m25.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+baseline_api   [  38% ] 1 VUs  0m22.5s/1m0s
+
+running (0m26.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  39% ] 1 VUs  0m23.5s/1m0s
+
+running (0m27.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  41% ] 1 VUs  0m24.5s/1m0s
+
+running (0m28.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  43% ] 1 VUs  0m25.5s/1m0s
+
+running (0m29.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  44% ] 1 VUs  0m26.5s/1m0s
+
+running (0m30.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  46% ] 1 VUs  0m27.5s/1m0s
+
+running (0m31.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  48% ] 1 VUs  0m28.5s/1m0s
+
+running (0m32.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  49% ] 1 VUs  0m29.5s/1m0s
+
+running (0m33.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  51% ] 1 VUs  0m30.5s/1m0s
+
+running (0m34.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  53% ] 1 VUs  0m31.5s/1m0s
+
+running (0m35.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  54% ] 1 VUs  0m32.5s/1m0s
+
+running (0m36.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  56% ] 1 VUs  0m33.5s/1m0s
+
+running (0m37.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  58% ] 1 VUs  0m34.5s/1m0s
+
+running (0m38.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  59% ] 1 VUs  0m35.5s/1m0s
+
+running (0m39.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  61% ] 1 VUs  0m36.5s/1m0s
+
+running (0m40.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  63% ] 1 VUs  0m37.5s/1m0s
+
+running (0m41.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  64% ] 1 VUs  0m38.5s/1m0s
+
+running (0m42.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  66% ] 1 VUs  0m39.5s/1m0s
+
+running (0m43.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  68% ] 1 VUs  0m40.5s/1m0s
+
+running (0m44.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  69% ] 1 VUs  0m41.5s/1m0s
+
+running (0m45.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  71% ] 1 VUs  0m42.5s/1m0s
+
+running (0m46.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  73% ] 1 VUs  0m43.5s/1m0s
+
+running (0m47.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  74% ] 1 VUs  0m44.5s/1m0s
+
+running (0m48.0s), 1/1 VUs, 1 complete and 0 interrupted iterations
+baseline_api   [  76% ] 1 VUs  0m45.5s/1m0s
+
+running (0m49.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  78% ] 1 VUs  0m46.5s/1m0s
+
+running (0m50.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  79% ] 1 VUs  0m47.5s/1m0s
+
+running (0m51.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  81% ] 1 VUs  0m48.5s/1m0s
+
+running (0m52.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  83% ] 1 VUs  0m49.5s/1m0s
+
+running (0m53.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  84% ] 1 VUs  0m50.5s/1m0s
+
+running (0m54.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  86% ] 1 VUs  0m51.5s/1m0s
+
+running (0m55.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  88% ] 1 VUs  0m52.5s/1m0s
+
+running (0m56.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  89% ] 1 VUs  0m53.5s/1m0s
+
+running (0m57.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  91% ] 1 VUs  0m54.5s/1m0s
+
+running (0m58.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  93% ] 1 VUs  0m55.5s/1m0s
+
+running (0m59.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  94% ] 1 VUs  0m56.5s/1m0s
+
+running (1m00.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  96% ] 1 VUs  0m57.5s/1m0s
+
+running (1m01.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  98% ] 1 VUs  0m58.5s/1m0s
+
+running (1m02.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api   [  99% ] 1 VUs  0m59.5s/1m0s
+
+running (1m03.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api ↓ [ 100% ] 1 VUs  1m0s
+
+running (1m04.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api ↓ [ 100% ] 1 VUs  1m0s
+
+running (1m05.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api ↓ [ 100% ] 1 VUs  1m0s
+
+running (1m06.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api ↓ [ 100% ] 1 VUs  1m0s
+
+running (1m07.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api ↓ [ 100% ] 1 VUs  1m0s
+
+running (1m08.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api ↓ [ 100% ] 1 VUs  1m0s
+
+running (1m09.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api ↓ [ 100% ] 1 VUs  1m0s
+
+running (1m10.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api ↓ [ 100% ] 1 VUs  1m0s
+
+running (1m11.0s), 1/1 VUs, 2 complete and 0 interrupted iterations
+baseline_api ↓ [ 100% ] 1 VUs  1m0s
+Итоговая сводка k6-нагрузочного тестирования
+Цель: http://127.0.0.1:8080
+Всего HTTP-запросов: 29
+Всего итераций: 3
+Доля HTTP-ошибок: 0.00%
+p95 времени ответа: 145.89 ms
+Доля успешных checks: 100.00%
+
+Статус: passed
+
+running (1m11.7s), 0/1 VUs, 3 complete and 0 interrupted iterations
+baseline_api ✓ [ 100% ] 1 VUs  1m0s

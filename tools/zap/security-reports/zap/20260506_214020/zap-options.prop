@@ -1,0 +1,6 @@
+replacer.full_list(0).description=admin-jwt
+replacer.full_list(0).enabled=true
+replacer.full_list(0).matchtype=REQ_HEADER
+replacer.full_list(0).matchstr=Authorization
+replacer.full_list(0).regex=false
+replacer.full_list(0).replacement=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkNTg3MTJmYy02ODFmLTRkODEtYTc0Zi1mZThkOTAwYTNiMWEiLCJleHAiOjE3NzgwOTQ2MjEsInJvbGUiOiJhZG1pbiJ9.NJ0wMvAf9RTlC7iiq2QkyN0WpTy5sy-OLBJrPth-74w

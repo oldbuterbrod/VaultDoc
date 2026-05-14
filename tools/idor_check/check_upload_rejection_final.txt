@@ -1,0 +1,6 @@
+[OK]   login admin
+[OK]   Backend отклоняет недопустимый файл
+[OK]   Admin читает аудит после rejected upload
+[OK]   Аудит содержит document_upload_rejected для недопустимого файла
+
+Итог: OK
